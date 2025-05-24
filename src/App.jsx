@@ -7,6 +7,7 @@ import Newsletter from "./Opengen Main Component/Newletter";
 import ContactSection from "./Opengen Main Component/ContactSection";
 import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
+ import HeaderSection from "./Opengen Main Component/HeaderSection";
 
  import AboutSection from "./AboutPage Component/AboutSection";
  import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
@@ -29,6 +30,7 @@ function App() {
                     <>
                      
                     <OpenNavbar/>
+                    <HeaderSection/>
                     <DeveloperEngagementRate/>
                     <Services/>
                     <ContactSection/>
