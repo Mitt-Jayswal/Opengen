@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
-import '../Design About Component/AboutNewfeed.css';
+import '../Design About Component/AboutNewFeed.css';
 
 const  AboutNewFeed = () => {
   const sectionRef = useRef(null);
