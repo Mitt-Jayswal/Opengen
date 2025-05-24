@@ -3,7 +3,7 @@ import "../Design About Component/FrequentlyQuestions.css";
 
 const faqData = [
   {
-    question: "What services does Opengen provide to developers??",
+    question: "What services does Opengen provide to developers?",
     answer: "Opengen specializes in developer advocacy, providing services such as developer education, community building, technical support, and content creation. We help companies engage with developers and enhance their products through developer-focused initiatives.",
   },
   {
@@ -16,7 +16,7 @@ const faqData = [
   },
   {
     question: "How do I get involved in an Opengen event as a developer?",
-    answer: "ou can easily join our events by registering through our Events page. Opengen events are open to developers of all skill levels, and they often include opportunities to network, learn new skills, and collaborate on projects.",
+    answer: "You can easily join our events by registering through our Events page. Opengen events are open to developers of all skill levels, and they often include opportunities to network, learn new skills, and collaborate on projects.",
   },
   {
     question: "Can Opengen help me with product adoption in the developer community?",

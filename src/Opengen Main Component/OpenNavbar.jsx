@@ -142,9 +142,9 @@ const OpenNavbar = () => {
               </Link>
             </li>
             <li>
-              <a href="/about" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="mobile-dropdown">
               <button className="mobile-dropdown-button" onClick={toggleServicesDropdown} type="button">
@@ -156,40 +156,40 @@ const OpenNavbar = () => {
                 )}
               </button>
               <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
-                <a href="/services/developer-advocacy" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Developer Advocacy
-                </a>
+                </Link>
                 <a href="/services/brand-amplification" onClick={toggleMenu} className="mobile-dropdown-link">
                   Brand Amplification
                 </a>
-                <a href="/services/partnership" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Partnership
-                </a>
+                </Link>
               </div>
             </li>
             <li>
-              <a href="/community" onClick={toggleMenu} className="mobile-nav-link">
+             <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 Community Connect
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/learn" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 Learn
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className="mobile-action-buttons">
            
-          <a href="/" className="mobile-signin-button" onClick={toggleMenu}>
+          <Link to="/about/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
             Contact Opengen
-          </a>
+          </Link>
         </div>
       </div>
 
