@@ -56,9 +56,7 @@ const OpenNavbar = () => {
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <ul className="nav-links">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
+               
               <li>
                 <Link to="/about/Opengen">About</Link>
               </li>
@@ -120,11 +118,7 @@ const OpenNavbar = () => {
 
         <nav className="mobile-nav">
           <ul className="mobile-nav-links">
-            <li>
-              <Link to="/" onClick={toggleMenu} className="mobile-nav-link">
-                Home
-              </Link>
-            </li>
+             
             <li>
               <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 About Us

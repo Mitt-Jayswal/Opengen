@@ -39,37 +39,37 @@ const  AboutNewFeed = () => {
     {
       icon: "🌐", // Replace with TechCrunch icon if available
       title: "OpenGen.Tech Launches New Developer Advocacy Program",
-      outlet: "TechCrunch",
+      
       link: "#"
     },
     {
       icon: "💡", // Replace with VentureBeat icon if available
       title: "How OpenGen.Tech is Shaping the Future of Developer Communities",
-      outlet: "VentureBeat",
+      
       link: "#"
     },
     {
       icon: "🖥️", // Replace with The Verge icon if available
       title: "Building Bridges: OpenGen.Tech’s Impact on Open Source",
-      outlet: "The Verge",
+      
       link: "#"
     },
     {
       icon: "📱", // Replace with Wired icon if available
       title: "Developer Advocacy: The Secret Sauce Behind OpenGen.Tech’s Success",
-      outlet: "Wired",
+      
       link: "#"
     },
     {
       icon: "🔗", // Replace with ZDNet icon if available
       title: "OpenGen.Tech Partners with Leading Tech Firms to Expand Community Reach",
-      outlet: "ZDNet",
+      
       link: "#"
     },
     {
       icon: "👨‍💻", // Replace with Dev.to icon if available
       title: "Why OpenGen.Tech is a Beacon for Developer-First Organizations",
-      outlet: "Dev.to",
+    //   outlet: "Dev.to",
       link: "#"
     }
   ];

@@ -11,7 +11,7 @@ import Services from "./Opengen Main Component/ServicesSection";
  import WhyChooseOpengen from "./Opengen Main Component/WhyChoose";
 
  import AboutSection from "./AboutPage Component/AboutSection";
- import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
+//  import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
  import CustomersSection from "./AboutPage Component/TrustedPartners";
  import AboutHero from "./AboutPage Component/AboutHeroSection";
  import AboutNewFeed from "./AboutPage Component/AboutFeed";
@@ -52,7 +52,7 @@ function App() {
                       <OpenNavbar/>
                     <AboutHero/>
                        <AboutSection/>
-                       <FrequentlyQuestions/>
+                       {/* <FrequentlyQuestions/> */}
                        
                        <AboutNewFeed/>
                        
