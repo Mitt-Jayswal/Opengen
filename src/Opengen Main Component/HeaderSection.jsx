@@ -36,8 +36,8 @@ const HeaderSection = () => {
           <div className="seattle-narrative">
             <div className="portland-content">
               <h1 className="vegas-headline">
-                Developer Advocacy
-                <span className="miami-accent"> Agency</span>
+              Your Developer Community, Supercharged —  
+                <span className="miami-accent"> We Drive Connection, Trust, and Scalable Growth for Tech-Forward Brands</span>
               </h1>
               <p className="atlanta-description">
                 We bridge the gap between cutting-edge technology and developer communities. Our mission is to empower
@@ -61,6 +61,7 @@ const HeaderSection = () => {
               </div>
             </div>
           </div>
+          
 
           <div className="orlando-gallery">
             <div className="tampa-showcase">
