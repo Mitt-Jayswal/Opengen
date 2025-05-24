@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import "../Design Opengen Component/navbar.css"
 import { Link } from "react-router-dom"
 
@@ -10,17 +10,7 @@ const OpenNavbar = () => {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
 
   const toggleMenu = () => {
-    console.log("Menu clicked, current state:", isOpen)
     setIsOpen(!isOpen)
-  }
-
-  // Handle hover for desktop dropdown
-  const handleMouseEnter = () => {
-    setServicesDropdownOpen(true)
-  }
-
-  const handleMouseLeave = () => {
-    setServicesDropdownOpen(false)
   }
 
   // Toggle for mobile dropdown
@@ -35,7 +25,6 @@ const OpenNavbar = () => {
         setIsOpen(false)
       }
     }
-
     window.addEventListener("resize", handleResize)
     return () => {
       window.removeEventListener("resize", handleResize)
@@ -60,17 +49,11 @@ const OpenNavbar = () => {
         <div className="left-section">
           <div className="logo-container">
             <a href="/" className="logo">
-              {/* <div className="logo-icon">
-                <div className="logo-square red"></div>
-                <div className="logo-square green"></div>
-                <div className="logo-square blue"></div>
-                <div className="logo-square yellow"></div>
-              </div> */}
               <span className="logo-text">OpenGen</span>
             </a>
           </div>
 
-          {/* Desktop Navigation - moved to left */}
+          {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <ul className="nav-links">
               <li>
@@ -79,15 +62,19 @@ const OpenNavbar = () => {
               <li>
                 <Link to="/about/Opengen">About</Link>
               </li>
-              <li className="services-dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-               
-                <button className="dropdown-button" aria-expanded={servicesDropdownOpen}>
+              <li className="services-dropdown-container">
+                <button
+                  className="dropdown-button"
+                  onMouseEnter={() => setServicesDropdownOpen(true)}
+                >
                   Services
-                  <ChevronDown className="dropdown-icon" size={16} />
                 </button>
-                 
                 {servicesDropdownOpen && (
-                  <div className="dropdown-content">
+                  <div
+                    className="dropdown-content"
+                    onMouseEnter={() => setServicesDropdownOpen(true)}
+                    onMouseLeave={() => setServicesDropdownOpen(false)}
+                  >
                     <Link to="/services/Opengen">Developer Advocacy</Link>
                     <Link to="/services/Opengen">Brand Amplification</Link>
                     <Link to="/services/Opengen">Partnership</Link>
@@ -109,13 +96,11 @@ const OpenNavbar = () => {
 
         <div className="right-section">
           <div className="action-buttons">
-             
             <a href="/" className="signin-button">
               Contact OpenGen
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <button className="mobile-menu-button" onClick={toggleMenu} aria-label="Toggle menu" type="button">
             <Menu size={24} />
           </button>
@@ -126,7 +111,6 @@ const OpenNavbar = () => {
       <div className={`mobile-sidebar ${isOpen ? "open" : ""}`}>
         <div className="mobile-sidebar-header">
           <div className="mobile-logo">
-             
             <span className="logo-text">OpenGen</span>
           </div>
           <button className="close-sidebar" onClick={toggleMenu} type="button">
@@ -149,11 +133,6 @@ const OpenNavbar = () => {
             <li className="mobile-dropdown">
               <button className="mobile-dropdown-button" onClick={toggleServicesDropdown} type="button">
                 Services
-                {servicesDropdownOpen ? (
-                  <ChevronUp className="mobile-dropdown-icon" size={18} />
-                ) : (
-                  <ChevronDown className="mobile-dropdown-icon" size={18} />
-                )}
               </button>
               <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
                 <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
@@ -168,7 +147,7 @@ const OpenNavbar = () => {
               </div>
             </li>
             <li>
-             <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 Community Connect
               </Link>
             </li>
@@ -186,7 +165,6 @@ const OpenNavbar = () => {
         </nav>
 
         <div className="mobile-action-buttons">
-           
           <Link to="/about/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
             Contact Opengen
           </Link>

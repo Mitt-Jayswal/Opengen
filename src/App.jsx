@@ -14,6 +14,8 @@ import Services from "./Opengen Main Component/ServicesSection";
  import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
  import CustomersSection from "./AboutPage Component/TrustedPartners";
  import AboutHero from "./AboutPage Component/AboutHeroSection";
+ import AboutNewFeed from "./AboutPage Component/AboutFeed";
+  
 
 
  import ServicesHero from "./ServicesPage Component/ServicesHero";
@@ -47,7 +49,10 @@ function App() {
                     <AboutHero/>
                        <AboutSection/>
                        <FrequentlyQuestions/>
-                       <CustomersSection/>
+                       
+                       <AboutNewFeed/>
+                       
+                        <CustomersSection/>
                     <FooterSection/>
                     </>
                 } />
