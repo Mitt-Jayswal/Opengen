@@ -1,0 +1,202 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
+import "../Design Opengen Component/navbar.css"
+import { Link } from "react-router-dom"
+
+const OpenNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
+
+  const toggleMenu = () => {
+    console.log("Menu clicked, current state:", isOpen)
+    setIsOpen(!isOpen)
+  }
+
+  // Handle hover for desktop dropdown
+  const handleMouseEnter = () => {
+    setServicesDropdownOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    setServicesDropdownOpen(false)
+  }
+
+  // Toggle for mobile dropdown
+  const toggleServicesDropdown = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen)
+  }
+
+  // Close mobile menu when window is resized to desktop size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024 && isOpen) {
+        setIsOpen(false)
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [isOpen])
+
+  // Prevent body scrolling when sidebar is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [isOpen])
+
+  return (
+    <header className="navbar-container">
+      <div className="navbar">
+        <div className="left-section">
+          <div className="logo-container">
+            <a href="/" className="logo">
+              {/* <div className="logo-icon">
+                <div className="logo-square red"></div>
+                <div className="logo-square green"></div>
+                <div className="logo-square blue"></div>
+                <div className="logo-square yellow"></div>
+              </div> */}
+              <span className="logo-text">OpenGen</span>
+            </a>
+          </div>
+
+          {/* Desktop Navigation - moved to left */}
+          <nav className="desktop-nav">
+            <ul className="nav-links">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about/Opengen">About</Link>
+              </li>
+              <li className="services-dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+               
+                <button className="dropdown-button" aria-expanded={servicesDropdownOpen}>
+                  Services
+                  <ChevronDown className="dropdown-icon" size={16} />
+                </button>
+                 
+                {servicesDropdownOpen && (
+                  <div className="dropdown-content">
+                    <Link to="/services/Opengen">Developer Advocacy</Link>
+                    <Link to="/services/Opengen">Brand Amplification</Link>
+                    <Link to="/services/Opengen">Partnership</Link>
+                  </div>
+                )}
+              </li>
+              <li>
+                <Link to="/community/Opengen">Community</Link>
+              </li>
+              <li>
+                <Link to="/learn/Opengen">Learn</Link>
+              </li>
+              <li>
+                <Link to="/support/Opengen">Contact Us</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="right-section">
+          <div className="action-buttons">
+             
+            <a href="/" className="signin-button">
+              Contact OpenGen
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button className="mobile-menu-button" onClick={toggleMenu} aria-label="Toggle menu" type="button">
+            <Menu size={24} />
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Sidebar */}
+      <div className={`mobile-sidebar ${isOpen ? "open" : ""}`}>
+        <div className="mobile-sidebar-header">
+          <div className="mobile-logo">
+             
+            <span className="logo-text">OpenGen</span>
+          </div>
+          <button className="close-sidebar" onClick={toggleMenu} type="button">
+            <X size={24} />
+          </button>
+        </div>
+
+        <nav className="mobile-nav">
+          <ul className="mobile-nav-links">
+            <li>
+              <Link to="/" onClick={toggleMenu} className="mobile-nav-link">
+                Home
+              </Link>
+            </li>
+            <li>
+              <a href="/about" onClick={toggleMenu} className="mobile-nav-link">
+                About Us
+              </a>
+            </li>
+            <li className="mobile-dropdown">
+              <button className="mobile-dropdown-button" onClick={toggleServicesDropdown} type="button">
+                Services
+                {servicesDropdownOpen ? (
+                  <ChevronUp className="mobile-dropdown-icon" size={18} />
+                ) : (
+                  <ChevronDown className="mobile-dropdown-icon" size={18} />
+                )}
+              </button>
+              <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
+                <a href="/services/developer-advocacy" onClick={toggleMenu} className="mobile-dropdown-link">
+                  Developer Advocacy
+                </a>
+                <a href="/services/brand-amplification" onClick={toggleMenu} className="mobile-dropdown-link">
+                  Brand Amplification
+                </a>
+                <a href="/services/partnership" onClick={toggleMenu} className="mobile-dropdown-link">
+                  Partnership
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="/community" onClick={toggleMenu} className="mobile-nav-link">
+                Community Connect
+              </a>
+            </li>
+            <li>
+              <a href="/learn" onClick={toggleMenu} className="mobile-nav-link">
+                Learn
+              </a>
+            </li>
+            <li>
+              <a href="/contact" onClick={toggleMenu} className="mobile-nav-link">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="mobile-action-buttons">
+           
+          <a href="/" className="mobile-signin-button" onClick={toggleMenu}>
+            Contact Opengen
+          </a>
+        </div>
+      </div>
+
+      {/* Overlay for mobile sidebar */}
+      {isOpen && <div className="mobile-overlay" onClick={toggleMenu}></div>}
+    </header>
+  )
+}
+
+export default OpenNavbar;

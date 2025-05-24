@@ -1,0 +1,152 @@
+.faq-section {
+  max-width: 1300px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 32px 24px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.faq-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #232323;
+}
+
+.faq-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.faq-btn {
+  background: #f3f0ff;
+  color: #4f3cc9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.faq-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.faq-list {
+  margin-top: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eaeaea;
+  padding: 0;
+}
+
+.faq-question-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.faq-index {
+  color: #7f6eea;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 22px;
+  min-width: 32px;
+}
+
+.faq-question {
+  flex: 1;
+  font-size: 1.13rem;
+  color: #232323;
+  font-weight: 500;
+}
+
+.faq-toggle-btn {
+  background: #7f6eea;
+  border: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.faq-toggle-btn.open {
+  background: #4f3cc9;
+}
+
+.faq-plus {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq-answer {
+  padding: 0 0 18px 54px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+  .faq-header h1 {
+    font-size: 1.25rem;
+  }
+  .faq-controls {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .faq-question-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 0;
+  }
+  .faq-index {
+    margin-right: 12px;
+    font-size: 1rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+  }
+  .faq-toggle-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.3rem;
+  }
+  .faq-answer {
+    padding-left: 36px;
+    font-size: 0.97rem;
+  }
+}
