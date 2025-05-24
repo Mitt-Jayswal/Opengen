@@ -2,7 +2,7 @@
 
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "../Design Service Component/servicesHero.css"
+import "../Design Service Component/ServicesHero.css"
 
 const ServicesHero = () => {
   return (
