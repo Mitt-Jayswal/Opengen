@@ -8,6 +8,7 @@ import ContactSection from "./Opengen Main Component/ContactSection";
 import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
  import HeaderSection from "./Opengen Main Component/HeaderSection";
+ import WhyChooseOpengen from "./Opengen Main Component/WhyChoose";
 
  import AboutSection from "./AboutPage Component/AboutSection";
  import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
@@ -33,6 +34,7 @@ function App() {
                     <HeaderSection/>
                     <DeveloperEngagementRate/>
                     <Services/>
+                    <WhyChooseOpengen/>
                     <ContactSection/>
                     <Newsletter/>
                     <FooterSection/>
