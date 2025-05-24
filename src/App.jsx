@@ -19,8 +19,12 @@ import Services from "./Opengen Main Component/ServicesSection";
 
 
  import ServicesHero from "./ServicesPage Component/ServicesHero";
+ import CommunityNews from "./ServicesPage Component/ServicesContainer";
 
  import CommunityHero from "./Community Component/CommunityHero";
+
+
+ import OpengenHelp from "./Support Component/SupportMain";
 
 function App() {
   
@@ -61,6 +65,7 @@ function App() {
                     <>
                      <OpenNavbar/>
                      <ServicesHero/>
+                     <CommunityNews/>
                     <FooterSection/>  
                     </>
                 } />
@@ -84,6 +89,7 @@ function App() {
                 <Route path="/support/Opengen" element={
                     <>
                      <OpenNavbar/>
+                     <OpengenHelp/>
                     <FooterSection/>   
                     </>
                 } />

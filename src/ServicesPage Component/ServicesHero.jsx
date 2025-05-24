@@ -36,7 +36,7 @@ const ServicesHero = () => {
         </div>
         <div className="services-hero-right">
           <p className="services-hero-desc">
-            Developer trust is earned — not bought. At OpenGen.Tech, we specialize in building that trust through strategic
+            Developer trust is earned  At OpenGen.Tech, we specialize in building that trust through strategic
             advocacy that blends credibility, community, and code. Because when developers believe, everything else follows.
           </p>
         </div>
