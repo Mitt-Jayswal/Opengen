@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import "../Partnership Component/Partners.css"
+import "../Partnership Component/partners.css"
 import image from '../assets/sample.avif'
 
 const googlePartners = [
