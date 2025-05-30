@@ -1,0 +1,472 @@
+.sahara-section {
+  padding: 80px 0;
+  background-color: #f8fafc;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sahara-section.sahara-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.desert-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Content Container Styles */
+.oasis-content {
+  flex: 1;
+  padding: 20px 0;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.dune-title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #1e293b;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.sand-paragraph {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.cactus-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.cactus-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #334155;
+  font-weight: 500;
+}
+
+.mirage-icon {
+  color: #6366f1;
+  margin-right: 12px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.palm-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.bedouin-primary {
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bedouin-primary:hover {
+  background-color: #0f172a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.camel-secondary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.camel-secondary:hover {
+  color: #4f46e5;
+  transform: translateX(2px);
+}
+
+.scorpion-arrow {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.camel-secondary:hover .scorpion-arrow {
+  transform: translateX(2px);
+}
+
+/* Form Container Styles */
+.mesa-form {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  max-width: 50%;
+  box-sizing: border-box;
+  
+}
+
+.canyon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.plateau-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.oasis-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #6366f1;
+  border-radius: 8px;
+  color: white;
+}
+
+.sandstorm-icon {
+  font-size: 16px;
+}
+
+.dune-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #1e293b;
+}
+
+.mirage-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #6366f1;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mirage-link:hover {
+  color: #4f46e5;
+}
+
+.nomad-form {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.caravan-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.caravan-row .tent-group {
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.tent-group {
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bazaar-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.oasis-input-icon {
+  color: #6366f1;
+  font-size: 14px;
+}
+
+.dune-input,
+.sahara-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f8fafc;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.dune-input:focus,
+.sahara-textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.sandstorm-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.oasis-checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #6366f1;
+}
+
+.mirage-terms {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.camel-link {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.camel-link:hover {
+  text-decoration: underline;
+}
+
+.desert-submit {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 16px;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.desert-submit:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.desert-submit:not(:disabled):hover {
+  background-color: #4f46e5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.25);
+}
+
+.sandstorm-btn-icon {
+  font-size: 14px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .desert-container {
+    flex-direction: column;
+  }
+
+  .oasis-content {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .mesa-form {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sahara-section {
+    padding: 60px 0;
+  }
+
+  .dune-title {
+    font-size: 28px;
+  }
+
+  .caravan-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .palm-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .bedouin-primary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sahara-section {
+    padding: 40px 0;
+  }
+
+  .canyon-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dune-title {
+    font-size: 24px;
+  }
+
+  .sand-paragraph {
+    font-size: 15px;
+  }
+
+  .cactus-item {
+    font-size: 15px;
+  }
+}
+
+
+
+/* Floating Label Styles */
+.floating-label-group {
+  position: relative;
+  margin-bottom: 24px !important;
+}
+
+.floating-input {
+  padding: 16px 14px 8px 14px !important;
+  background-color: #fff !important;
+  border: 2px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.floating-input:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+.floating-label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 4px;
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+}
+
+.floating-input:focus + .floating-label,
+.floating-input:not(:placeholder-shown) + .floating-label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.floating-input:focus + .floating-label .oasis-input-icon,
+.floating-input:not(:placeholder-shown) + .floating-label .oasis-input-icon {
+  color: #3b82f6;
+  font-size: 12px;
+}
+
+/* Textarea specific adjustments */
+.floating-label-group textarea.floating-input {
+  min-height: 80px;
+  padding-top: 20px !important;
+}
+
+.floating-label-group textarea.floating-input + .floating-label {
+  top: 24px;
+}
+
+.floating-label-group textarea.floating-input:focus + .floating-label,
+.floating-label-group textarea.floating-input:not(:placeholder-shown) + .floating-label {
+  top: 0;
+  transform: translateY(-50%);
+}
+
+/* Remove old label styles */
+.bazaar-label {
+  display: none;
+}
+
+/* Update input focus states */
+.dune-input:focus,
+.sahara-textarea:focus {
+  outline: none;
+  border-color: #3b82f6 !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Ensure proper spacing for floating labels */
+.tent-group.floating-label-group {
+  margin-bottom: 24px;
+}
+
+.caravan-row .tent-group.floating-label-group {
+  margin-bottom: 24px;
+}

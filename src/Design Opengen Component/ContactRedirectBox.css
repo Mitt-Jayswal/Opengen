@@ -1,0 +1,275 @@
+.con-attbox-main-section-tact {
+  padding: 80px 20px;
+  background-color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.con-attbox-main-section-tact.con-attbox-visible-tact {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.con-attbox-container-tact {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.con-attbox-card-tact {
+  background: linear-gradient(135deg, #fefefe 0%, #fdf2f8 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 300px;
+  position: relative;
+}
+
+.con-attbox-content-tact {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.con-attbox-title-tact {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.con-attbox-description-tact {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.con-attbox-link-tact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3b82f6;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.con-attbox-link-tact:hover {
+  color: #2563eb;
+  gap: 12px;
+}
+
+.con-attbox-link-tact svg {
+  transition: transform 0.2s ease;
+}
+
+.con-attbox-link-tact:hover svg {
+  transform: translateX(2px);
+}
+
+.con-attbox-image-container-tact {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.con-attbox-image-wrapper-tact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.con-attbox-image-tact {
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.9;
+  transform: translateX(20px);
+  filter: blur(0.5px);
+  transition: all 0.3s ease;
+}
+
+.con-attbox-card-tact:hover .con-attbox-image-tact {
+  opacity: 1;
+  transform: translateX(15px);
+  filter: blur(0px);
+}
+
+/* Create the effect of image emerging from card */
+.con-attbox-image-container-tact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, #fefefe 0%, rgba(254, 254, 254, 0.8) 50%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .con-attbox-card-tact {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .con-attbox-content-tact {
+    padding: 40px 30px;
+  }
+
+  .con-attbox-title-tact {
+    font-size: 2.2rem;
+  }
+
+  .con-attbox-image-container-tact {
+    height: 250px;
+    order: -1;
+  }
+
+  .con-attbox-image-wrapper-tact {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .con-attbox-image-tact {
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .con-attbox-image-container-tact::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .con-attbox-main-section-tact {
+    padding: 60px 15px;
+  }
+
+  .con-attbox-content-tact {
+    padding: 30px 25px;
+  }
+
+  .con-attbox-title-tact {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+
+  .con-attbox-description-tact {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .con-attbox-image-container-tact {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .con-attbox-main-section-tact {
+    padding: 40px 10px;
+  }
+
+  .con-attbox-content-tact {
+    padding: 25px 20px;
+  }
+
+  .con-attbox-title-tact {
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+  }
+
+  .con-attbox-description-tact {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .con-attbox-link-tact {
+    font-size: 0.9rem;
+  }
+
+  .con-attbox-image-container-tact {
+    height: 180px;
+  }
+}
+
+/* Animation delays for smoother entrance */
+.con-attbox-main-section-tact.con-attbox-visible-tact .con-attbox-content-tact {
+  animation: con-attbox-slideInLeft-tact 0.8s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.con-attbox-main-section-tact.con-attbox-visible-tact .con-attbox-image-container-tact {
+  animation: con-attbox-slideInRight-tact 0.8s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+@keyframes con-attbox-slideInLeft-tact {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes con-attbox-slideInRight-tact {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Accessibility */
+.con-attbox-link-tact:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .con-attbox-main-section-tact,
+  .con-attbox-content-tact,
+  .con-attbox-image-container-tact,
+  .con-attbox-image-tact,
+  .con-attbox-link-tact {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Performance optimizations */
+.con-attbox-card-tact {
+  will-change: transform;
+}
+
+.con-attbox-image-tact {
+  will-change: transform, opacity, filter;
+}

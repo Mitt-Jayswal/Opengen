@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import OpenNavbar from "./Opengen Main Component/OpenNavbar";
 import FooterSection from "./Opengen Main Component/FooterSection";
 import Newsletter from "./Opengen Main Component/Newletter";
-import ContactSection from "./Opengen Main Component/ContactSection";
+ import ContactRedirectBox from "./Opengen Main Component/ContactredirectBox";
 import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
  import HeaderSection from "./Opengen Main Component/HeaderSection";
- import WhyChooseOpengen from "./Opengen Main Component/WhyChoose";
+ 
 
  import AboutSection from "./AboutPage Component/AboutSection";
 //  import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
@@ -20,11 +20,15 @@ import Services from "./Opengen Main Component/ServicesSection";
 
  import ServicesHero from "./ServicesPage Component/ServicesHero";
  import CommunityNews from "./ServicesPage Component/ServicesContainer";
+ import ServiceDev from "./ServicesPage Component/Servicedev";
 
  import CommunityHero from "./Community Component/CommunityHero";
+ import CommunityEvents from "./Community Component/CommunityEvents";
 
 
  import OpengenHelp from "./Support Component/SupportMain";
+ import ContactPageSection from "./Support Component/ContactSection";
+ import Partners from "./PartnerShip Component/Partners";
 
 function App() {
   
@@ -40,8 +44,8 @@ function App() {
                     <HeaderSection/>
                     <DeveloperEngagementRate/>
                     <Services/>
-                    <WhyChooseOpengen/>
-                    <ContactSection/>
+                    
+                     <ContactRedirectBox/>
                     <Newsletter/>
                     <FooterSection/>
                     </>
@@ -55,8 +59,7 @@ function App() {
                        {/* <FrequentlyQuestions/> */}
                        
                        <AboutNewFeed/>
-                       
-                        <CustomersSection/>
+                        
                     <FooterSection/>
                     </>
                 } />
@@ -65,15 +68,34 @@ function App() {
                     <>
                      <OpenNavbar/>
                      <ServicesHero/>
-                     <CommunityNews/>
+                     <ServiceDev/>
+                     
                     <FooterSection/>  
+                    </>
+                } />
+
+                <Route path="/partnerships/Opengen" element={
+                    <>
+                     <OpenNavbar/>
+                      <Partners/>
+                    <FooterSection/>   
+                    </>
+                } />
+
+                <Route path="/brandamplification/Opengen" element={
+                    <>
+                     <OpenNavbar/>
+                      
+                    <FooterSection/>   
                     </>
                 } />
 
               <Route path="/community/Opengen" element={
                     <>
                      <OpenNavbar/>
-                     <CommunityHero/>
+                      
+                     <CommunityEvents/>
+                     
                     <FooterSection/>
                     </>
                 } />
@@ -90,9 +112,12 @@ function App() {
                     <>
                      <OpenNavbar/>
                      <OpengenHelp/>
+                     <ContactPageSection/>
                     <FooterSection/>   
                     </>
                 } />
+
+                 
                 </Routes>
                 </Router>
     
