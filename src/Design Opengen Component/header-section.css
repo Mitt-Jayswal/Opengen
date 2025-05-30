@@ -576,10 +576,10 @@
   top: 100px;
   left: 100px;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 410px;
   background: rgba(255, 255, 255, 0.05);
-  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28672%29-tZBrVYa4ZAOX1hYOAYRuCB2kwDpBRj.png");
+  background-image: url("../assets/C.jpeg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;

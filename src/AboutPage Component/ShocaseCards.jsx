@@ -31,7 +31,7 @@ const ShowcaseCards = () => (
         <div className="showcase-card-content">
           <h3 className="showcase-card-title">Agency Excellence</h3>
           <p className="showcase-card-desc">
-            OpenGen.Tech empowers brands and developers with advocacy, mentorship, and creative solutions for impactful digital transformation.
+            OpenGen empowers brands and developers with advocacy, mentorship, and creative solutions for impactful digital transformation.
           </p>
         </div>
         <div className="showcase-card-underline"></div>

@@ -1,10 +1,28 @@
-"use client"
-
 import { useEffect, useState } from "react"
 import "../Design Opengen Component/header-section.css"
+import { Link,useLocation } from "react-router-dom"
+import square1 from '../assets/G.jpeg'
 
 const HeaderSection = () => {
+  const location=useLocation();
   const [isVisible, setIsVisible] = useState(false)
+
+
+  const ScrollToTopLink = ({ children, to, className, ...props }) => {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  return (
+    <Link to={to} onClick={handleClick} className={className} {...props}>
+      {children}
+    </Link>
+  );
+};
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,7 +55,7 @@ const HeaderSection = () => {
             <div className="portland-content">
               <h1 className="vegas-headline">
               Your Developer Community, Supercharged —  
-                <span className="miami-accent"> We Drive Connection, Trust, and Scalable Growth for Tech-Forward Brands</span>
+                <span className="miami-accent"> We Drive Connection, Trust, and Scalable Growth for advancing data and AI innovation</span>
               </h1>
               <p className="atlanta-description">
                 We bridge the gap between cutting-edge technology and developer communities. Our mission is to empower
@@ -49,15 +67,11 @@ const HeaderSection = () => {
                   <svg className="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                   </svg>
-                  Get Started
+                  <ScrollToTopLink to="/about/Opengen" style={{textDecoration:'none',color:'white'}}>
+                 Know More About OpenGen.Tech
+                 </ScrollToTopLink>
                 </button>
-                <button className="houston-secondary">
-                  <svg className="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M9 12l2 2 4-4" />
-                  </svg>
-                  Learn More
-                </button>
+                 
               </div>
             </div>
           </div>
@@ -69,7 +83,7 @@ const HeaderSection = () => {
               <div className="triangle-shape triangle-bottom"></div>
               <div className="nashville-frame">
                 <div className="raleigh-portrait raleigh-first">
-                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28672%29-BwfSw2U7Dk9N2GVTq5L0dac4IVAExO.png" alt="Developer" />
+                  <img src={square1} alt="Developer" />
                 </div>
                 <div className="raleigh-portrait raleigh-second">
                   <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28672%29-BwfSw2U7Dk9N2GVTq5L0dac4IVAExO.png" alt="Developer" />

@@ -42,7 +42,7 @@ const ServicesHero = () => {
         </div>
       </div>
       <div className="services-hero-bottom">
-        <span>Connect with OpenGen!!</span>
+        
       </div>
     </section>
   );

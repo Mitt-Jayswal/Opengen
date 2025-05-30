@@ -48,7 +48,7 @@ const CustomersSection = () => {
       className={`customers-section ${isVisible ? "visible" : ""}`}
     >
       <div className="customers-content">
-        <h2 className="customers-title">Our Customers</h2>
+        <h2 className="customers-title">Featured In</h2>
         <div className="customers-logos-row">
           {customers.map((customer) => (
             <div className="customer-logo-box" key={customer.name}>

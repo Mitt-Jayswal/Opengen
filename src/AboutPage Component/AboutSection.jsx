@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react"
 import { FaAward, FaLinkedin, FaUsers, FaGithub } from "react-icons/fa"
 import "../Design About Component/AboutSection.css"
-import sample from '../assets/sample.avif'
+import sample from '../assets/H.jpeg'
+import { Link } from "react-router-dom"
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -73,27 +74,21 @@ const AboutSection = () => {
             support projects that deserve visibility, adoption, and developer mindshare.
           </p>
 
-          <a href="#explore" className="explore-button">
+          <Link to="/services/Opengen" className="explore-button">
             Explore Our Services
-          </a>
+          </Link>
         </div>
 
         <div className="about-visuals">
           <div className="visual-element triangle-top"></div>
-          <div className="visual-element triangle-bottom"></div>
+          
 
           <div className="background-square"></div>
 
           <div className="image-collage">
-            <div className="image-circle top-circle">
-              <img
-                src={sample}
-                alt="Tech leader"
-                className="circle-img"
-              />
-            </div>
+            
 
-            <div className="image-circle center-circle">
+           
               <div className="arrow-container">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon">
                   <path
@@ -105,7 +100,7 @@ const AboutSection = () => {
                   />
                 </svg>
               </div>
-            </div>
+             
 
             <div className="image-circle bottom-left-circle">
               <img

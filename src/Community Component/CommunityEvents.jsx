@@ -312,6 +312,11 @@ const CommunityEvents = () => {
       </section>
       <br/>
       <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }

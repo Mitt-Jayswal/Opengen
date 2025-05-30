@@ -82,6 +82,7 @@
   display: block;
   transition: color 0.2s;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-links a:hover {

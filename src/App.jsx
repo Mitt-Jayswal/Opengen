@@ -8,27 +8,39 @@ import Newsletter from "./Opengen Main Component/Newletter";
 import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
  import HeaderSection from "./Opengen Main Component/HeaderSection";
+ import PartnersGoogle from "./Opengen Main Component/Partners";
  
 
  import AboutSection from "./AboutPage Component/AboutSection";
-//  import FrequentlyQuestions from "./AboutPage Component/FrequentlyQuestions";
- import CustomersSection from "./AboutPage Component/TrustedPartners";
- import AboutHero from "./AboutPage Component/AboutHeroSection";
  import AboutNewFeed from "./AboutPage Component/AboutFeed";
+ import MainBrandHeaderAbout from "./AboutPage Component/MainHeader";
   
 
 
  import ServicesHero from "./ServicesPage Component/ServicesHero";
- import CommunityNews from "./ServicesPage Component/ServicesContainer";
+  
  import ServiceDev from "./ServicesPage Component/Servicedev";
 
- import CommunityHero from "./Community Component/CommunityHero";
+ import ServiceDev3 from "./ServicesPage Component/Servicedev3";
+
+ import ServiceDev2 from "./ServicesPage Component/Sample";
+
+  
  import CommunityEvents from "./Community Component/CommunityEvents";
 
 
  import OpengenHelp from "./Support Component/SupportMain";
  import ContactPageSection from "./Support Component/ContactSection";
- import Partners from "./PartnerShip Component/Partners";
+
+ import PartnersPage from "./PartnerShip Component/Partners";
+ import MainBrandHeaderPartner from "./PartnerShip Component/MainHeaderPartner";
+
+
+ import CollaborativeAppsPage from "./BrandAmplification Component/Collaborative";
+ import WhatWeOffer from "./BrandAmplification Component/WhatWeOffer";
+ import MainBrandHeader from "./BrandAmplification Component/MainHeader";
+ import ContentBrand from "./BrandAmplification Component/ContentBrand";
+  
 
 function App() {
   
@@ -42,6 +54,7 @@ function App() {
                      
                     <OpenNavbar/>
                     <HeaderSection/>
+                    <PartnersGoogle/>
                     <DeveloperEngagementRate/>
                     <Services/>
                     
@@ -54,9 +67,8 @@ function App() {
               <Route path="/about/Opengen" element={
                     <>
                       <OpenNavbar/>
-                    <AboutHero/>
+                     <MainBrandHeaderAbout/>
                        <AboutSection/>
-                       {/* <FrequentlyQuestions/> */}
                        
                        <AboutNewFeed/>
                         
@@ -69,6 +81,9 @@ function App() {
                      <OpenNavbar/>
                      <ServicesHero/>
                      <ServiceDev/>
+                     <ServiceDev3/>
+                     <ServiceDev2/>
+                      
                      
                     <FooterSection/>  
                     </>
@@ -77,7 +92,9 @@ function App() {
                 <Route path="/partnerships/Opengen" element={
                     <>
                      <OpenNavbar/>
-                      <Partners/>
+                     <MainBrandHeaderPartner/>
+                      <PartnersPage/>
+
                     <FooterSection/>   
                     </>
                 } />
@@ -85,7 +102,10 @@ function App() {
                 <Route path="/brandamplification/Opengen" element={
                     <>
                      <OpenNavbar/>
-                      
+                     <MainBrandHeader/>
+                     <CollaborativeAppsPage/>
+                     <ContentBrand/>
+                     <WhatWeOffer/>
                     <FooterSection/>   
                     </>
                 } />

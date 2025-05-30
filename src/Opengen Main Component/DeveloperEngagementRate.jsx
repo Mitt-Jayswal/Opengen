@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../Design Opengen Component/Developerengagementrate.css";
-import sample from '../assets/sample.avif'
+import sample from '../assets/k.jpeg'
 
 // Replace with your actual image URL
 const bgImg =
@@ -37,10 +37,7 @@ const DeveloperEngagementRate = () => {
           <div className="stat-number">200+</div>
           <div className="stat-desc">Developer Communities Engaged Across the Globe<br />Our programs span over 200+ developer communities, promoting collaboration, knowledge-sharing.</div>
         </div>
-        <div className="stat">
-          <div className="stat-number">Innovative Solutions for Developer Communities</div>
-          <div className="stat-desc">Customized Advocacy Campaigns for Every Business</div>
-        </div>
+         
          
       </div>
       <div
@@ -52,10 +49,10 @@ const DeveloperEngagementRate = () => {
         <div className="customer-story-overlay">
           <div className="customer-story-content">
             <h2>
-              OpenGen Powers Developer Advocacy Services<br />
+              OpenGen Powers Developer Advocacy Services
   for Leading Organizations in AI, Data Science, Data Engineering, and Open Source.
             </h2>
-            <button className="story-btn">Know More About OpenGen</button>
+            
           </div>
         </div>
       </div>

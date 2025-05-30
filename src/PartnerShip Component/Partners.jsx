@@ -15,7 +15,7 @@ const googlePartners = [
   { id: 8, image, name: "Android", category: "Mobile OS" },
 ]
 
-const PartnersGoogle = () => {
+const PartnersPage = () => {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -72,4 +72,4 @@ const PartnersGoogle = () => {
   )
 }
 
-export default PartnersGoogle
+export default PartnersPage

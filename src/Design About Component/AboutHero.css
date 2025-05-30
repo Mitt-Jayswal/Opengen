@@ -27,6 +27,7 @@
   color: var(--text-dark);
   line-height: 1.6;
   background-color: #f8fafc;
+  height: 75vh;
 }
 
 .careers-container {
@@ -130,6 +131,7 @@
 .btn-icon {
   font-size: 0.9rem;
 }
+ 
 
 /* Responsive Styles */
 @media (max-width: 900px) {

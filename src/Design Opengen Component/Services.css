@@ -157,6 +157,7 @@
   transition: all 0.2s ease;
   text-decoration: none;
   gap: 8px;
+  height: 35px;
 }
 
 .action-button:hover {

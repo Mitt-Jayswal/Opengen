@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import "../Design Opengen Component/navbar.css"
@@ -49,7 +47,7 @@ const OpenNavbar = () => {
         <div className="left-section">
           <div className="logo-container">
             <a href="/" className="logo">
-              <span className="logo-text">OpenGen</span>
+              <span className="logo-text" style={{color:'black'}}>OpenGen</span>
             </a>
           </div>
 
@@ -74,8 +72,8 @@ const OpenNavbar = () => {
                     onMouseLeave={() => setServicesDropdownOpen(false)}
                   >
                     <Link to="/services/Opengen">Developer Advocacy</Link>
-                    <Link to="/services/Opengen">Brand Amplification</Link>
-                    <Link to="/services/Opengen">Partnership</Link>
+                    <Link to="/brandamplification/Opengen">Brand Amplification</Link>
+                    <Link to="/partnerships/Opengen">Partnership</Link>
                   </div>
                 )}
               </li>
@@ -94,9 +92,9 @@ const OpenNavbar = () => {
 
         <div className="right-section">
           <div className="action-buttons">
-            <a href="/" className="signin-button">
-              Contact OpenGen
-            </a>
+            <Link to="/support/Opengen" className="signin-button">
+              Get in Touch
+            </Link>
           </div>
 
           <button className="mobile-menu-button" onClick={toggleMenu} aria-label="Toggle menu" type="button">
@@ -132,7 +130,7 @@ const OpenNavbar = () => {
                 <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Developer Advocacy
                 </Link>
-                <a href="/services/brand-amplification" onClick={toggleMenu} className="mobile-dropdown-link">
+                <a href="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Brand Amplification
                 </a>
                 <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
@@ -151,7 +149,7 @@ const OpenNavbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/support/Opengen" onClick={toggleMenu} className="mobile-nav-link">
                 Contact Us
               </Link>
             </li>
@@ -159,8 +157,8 @@ const OpenNavbar = () => {
         </nav>
 
         <div className="mobile-action-buttons">
-          <Link to="/about/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
-            Contact Opengen
+          <Link to="/support/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
+            Get in Touch
           </Link>
         </div>
       </div>

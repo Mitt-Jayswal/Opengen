@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
 import '../Design About Component/AboutNewFeed.css';
+import { Link } from 'react-router-dom';
 
 const  AboutNewFeed = () => {
   const sectionRef = useRef(null);
@@ -21,7 +22,7 @@ const  AboutNewFeed = () => {
   // Endorsed By data
   const testimonials = [
     {
-      quote: "OpenGen.Tech’s advocacy work has transformed our developer community and accelerated our innovation cycle.",
+      quote: "OpenGen advocacy work has transformed our developer community and accelerated our innovation cycle.",
       role: "Leading AI Startup",
     },
     {
@@ -29,7 +30,7 @@ const  AboutNewFeed = () => {
       role: "Open Source Collective",
     },
     {
-      quote: "Working with OpenGen.Tech has elevated our brand and expanded our reach in the tech ecosystem.",
+      quote: "Working with OpenGen has elevated our brand and expanded our reach in the tech ecosystem.",
       role: "Cloud Innovators",
     }
   ];
@@ -38,39 +39,39 @@ const  AboutNewFeed = () => {
   const news = [
     {
       icon: "🌐", // Replace with TechCrunch icon if available
-      title: "OpenGen.Tech Launches New Developer Advocacy Program",
+      title: "OpenGen Launches New Developer Advocacy Program",
       
-      link: "#"
+      link: "/services/Opengen"
     },
     {
       icon: "💡", // Replace with VentureBeat icon if available
-      title: "How OpenGen.Tech is Shaping the Future of Developer Communities",
+      title: "How OpenGen is Shaping the Future of Developer Communities",
       
-      link: "#"
+      link: "/services/Opengen"
     },
     {
       icon: "🖥️", // Replace with The Verge icon if available
       title: "Building Bridges: OpenGen.Tech’s Impact on Open Source",
       
-      link: "#"
+      link: "/services/Opengen"
     },
     {
       icon: "📱", // Replace with Wired icon if available
       title: "Developer Advocacy: The Secret Sauce Behind OpenGen.Tech’s Success",
       
-      link: "#"
+      link: "/services/Opengen"
     },
     {
       icon: "🔗", // Replace with ZDNet icon if available
       title: "OpenGen.Tech Partners with Leading Tech Firms to Expand Community Reach",
       
-      link: "#"
+      link: "/services/Opengen"
     },
     {
       icon: "👨‍💻", // Replace with Dev.to icon if available
-      title: "Why OpenGen.Tech is a Beacon for Developer-First Organizations",
+      title: "Why OpenGen is a Beacon for Developer-First Organizations",
     //   outlet: "Dev.to",
-      link: "#"
+      link: "/services/Opengen"
     }
   ];
 
@@ -80,7 +81,7 @@ const  AboutNewFeed = () => {
       <section className="endorsed-section">
         <h2 className="section-title">Endorsed By</h2>
         <p className="section-subtitle">
-          At OpenGen.Tech, we’re proud to be trusted by industry leaders, open-source contributors, and developer-first organizations around the world. Our advocacy has earned praise from those who matter most — the builders, engineers, and innovators shaping tomorrow.
+          At OpenGen we’re proud to be trusted by industry leaders, open-source contributors, and developer-first organizations around the world. Our advocacy has earned praise from those who matter most — the builders, engineers, and innovators shaping tomorrow.
         </p>
         <div className="testimonial-grid">
           {testimonials.map((testimonial, idx) => (
@@ -107,7 +108,10 @@ const  AboutNewFeed = () => {
               <div className="news-icon">{item.icon}</div>
               <h3 className="news-title">"{item.title}"</h3>
               <div className="news-outlet">{item.outlet}</div>
-              <div className="news-read-more">Read More →</div>
+              <div className="news-read-more">
+              <Link to="/services/Opengen" style={{textDecoration:'none'}}>
+              Read More →
+              </Link></div>
             </a>
           ))}
         </div>

@@ -1,10 +1,26 @@
 import { useEffect, useRef, useState } from "react"
 import "../Design Opengen Component/Services.css"
 import sample from '../assets/sample.avif'
+import { Link } from "react-router-dom"
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
+
+
+  const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top of the page whenever the location changes
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+};
+
+
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,17 +70,10 @@ const Services = () => {
               <h3 className="card-heading">Developer Advocacy</h3>
               <p className="card-text">Explore comprehensive how-to articles, tutorials, and instructional content to enhance your development skills.</p>
               <button className="action-button">
-                <span>Learn more</span>
-                <svg className="arrow-icon" viewBox="0 0 16 16" fill="currentColor">
-                  <path
-                    d="M6.5 3L11 8l-4.5 5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+              <Link to="/services/Opengen" style={{textDecoration:'none'}}>
+               <span style={{color:"white"}}>Know More</span>
+                </Link>
+                
               </button>
             </div>
           </div>
@@ -81,17 +90,10 @@ const Services = () => {
               <h3 className="card-heading">Brand Amplification</h3>
               <p className="card-text">Access adoption and training resources to quickly onboard and maximize your Teams experience.</p>
               <button className="action-button">
-                <span>Learn more</span>
-                <svg className="arrow-icon" viewBox="0 0 16 16" fill="currentColor">
-                  <path
-                    d="M6.5 3L11 8l-4.5 5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+               <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+                <span style={{color:"white"}}>Know More</span>
+                </Link>
+                 
               </button>
             </div>
           </div>
@@ -108,17 +110,10 @@ const Services = () => {
               <h3 className="card-heading">Partnership</h3>
               <p className="card-text">Explore strategic partnership opportunities with us to leverage advanced solutions, foster industry leadership, and unlock new pathways for growth.</p>
               <button className="action-button">
-                <span>Go to the blog</span>
-                <svg className="arrow-icon" viewBox="0 0 16 16" fill="currentColor">
-                  <path
-                    d="M6.5 3L11 8l-4.5 5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+               <Link to="/partnerships/Opengen" style={{textDecoration:'none'}}>
+                <span style={{color:"white"}}>Know More</span>
+                </Link>
+                 
               </button>
             </div>
           </div>

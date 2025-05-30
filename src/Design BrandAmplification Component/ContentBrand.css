@@ -1,0 +1,198 @@
+.page2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.page2-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page2-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.page2-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.page2-content {
+  display: flex;
+  gap: 40px;
+}
+
+.page2-left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.page2-left-column h2 {
+  font-size: 1.8rem;
+  color: #0078d4;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page2-left-column ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.page2-left-column li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.page2-collaboration {
+  background-color: #7096D1;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 30px;
+   
+}
+
+.page2-collaboration h3 {
+  color: #0078d4;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.page2-collaboration p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.page2-contact-button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page2-contact-button:hover {
+  background-color: #005a9e;
+}
+
+.page2-right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page2-image-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.page2-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.page2-image:hover {
+  transform: scale(1.05);
+}
+
+.page2-text-container {
+  flex: 1;
+  background-color: #081F5C;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.page2-text-container h3 {
+  color: #0078d4;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.page2-text-container p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.page2-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.page2-link {
+  color: #0078d4;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #0078d4;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.page2-link:hover {
+  background-color: #0078d4;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .page2-content {
+    flex-direction: column;
+  }
+
+  .page2-left-column {
+    padding-right: 0;
+  }
+
+  .page2-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page2-container {
+    padding: 30px 15px;
+  }
+
+  .page2-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page2-left-column h2 {
+    font-size: 1.5rem;
+  }
+
+  .page2-collaboration h3,
+  .page2-text-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .page2-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .page2-link {
+    width: 100%;
+    text-align: center;
+  }
+}

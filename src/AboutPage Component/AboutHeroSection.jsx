@@ -1,7 +1,3 @@
-"use client"
-
-import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import "../Design About Component/AboutHero.css"
 
 const AboutHero = () => {
@@ -22,11 +18,7 @@ const AboutHero = () => {
               {/* <button className="primary-btn">
                 Explore Opportunities <FaArrowRight className="btn-icon" />
               </button> */}
-              <Link to="/support/cloudtris/" style={{ textDecoration: 'none' }}>
-                <button className="secondary-btn">
-                  Meet Our Team <FaSearch className="btn-icon" />
-                </button>
-              </Link>
+               
             </div>
           </div>
         </div>
