@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import "../Design Opengen Component/Services.css"
-import sample from '../assets/sample.avif'
+import sample from '../assets/partnership.png'
 import { Link } from "react-router-dom"
 
 const Services = () => {
