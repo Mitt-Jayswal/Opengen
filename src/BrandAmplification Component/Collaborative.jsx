@@ -1,8 +1,7 @@
-"use client"
-
 import { useEffect, useRef } from "react"
 import "../Design BrandAmplification Component/CollaborativeAppsPage.css"
 import image from '../assets/E.jpeg'
+import { Link } from "react-router-dom"
 
 const Collaborativepage = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -139,7 +138,9 @@ const Collaborativepage = () => {
               Strategic advocacy makes your developer relations more personal and impactful. Our experts make your
               advocacy program more capable.
             </p>
-            <button className="advocacy-button">Learn more about advocacy</button>
+            <Link to="/about/Opengen">
+            <button className="advocacy-button">Know More about OpenGen</button>
+            </Link>
           </div>
         </div>
       </div>

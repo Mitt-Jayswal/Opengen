@@ -133,7 +133,7 @@ function App() {
                 <Route path="/support/Opengen" element={
                     <>
                      <OpenNavbar/>
-                     <OpengenHelp/>
+                     
                      <ContactPageSection/>
                     <FooterSection/>   
                     </>
