@@ -1,45 +1,28 @@
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
-import "../Design Opengen Component/navbar.css"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { FaCode, FaBullhorn, FaHandshake, FaUsers, FaBookOpen, FaEnvelope } from "react-icons/fa";
+import "../Design Opengen Component/navbar.css";
+import { Link } from "react-router-dom";
 
 const OpenNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOpen);
 
-  // Toggle for mobile dropdown
-  const toggleServicesDropdown = () => {
-    setServicesDropdownOpen(!servicesDropdownOpen)
-  }
-
-  // Close mobile menu when window is resized to desktop size
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 1024 && isOpen) {
-        setIsOpen(false)
-      }
-    }
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [isOpen])
+      if (window.innerWidth > 1024 && isOpen) setIsOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isOpen]);
 
-  // Prevent body scrolling when sidebar is open
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = ""
-    }
-    return () => {
-      document.body.style.overflow = ""
-    }
-  }, [isOpen])
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
 
   return (
     <header className="navbar-container">
@@ -47,126 +30,145 @@ const OpenNavbar = () => {
         <div className="left-section">
           <div className="logo-container">
             <Link to="/" className="logo">
-              <span className="logo-text" style={{color:'black'}}>OpenGen</span>
+              <span className="logo-text" style={{ color: "#0078d4", fontFamily: "Poppins, Arial, sans-serif" }}>
+                OpenGen
+              </span>
             </Link>
           </div>
-
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <ul className="nav-links">
-               
               <li>
-                <Link to="/about/Opengen">About</Link>
+                <Link to="/about/Opengen">
+                  <FaUsers style={{ marginRight: 6, verticalAlign: "middle" }} /> About
+                </Link>
               </li>
-              <li className="services-dropdown-container">
+              <li className="services-dropdown-container"
+                  onMouseLeave={() => setServicesDropdownOpen(false)}>
                 <button
                   className="dropdown-button"
                   onMouseEnter={() => setServicesDropdownOpen(true)}
+                  style={{ fontFamily: "Poppins, Arial, sans-serif" }}
                 >
+                  <FaCode style={{ marginRight: 6, verticalAlign: "middle" }} />
                   Services
                 </button>
                 {servicesDropdownOpen && (
                   <div
-                    className="dropdown-content"
+                    className="dropdown-content modern-dropdown"
                     onMouseEnter={() => setServicesDropdownOpen(true)}
                     onMouseLeave={() => setServicesDropdownOpen(false)}
                   >
-                    <Link to="/services/Opengen">Developer Advocacy</Link>
-                    <Link to="/brandamplification/Opengen">Brand Amplification</Link>
-                    <Link to="/partnerships/Opengen">Partnership</Link>
+                    <Link to="/services/Opengen">
+                      <FaCode style={{ marginRight: 8, color: "#0078d4" }} />
+                      Developer Advocacy
+                    </Link>
+                    <Link to="/brandamplification/Opengen">
+                      <FaBullhorn style={{ marginRight: 8, color: "#0078d4" }} />
+                      Brand Amplification
+                    </Link>
+                    <Link to="/partnerships/Opengen">
+                      <FaHandshake style={{ marginRight: 8, color: "#0078d4" }} />
+                      Partnership
+                    </Link>
                   </div>
                 )}
               </li>
               <li>
-                <Link to="/community/Opengen">Community</Link>
+                <Link to="/community/Opengen">
+                  <FaUsers style={{ marginRight: 6, verticalAlign: "middle" }} /> Community
+                </Link>
               </li>
               <li>
-                <Link to="/learn/Opengen">Learn</Link>
+                <Link to="/learn/Opengen">
+                  <FaBookOpen style={{ marginRight: 6, verticalAlign: "middle" }} /> Learn
+                </Link>
               </li>
               <li>
-                <Link to="/support/Opengen">Contact Us</Link>
+                <Link to="/support/Opengen">
+                  <FaEnvelope style={{ marginRight: 6, verticalAlign: "middle" }} /> Contact Us
+                </Link>
               </li>
             </ul>
           </nav>
         </div>
-
         <div className="right-section">
           <div className="action-buttons">
             <Link to="/support/Opengen" className="signin-button">
+              <FaEnvelope style={{ marginRight: 6, verticalAlign: "middle" }} />
               Get in Touch
             </Link>
           </div>
-
           <button className="mobile-menu-button" onClick={toggleMenu} aria-label="Toggle menu" type="button">
             <Menu size={24} />
           </button>
         </div>
       </div>
-
       {/* Mobile Sidebar */}
       <div className={`mobile-sidebar ${isOpen ? "open" : ""}`}>
         <div className="mobile-sidebar-header">
           <div className="mobile-logo">
-            <span className="logo-text">OpenGen</span>
+            <span className="logo-text" style={{ color: "#0078d4", fontFamily: "Poppins, Arial, sans-serif" }}>OpenGen</span>
           </div>
           <button className="close-sidebar" onClick={toggleMenu} type="button">
             <X size={24} />
           </button>
         </div>
-
         <nav className="mobile-nav">
           <ul className="mobile-nav-links">
-             
             <li>
               <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                About Us
+                <FaUsers style={{ marginRight: 10, color: "#0078d4" }} /> About Us
               </Link>
             </li>
             <li className="mobile-dropdown">
               <button className="mobile-dropdown-button" onClick={toggleServicesDropdown} type="button">
+                <FaCode style={{ marginRight: 10, color: "#0078d4" }} />
                 Services
               </button>
               <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
-                <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/services/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                  <FaCode style={{ marginRight: 10, color: "#0078d4" }} />
                   Developer Advocacy
                 </Link>
                 <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                  <FaBullhorn style={{ marginRight: 10, color: "#0078d4" }} />
                   Brand Amplification
                 </Link>
-                <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/partnerships/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                  <FaHandshake style={{ marginRight: 10, color: "#0078d4" }} />
                   Partnership
                 </Link>
               </div>
             </li>
             <li>
-              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                Community Connect
+              <Link to="/community/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+                <FaUsers style={{ marginRight: 10, color: "#0078d4" }} /> Community Connect
               </Link>
             </li>
             <li>
-              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                Learn
+              <Link to="/learn/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+                <FaBookOpen style={{ marginRight: 10, color: "#0078d4" }} /> Learn
               </Link>
             </li>
             <li>
               <Link to="/support/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                Contact Us
+                <FaEnvelope style={{ marginRight: 10, color: "#0078d4" }} /> Contact Us
               </Link>
             </li>
           </ul>
         </nav>
-
         <div className="mobile-action-buttons">
           <Link to="/support/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
+            <FaEnvelope style={{ marginRight: 10, color: "#fff" }} />
             Get in Touch
           </Link>
         </div>
       </div>
-
       {/* Overlay for mobile sidebar */}
       {isOpen && <div className="mobile-overlay" onClick={toggleMenu}></div>}
     </header>
-  )
-}
+  );
+};
 
 export default OpenNavbar;
