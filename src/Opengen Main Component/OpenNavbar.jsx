@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { FaCode, FaBullhorn, FaHandshake, FaUsers, FaBookOpen, FaEnvelope } from "react-icons/fa";
 import "../Design Opengen Component/navbar.css";
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png'
 
 const OpenNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,7 @@ const OpenNavbar = () => {
         <div className="left-section">
           <div className="logo-container">
             <Link to="/" className="logo">
-              <span className="logo-text" style={{ color: "#0078d4", fontFamily: "Poppins, Arial, sans-serif" }}>
-                OpenGen
-              </span>
+              <img src={logo} alt="okokoko" style={{width:'50px',height:'50px'}}/>
             </Link>
           </div>
           {/* Desktop Navigation */}
@@ -40,7 +39,7 @@ const OpenNavbar = () => {
             <ul className="nav-links">
               <li>
                 <Link to="/about/Opengen">
-                  <FaUsers style={{ marginRight: 6, verticalAlign: "middle" }} /> About
+                    About
                 </Link>
               </li>
               <li className="services-dropdown-container"
@@ -50,7 +49,7 @@ const OpenNavbar = () => {
                   onMouseEnter={() => setServicesDropdownOpen(true)}
                   style={{ fontFamily: "Poppins, Arial, sans-serif" }}
                 >
-                  <FaCode style={{ marginRight: 6, verticalAlign: "middle" }} />
+                   
                   Services
                 </button>
                 {servicesDropdownOpen && (
@@ -76,17 +75,17 @@ const OpenNavbar = () => {
               </li>
               <li>
                 <Link to="/community/Opengen">
-                  <FaUsers style={{ marginRight: 6, verticalAlign: "middle" }} /> Community
+                   Community
                 </Link>
               </li>
               <li>
                 <Link to="/learn/Opengen">
-                  <FaBookOpen style={{ marginRight: 6, verticalAlign: "middle" }} /> Learn
+                    Learn
                 </Link>
               </li>
               <li>
                 <Link to="/support/Opengen">
-                  <FaEnvelope style={{ marginRight: 6, verticalAlign: "middle" }} /> Contact Us
+                    Contact Us
                 </Link>
               </li>
             </ul>
