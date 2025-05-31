@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from "react"
 import "../Design Opengen Component/Services.css"
 import sample from '../assets/partnership.png'
-import { Link } from "react-router-dom"
+import sample2 from '../assets/K.jpeg'
+import sample3 from '../assets/brandpromotee.jpg'
+import { Link, useLocation } from "react-router-dom"
 
 const Services = () => {
+  const location =useLocation();
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -61,7 +64,7 @@ const Services = () => {
           <div className="modern-card">
             <div className="image-container">
               <img
-                src={sample}
+                src={sample2}
                 alt="Services"
                 className="card-img"
               />
@@ -81,7 +84,7 @@ const Services = () => {
           <div className="modern-card">
             <div className="image-container">
               <img
-                src={sample}
+                src={sample3}
                 alt="Services"
                 className="card-img"
               />

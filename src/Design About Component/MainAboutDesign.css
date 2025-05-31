@@ -1,14 +1,14 @@
-.call-open-end-support-container {
+.terran-about-ab {
   position: relative;
   width: 100%;
   height: 300px;
-  background-image: url("../assets/contactmainimage.jpg");
+  background-image: url("../assets/servicesmain.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
-.call-open-end-support-overlay {
+.terran-overlay-ab {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,11 +20,11 @@
   padding-left: 10%;
 }
 
-.call-open-end-support-content {
+.terran-content-ab {
   width: 100%;
 }
 
-.call-open-end-support-heading {
+.terran-heading-ab {
   color: white;
   font-size: 2.5rem;
   font-weight: 500;
@@ -33,26 +33,26 @@
 }
 
 @media (max-width: 768px) {
-  .call-open-end-support-overlay {
+  .terran-overlay-ab {
     width: 70%;
     padding-left: 5%;
   }
 
-  .call-open-end-support-heading {
+  .terran-heading-ab {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .call-open-end-support-container {
+  .terran-about-ab {
     height: 200px;
   }
 
-  .call-open-end-support-overlay {
+  .terran-overlay-ab {
     width: 100%;
   }
 
-  .call-open-end-support-heading {
+  .terran-heading-ab {
     font-size: 1.8rem;
   }
 }

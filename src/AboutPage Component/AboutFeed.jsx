@@ -116,7 +116,7 @@ const  AboutNewFeed = () => {
           ))}
         </div>
         <div className="news-contact">
-          Want to feature us in your publication? <a href="#" className="news-contact-link">Contact our media team</a>
+          Want to feature us in your publication? <Link to="#" className="news-contact-link">Contact our media team</Link>
         </div>
       </section>
     </div>

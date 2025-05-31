@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../Design Opengen Component/Developerengagementrate.css";
-import sample from '../assets/K.jpeg'
+import sample from '../assets/secondsection.png'
 
 // Replace with your actual image URL
 const bgImg =

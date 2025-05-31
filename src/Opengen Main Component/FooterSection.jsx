@@ -83,7 +83,7 @@ const FooterSection = () => {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <div className="footer-left">
-            <Link to="/" className="terms-link">Terms and Conditions</Link>
+             
           </div>
           
           <div className="footer-center">

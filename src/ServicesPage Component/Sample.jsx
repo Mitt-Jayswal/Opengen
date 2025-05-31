@@ -1,7 +1,6 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
 import "../Design Service Component/ServiceDev2.css"
+import { Link } from "react-router-dom"
 
 const ServiceDev2 = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -116,6 +115,7 @@ const ServiceDev2 = () => {
             services.
           </p>
           <div className="cta-buttons">
+          <Link to="/support/Opengen">
             <button className="cta-button primary">
               Schedule a Consultation
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ const ServiceDev2 = () => {
                 />
               </svg>
             </button>
-            <button className="cta-button secondary">View Our Work</button>
+            </Link>
           </div>
         </div>
       </section>
