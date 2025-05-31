@@ -110,14 +110,7 @@ const AboutSection = () => {
               />
             </div>
 
-            <div className="image-circle bottom-right-circle">
-              <img
-               src={sample}
-                alt="Tech presentation"
-                className="circle-img"
-              />
-              <div className="yellow-overlay"></div>
-            </div>
+            
           </div>
         </div>
       </div>

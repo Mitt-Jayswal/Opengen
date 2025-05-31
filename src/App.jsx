@@ -9,6 +9,7 @@ import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
  import HeaderSection from "./Opengen Main Component/HeaderSection";
  import PartnersGoogle from "./Opengen Main Component/Partners";
+ import AdvancedService from "./Opengen Main Component/AdvancedService";
  
 
  import AboutSection from "./AboutPage Component/AboutSection";
@@ -57,6 +58,7 @@ function App() {
                     <PartnersGoogle/>
                     <DeveloperEngagementRate/>
                     <Services/>
+                    <AdvancedService/>
                     
                      <ContactRedirectBox/>
                     <Newsletter/>

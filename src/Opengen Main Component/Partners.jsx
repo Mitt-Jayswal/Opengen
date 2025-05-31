@@ -5,18 +5,18 @@ import "../Design Opengen Component/Partner.css"
 import image from "../assets/sample.avif"
 
 const partners = [
-  { id: 1, image, name: "Prodigal" },
-  { id: 2, image, name: "Brainfish" },
-  { id: 3, image, name: "ExamRoom.AI" },
-  { id: 4, image, name: "DashToon" },
-  { id: 5, image, name: "Games24" },
-  { id: 6, image, name: "Aviva" },
-  { id: 7, image, name: "Aviso" },
-  { id: 8, image, name: "Siemens" },
+  { id: 1, image, name: "OpenGen" },
+  { id: 2, image, name: "OpenGen" },
+  { id: 3, image, name: "OpenGen" },
+  { id: 4, image, name: "OpenGen" },
+  { id: 5, image, name: "OpenGen" },
+  { id: 6, image, name: "OpenGen" },
+  { id: 7, image, name: "OpenGen" },
+  { id: 8, image, name: "OpenGen" },
   { id: 9, image, name: "OpenGen" },
-  { id: 10, image, name: "TechCorp" },
-  { id: 11, image, name: "DataFlow" },
-  { id: 12, image, name: "CloudSync" },
+  { id: 10, image, name: "OpenGen" },
+  { id: 11, image, name: "OpenGen" },
+  { id: 12, image, name: "OpenGen" },
 ]
 
 const PartnersGoogle = () => {
