@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { FaAward, FaLinkedin, FaUsers, FaGithub } from "react-icons/fa"
 import "../Design About Component/AboutSection.css"
 import sample from '../assets/H.jpeg'
+import sample2 from '../assets/AIimage.png'
 import { Link } from "react-router-dom"
 
 const AboutSection = () => {
@@ -104,7 +105,7 @@ const AboutSection = () => {
 
             <div className="image-circle bottom-left-circle">
               <img
-               src={sample}
+               src={sample2}
                 alt="Tech team"
                 className="circle-img"
               />

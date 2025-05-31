@@ -146,7 +146,7 @@ const AdvancedService = () => {
 
         <div className="rec-peacock-open-cta">
         <Link to="/community/Opengen">
-          <button className="rec-flamingo-open-browse">Browse the Marketplace →</button>
+          <button className="rec-flamingo-open-browse">Join Opengen Community →</button>
           </Link>
         </div>
       </div>

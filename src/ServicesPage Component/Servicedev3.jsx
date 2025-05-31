@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import "../Design Service Component/ServiceDev3.css"
-import lalalala from "../assets/A.jpeg"
+import lalalala from "../assets/storytelling.webp"
 import { Link } from "react-router-dom"
 
 const ServiceDev3 = () => {

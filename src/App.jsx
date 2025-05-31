@@ -10,11 +10,13 @@ import Services from "./Opengen Main Component/ServicesSection";
  import HeaderSection from "./Opengen Main Component/HeaderSection";
  import PartnersGoogle from "./Opengen Main Component/Partners";
  import AdvancedService from "./Opengen Main Component/AdvancedService";
+ import FreeMidCode from "./Opengen Main Component/FreeLandingCode";
  
 
  import AboutSection from "./AboutPage Component/AboutSection";
  import AboutNewFeed from "./AboutPage Component/AboutFeed";
  import MainBrandHeaderAbout from "./AboutPage Component/MainHeader";
+ 
   
 
 
@@ -30,8 +32,9 @@ import Services from "./Opengen Main Component/ServicesSection";
  import CommunityEvents from "./Community Component/CommunityEvents";
 
 
- import OpengenHelp from "./Support Component/SupportMain";
+ import MainBrandHeaderSupport from "./Support Component/SupportMain";
  import ContactPageSection from "./Support Component/ContactSection";
+
 
  import PartnersPage from "./PartnerShip Component/Partners";
  import MainBrandHeaderPartner from "./PartnerShip Component/MainHeaderPartner";
@@ -41,6 +44,8 @@ import Services from "./Opengen Main Component/ServicesSection";
  import WhatWeOffer from "./BrandAmplification Component/WhatWeOffer";
  import MainBrandHeader from "./BrandAmplification Component/MainHeader";
  import ContentBrand from "./BrandAmplification Component/ContentBrand";
+
+
   
 
 function App() {
@@ -58,6 +63,7 @@ function App() {
                     <PartnersGoogle/>
                     <DeveloperEngagementRate/>
                     <Services/>
+                    <FreeMidCode/>
                     <AdvancedService/>
                     
                      <ContactRedirectBox/>
@@ -133,6 +139,7 @@ function App() {
                 <Route path="/support/Opengen" element={
                     <>
                      <OpenNavbar/>
+                     <MainBrandHeaderSupport/>
                      
                      <ContactPageSection/>
                     <FooterSection/>   

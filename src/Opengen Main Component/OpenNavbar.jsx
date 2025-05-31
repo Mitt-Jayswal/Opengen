@@ -46,9 +46,9 @@ const OpenNavbar = () => {
       <div className="navbar">
         <div className="left-section">
           <div className="logo-container">
-            <a href="/" className="logo">
+            <Link to="/" className="logo">
               <span className="logo-text" style={{color:'black'}}>OpenGen</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -130,9 +130,9 @@ const OpenNavbar = () => {
                 <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Developer Advocacy
                 </Link>
-                <a href="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Brand Amplification
-                </a>
+                </Link>
                 <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   Partnership
                 </Link>

@@ -1,0 +1,37 @@
+import React from "react";
+import "../Design Opengen Component/FreeMidCode.css"; 
+import codeimage from '../assets/K.jpeg'
+import { Link } from "react-router-dom";
+
+const FreeMidCode = () => {
+  return (
+    <div className="free-mid-wrapper">
+      <h1 className="free-mid-title">Loved by companies of all sizes</h1>
+      <p className="free-mid-subtitle">
+        See real stories from businesses like yours
+      </p>
+      <div className="free-mid-card">
+        <div className="free-mid-card-left">
+          <span className="free-mid-badge">Customer story</span>
+          <h2 className="free-mid-brand">OpenGen</h2>
+          <p className="free-mid-quote">
+            OpenGen has been a game-changer in our pursuit of operational excellence. By streamlining our processes and providing powerful tools, it has enhanced our team's productivity and the quality of our development outcomes. OpenGen empowers developers to work smarter,
+             fostering innovation and helping us achieve new heights in growth and success."
+          </p>
+           <Link to="/about/Opengen">
+          <button className="free-mid-btn">Read story</button>
+          </Link>
+        </div>
+        <div className="free-mid-card-right">
+          <img
+            src={codeimage} 
+            alt="Wolt delivery"
+            className="free-mid-img"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FreeMidCode;

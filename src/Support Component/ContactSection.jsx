@@ -118,9 +118,9 @@ const ContactPageSection = () => {
               </div>
               <h2 className="dune-heading">Contact Us</h2>
             </div>
-            <a href="#feedback" className="mirage-link">
+            <Link to="#feedback" className="mirage-link">
               Provide feedback <FaArrowRight className="scorpion-arrow" />
-            </a>
+            </Link>
           </div>
 
           <form onSubmit={handleSubmit} className="nomad-form">
@@ -223,9 +223,9 @@ const ContactPageSection = () => {
               />
               <label htmlFor="terms" className="mirage-terms">
                 I agree to the{" "}
-                <a href="/terms" className="camel-link">
+                <Link to="/terms" className="camel-link">
                   Terms and Conditions
-                </a>
+                </Link>
               </label>
             </div>
 

@@ -3,7 +3,8 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { FcGoogle } from "react-icons/fc";
-import "../Design Opengen Component/Footer.css"
+import "../Design Opengen Component/Footer.css";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
@@ -12,21 +13,24 @@ const FooterSection = () => {
         <div className="footer-content">
           {/* Logo Section */}
           <div className="footer-section logo-section">
-            <h2 className="logo">LOGO</h2>
-            <p className="tagline">OpenGen</p>
+          <Link to="/"><h2 className="logo">LOGO</h2></Link>
+            <Link to="/"><p className="tagline">OpenGen</p></Link>
           </div>
 
           {/* Column 1 */}
           <div className="footer-section">
             <ul className="footer-links">
               <li>
-                <a href="#">About OpenGen</a>
+                <Link to="/about/Opengen">About OpenGen</Link>
               </li>
               <li>
-                <a href="#">Community News</a>
+                <Link to="/services/Opengen">developer Advocacay</Link>
               </li>
               <li>
-                <a href="#">Support</a>
+                <Link to="/brandamplification/Opengen">Brand Amplification</Link>
+              </li>
+              <li>
+                <Link to="/partnerships/Opengen">Partnerships</Link>
               </li>
             </ul>
           </div>
@@ -35,10 +39,10 @@ const FooterSection = () => {
           <div className="footer-section">
             <ul className="footer-links">
               <li>
-                <a href="#">SERVICES</a>
+                <Link to="/services/Opengen">Services</Link>
               </li>
               <li>
-                <a href="#">Events</a>
+                <Link to="/community/Opengen">Events</Link>
               </li>
             </ul>
           </div>
@@ -47,31 +51,27 @@ const FooterSection = () => {
           <div className="footer-section">
             <ul className="footer-links">
               <li>
-                <a href="#">Blogs</a>
+                <Link to="/community/Opengen">Blogs</Link>
               </li>
               <li>
-                <a href="#">Developer Support</a>
+                <Link to="/support/Opengen">Developer Support</Link>
               </li>
-              <li>
-                <a href="#"></a>
-              </li>
+              {/* Removed the empty link */}
             </ul>
           </div>
 
           {/* Column 4 */}
           <div className="footer-section">
             <ul className="footer-links">
+              
               <li>
-                <a href="#">ABOUT US</a>
+                <Link to="/support/Opengen">Get in Touch</Link>
               </li>
               <li>
-                <a href="#">CONTACT US</a>
+                <Link to="/support/Opengen">Developers Community</Link>
               </li>
               <li>
-                <a href="#">AFFILIATES</a>
-              </li>
-              <li>
-                <a href="#">RESOURCES</a>
+                <Link to="/">RESOURCES</Link>
               </li>
             </ul>
           </div>
@@ -83,29 +83,29 @@ const FooterSection = () => {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <div className="footer-left">
-            <a href="#" className="terms-link">Terms and Conditions</a>
+            <Link to="/" className="terms-link">Terms and Conditions</Link>
           </div>
           
           <div className="footer-center">
             <div className="social-icons">
-              <a href="#" className="social-icon">
+              <Link to="/" className="social-icon">
                 <FaFacebook />
-              </a>
-              <a href="#" className="social-icon">
+              </Link>
+              <Link to="/" className="social-icon">
                 <FaXTwitter />
-              </a>
-              <a href="#" className="social-icon">
+              </Link>
+              <Link to="/" className="social-icon">
                 <RxLinkedinLogo />
-              </a>
-              <a href="#" className="social-icon">
+              </Link>
+              <Link to="/" className="social-icon">
                 <AiFillInstagram />
-              </a>
-              <a href="#" className="social-icon">
+              </Link>
+              <Link to="/" className="social-icon">
                 <FcGoogle />
-              </a>
+              </Link>
             </div>
             <div className="copyright">
-              <p>©Copyright. All rights reserved.</p>
+              <p>©OpenGen. All rights reserved.</p>
             </div>
           </div>
           
@@ -115,7 +115,7 @@ const FooterSection = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default FooterSection;

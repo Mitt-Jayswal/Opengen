@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import "../Design Opengen Component/header-section.css"
 import { Link,useLocation } from "react-router-dom"
 import square1 from '../assets/G.jpeg'
+import square2 from '../assets/square2.png'
+import square3 from '../assets/square3.png'
 
 const HeaderSection = () => {
   const location=useLocation();
@@ -68,7 +70,7 @@ const HeaderSection = () => {
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                   </svg>
                   <ScrollToTopLink to="/about/Opengen" style={{textDecoration:'none',color:'white'}}>
-                 Know More About OpenGen.Tech
+                 Know More About OpenGen
                  </ScrollToTopLink>
                 </button>
                  
@@ -86,10 +88,10 @@ const HeaderSection = () => {
                   <img src={square1} alt="Developer" />
                 </div>
                 <div className="raleigh-portrait raleigh-second">
-                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28672%29-BwfSw2U7Dk9N2GVTq5L0dac4IVAExO.png" alt="Developer" />
+                  <img src={square2} alt="Developer" />
                 </div>
                 <div className="raleigh-portrait raleigh-third">
-                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28672%29-BwfSw2U7Dk9N2GVTq5L0dac4IVAExO.png" alt="Developer" />
+                  <img src={square3} alt="Developer" />
                 </div>
                 <div className="richmond-navigator">
                   <span>→</span>
