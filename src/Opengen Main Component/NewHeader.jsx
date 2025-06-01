@@ -5,7 +5,7 @@ import "../Design Opengen Component/Headernew.css"
 import { Link } from "react-router-dom"
 import square1 from '../assets/C.jpeg'
 import square2 from '../assets/M.jpeg'
-
+ 
 const Headernew = () => {
   const [displayText, setDisplayText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -92,13 +92,13 @@ const Headernew = () => {
   }, [isOpen])
 
   return (
-    <div className={`header-container ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+    <div className={`manhattan-wrapper ${isDarkMode ? "brooklyn-dark" : "queens-light"}`}>
       {/* Navbar */}
-      <header className="navbar-container">
-        <div className="navbar">
-          <div className="left-section">
-            <div className="logo-container">
-              <Link to="/" className="logo">
+      <header className="bronx-navigation">
+        <div className="staten-navbar">
+          <div className="harlem-left">
+            <div className="soho-brand">
+              <Link to="/" className="tribeca-logo">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
@@ -107,26 +107,26 @@ const Headernew = () => {
                     strokeWidth="1"
                   />
                 </svg>
-                <span className="logo-text" style={{ color: isDarkMode ? "#e6c068" : "#0078d4" }}>
+                <span className="chelsea-text" style={{ color: isDarkMode ? "#e6c068" : "#0078d4" }}>
                   OpenGen
                 </span>
               </Link>
             </div>
             {/* Desktop Navigation */}
-            <nav className="desktop-nav">
-              <ul className="nav-links">
+            <nav className="midtown-desktop">
+              <ul className="village-links">
                 <li>
                   <Link to="/about/Opengen">About</Link>
                 </li>
                 <li
-                  className="services-dropdown-container"
+                  className="williamsburg-services"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   ref={dropdownContainerRef}
                 >
-                  <button className="dropdown-button">Services</button>
+                  <button className="dumbo-dropdown">Services</button>
                   {servicesDropdownOpen && (
-                    <div className="dropdown-content modern-dropdown">
+                    <div className="greenwich-menu">
                       <Link to="/services/Opengen">
                         <FaCode style={{ marginRight: 8, color: "#0078d4" }} />
                         Developer Advocacy
@@ -154,133 +154,128 @@ const Headernew = () => {
               </ul>
             </nav>
           </div>
-          <div className="right-section">
-            <div className="action-buttons">
-              <Link to="/support/Opengen" className="signin-button">
+          <div className="nolita-right">
+            <div className="flatiron-actions">
+              <Link to="/support/Opengen" className="meatpacking-signin">
                 <FaEnvelope style={{ marginRight: 6, verticalAlign: "middle" }} />
                 Get in Touch
               </Link>
             </div>
-            <button className="mobile-menu-button" onClick={toggleMenu} aria-label="Toggle menu" type="button">
+            <button className="chinatown-mobile" onClick={toggleMenu} aria-label="Toggle menu" type="button">
               <Menu size={24} />
             </button>
           </div>
         </div>
         {/* Mobile Sidebar */}
-        <div className={`mobile-sidebar ${isOpen ? "open" : ""}`}>
-          <div className="mobile-sidebar-header">
-            <div className="mobile-logo">
+        <div className={`littleitaly-sidebar ${isOpen ? "open" : ""}`}>
+          <div className="bowery-header">
+            <div className="eastvillage-brand">
               <span
-                className="logo-text"
+                className="chelsea-text"
                 style={{ color: isDarkMode ? "#e6c068" : "#0078d4", fontFamily: "Poppins, Arial, sans-serif" }}
               >
                 OpenGen
               </span>
             </div>
-            <button className="close-sidebar" onClick={toggleMenu} type="button">
+            <button className="westvillage-close" onClick={toggleMenu} type="button">
               <X size={24} />
             </button>
           </div>
-          <nav className="mobile-nav">
-            <ul className="mobile-nav-links">
+          <nav className="uppereast-nav">
+            <ul className="upperwest-links">
               <li>
-                <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                  <FaUsers style={{ marginRight: 10, color: "#000000" }} /> About Us
+                <Link to="/about/Opengen" onClick={toggleMenu} className="morningside-link">
+                  <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> About Us
                 </Link>
               </li>
-              <li className="mobile-dropdown">
+              <li className="inwood-dropdown">
                 <button
-                  className="mobile-dropdown-button"
+                  className="washington-button"
                   onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                   type="button"
                 >
-                  <FaCode style={{ marginRight: 10, color: "#000000" }} />
-                  Services
+                  <FaCode style={{ marginRight: 10, color: "#ffffff" }} />
+                  <span style={{color:'#ffffff'}}>Services</span>
                 </button>
-                <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
-                  <Link to="/services/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
-                    <FaCode style={{ marginRight: 10, color: "#000000" }} />
-                    Developer Advocacy
+                <div className={`hamilton-menu ${servicesDropdownOpen ? "open" : ""}`}>
+                  <Link to="/services/Opengen" onClick={toggleMenu} className="lenox-link">
+                    <FaCode style={{ marginRight: 10, color: "#ffffff" }} />
+                    <span style={{color:'#ffffff'}}>Developer Advocacy</span>
                   </Link>
-                  <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
-                    <FaBullhorn style={{ marginRight: 10, color: "#000000" }} />
-                    Brand Amplification
+                  <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="lenox-link">
+                    <FaBullhorn style={{ marginRight: 10, color: "#ffffff" }} />
+                    <span style={{color:'#ffffff'}}>Brand Amplification</span>
                   </Link>
-                  <Link to="/partnerships/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
-                    <FaHandshake style={{ marginRight: 10, color: "#000000" }} />
-                    Partnership
+                  <Link to="/partnerships/Opengen" onClick={toggleMenu} className="lenox-link">
+                    <FaHandshake style={{ marginRight: 10, color: "#ffffff" }} />
+                    <span style={{color:'#ffffff'}}>Partnership</span>
                   </Link>
                 </div>
               </li>
               <li>
-                <Link to="/community/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                  <FaUsers style={{ marginRight: 10, color: "#000000" }} /> Community Connect
+                <Link to="/community/Opengen" onClick={toggleMenu} className="morningside-link">
+                  <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> Community Connect
                 </Link>
               </li>
               <li>
-                <Link to="/learn/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                  <FaBookOpen style={{ marginRight: 10, color: "#000000" }} /> Learn
+                <Link to="/learn/Opengen" onClick={toggleMenu} className="morningside-link">
+                  <FaBookOpen style={{ marginRight: 10, color: "#ffffff" }} /> Learn
                 </Link>
               </li>
               <li>
-                <Link to="/support/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                  <FaEnvelope style={{ marginRight: 10, color: "#000000" }} /> Contact Us
+                <Link to="/support/Opengen" onClick={toggleMenu} className="morningside-link">
+                  <FaEnvelope style={{ marginRight: 10, color: "#ffffff" }} /> Contact Us
                 </Link>
               </li>
             </ul>
           </nav>
-          <div className="mobile-action-buttons">
-            <Link to="/support/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
+          <div className="riverside-actions">
+            <Link to="/support/Opengen" className="central-signin" onClick={toggleMenu}>
               <FaEnvelope style={{ marginRight: 10, color: "#fff" }} />
               Get in Touch
             </Link>
           </div>
         </div>
         {/* Overlay for mobile sidebar */}
-        {isOpen && <div className="mobile-overlay" onClick={toggleMenu}></div>}
+        {isOpen && <div className="prospect-overlay" onClick={toggleMenu}></div>}
       </header>
 
-      <div className="header-background">
-        {/* 3D Geometric Background */}
-        
-        <div className="wave-container">
-          <div className="wave wave1"></div>
-          <div className="wave wave2"></div>
-          <div className="wave wave3"></div>
-
-          {/* 3D Squares */}
-           
+      <div className="battery-background">
+        <div className="financial-waves">
+          <div className="wallstreet-wave1"></div>
+          <div className="wallstreet-wave2"></div>
+          <div className="wallstreet-wave3"></div>
         </div>
 
-        <div className="header-content">
-          <div className="header-left">
-            <div className="templates-badge">
-              <div className="badge-icon">
+        <div className="broadway-content">
+          <div className="times-left">
+            <div className="herald-badge">
+              <div className="madison-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
                 </svg>
               </div>
-              <span className="badge-text">Introducing OpenGen</span>
+              <span className="penn-text">Introducing OpenGen</span>
             </div>
 
-            <h1 className="header-title">
-              <span className="typewriter-text">
-                <span className="text-gold">{firstHalf}</span>
-                <span className="text-white">{secondHalf}</span>
+            <h1 className="empire-title">
+              <span className="rockefeller-typewriter">
+                <span className="fifth-gold">{firstHalf}</span>
+                <span className="lexington-white">{secondHalf}</span>
               </span>
             </h1>
 
-            <p className="header-description">
+            <p className="park-description">
               Empowering developer communities through strategic advocacy, innovative hackathons, and scalable growth
               initiatives. We connect, inspire, and advance the future of data and AI innovation through meaningful
               developer engagement.
             </p>
 
             <Link to="/community/Opengen">
-              <button className="browse-button">
+              <button className="columbus-button">
                 Explore Our Community
                 <svg
-                  className="button-arrow"
+                  className="amsterdam-arrow"
                   width="16"
                   height="16"
                   viewBox="0 0 24 24"
@@ -299,41 +294,41 @@ const Headernew = () => {
             </Link>
           </div>
 
-          <div className="header-right">
-            <div className="dashboard-images">
-              <div className="dashboard-image dashboard-1">
+          <div className="brooklyn-right">
+            <div className="queens-gallery">
+              <div className="bronx-image1">
                 <img src={square1} alt="Developer Dashboard" />
               </div>
-              <div className="dashboard-image dashboard-2">
+              <div className="bronx-image2">
                 <img src={square2} alt="Community Analytics" />
               </div>
 
               {/* Vertical Image Container */}
-              <div className="vertical-image-container">
-                <h3 className="vertical-image-title">Featured Resources</h3>
-                <div className="vertical-image-item">
-                  <div className="vertical-image-icon">
+              <div className="staten-vertical">
+                <h3 className="harlem-title">Featured Resources</h3>
+                <div className="soho-item">
+                  <div className="tribeca-icon">
                     <FaCode />
                   </div>
-                  <div className="vertical-image-content">
+                  <div className="chelsea-content">
                     <h4>Developer Tools</h4>
                     <p>Access our latest SDKs</p>
                   </div>
                 </div>
-                <div className="vertical-image-item">
-                  <div className="vertical-image-icon">
+                <div className="soho-item">
+                  <div className="tribeca-icon">
                     <FaBookOpen />
                   </div>
-                  <div className="vertical-image-content">
+                  <div className="chelsea-content">
                     <h4>Documentation</h4>
                     <p>Explore our guides</p>
                   </div>
                 </div>
-                <div className="vertical-image-item">
-                  <div className="vertical-image-icon">
+                <div className="soho-item">
+                  <div className="tribeca-icon">
                     <FaUsers />
                   </div>
-                  <div className="vertical-image-content">
+                  <div className="chelsea-content">
                     <h4>Community</h4>
                     <p>Join our events</p>
                   </div>
@@ -344,11 +339,11 @@ const Headernew = () => {
         </div>
 
         {/* Theme Toggle */}
-        <div className="theme-toggle-container">
-          <div className="theme-toggle-line"></div>
-          <div className="theme-toggle-buttons">
+        <div className="midtown-toggle">
+          <div className="village-line"></div>
+          <div className="williamsburg-buttons">
             <button
-              className={`theme-button ${!isDarkMode ? "active" : ""}`}
+              className={`dumbo-theme ${!isDarkMode ? "active" : ""}`}
               onClick={() => setIsDarkMode(false)}
               aria-label="Light mode"
             >
@@ -362,7 +357,7 @@ const Headernew = () => {
               </svg>
             </button>
             <button
-              className={`theme-button ${isDarkMode ? "active" : ""}`}
+              className={`dumbo-theme ${isDarkMode ? "active" : ""}`}
               onClick={() => setIsDarkMode(true)}
               aria-label="Dark mode"
             >

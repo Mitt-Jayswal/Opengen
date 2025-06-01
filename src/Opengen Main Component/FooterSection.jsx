@@ -57,13 +57,13 @@ const FooterSection = () => {
           <div className="footer-section">
             <ul className="footer-links">
             <li>
-                <Link to="/community/Opengen">Reports</Link>
+                <Link to="/learn/Opengen">Reports</Link>
               </li>
               <li>
-                <Link to="/community/Opengen">Blogs</Link>
+                <Link to="/learn/Opengen">Blogs</Link>
               </li>
               <li>
-                <Link to="/community/Opengen">Podcast</Link>
+                <Link to="/learn/Opengen">Podcast</Link>
               </li>
               <li>
                 <Link to="/support/Opengen">Developer Support</Link>
@@ -83,7 +83,7 @@ const FooterSection = () => {
                 <Link to="/support/Opengen">Developers Community</Link>
               </li>
               <li>
-                <Link to="/">Resources</Link>
+                <Link to="/learn/Opengen">Resources</Link>
               </li>
             </ul>
           </div>

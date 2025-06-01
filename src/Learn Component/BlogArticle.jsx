@@ -1,6 +1,8 @@
 import "../DesignLearn Component/ArticleSection.css"
+import { Link } from "react-router-dom"
 import Blog1 from '../assets/Blog 1.png'
 import Blog2 from '../assets/Blog2.png'
+
 
 const ArticleSection = () => {
   return (
@@ -13,8 +15,12 @@ const ArticleSection = () => {
           </p>
            
           <div className="dev-advocacy-buttons">
+           <Link to="https://www.youtube.com/watch?v=HWxPv3iSDTg&ab_channel=ViniJaiswal" style={{textDecoration:'none'}}>
             <button className="primary-button">Subscribe</button>
-            <button className="secondary-button">Explore Topics</button>
+            </Link>
+            <Link to="/about/Opengen">
+            <button className="secondary-button">Know More about OpenGen</button>
+            </Link>
           </div>
         </div>
 
@@ -29,7 +35,7 @@ const ArticleSection = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Data Lake 1.2.1 Launches with Performance Boosts and Spark Compatibility Fixes</h3>
-            <a href="#" className="article-link">
+            <Link to="https://www.linkedin.com/pulse/delta-lake-121-release-announcement-vini-jaiswal/" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -40,7 +46,7 @@ const ArticleSection = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="article-card">
@@ -53,7 +59,7 @@ const ArticleSection = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Data Council 2022: Exploring How Delta Lake is Powering the Future of Lakehouse Architecture</h3>
-            <a href="#" className="article-link">
+            <Link to="https://www.linkedin.com/pulse/building-lakehouse-delta-lake-data-council-2022-vini-jaiswal/?trackingId=hkz4pzpRSq6iErJf5ym8Gg%3D%3D" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -64,7 +70,7 @@ const ArticleSection = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
 

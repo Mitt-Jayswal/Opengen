@@ -1,4 +1,5 @@
 import "../DesignLearn Component/ArticleSection.css"
+import { Link } from "react-router-dom";
 
 const ArticleSection3 = () => {
   return (
@@ -12,8 +13,12 @@ const ArticleSection3 = () => {
           </p>
            
           <div className="dev-advocacy-buttons">
+            <Link to="https://www.youtube.com/watch?v=HWxPv3iSDTg&ab_channel=ViniJaiswal" style={{textDecoration:'none'}}>
             <button className="primary-button">Subscribe</button>
-            <button className="secondary-button">Explore Topics</button>
+            </Link>
+            <Link to="/about/Opengen">
+            <button className="secondary-button">Know More about OpenGen</button>
+            </Link>
           </div>
         </div>
 
