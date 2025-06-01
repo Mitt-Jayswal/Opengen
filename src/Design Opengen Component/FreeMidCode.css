@@ -1,3 +1,6 @@
+.bodyfree{
+  background-color: #000000;
+}
 .free-mid-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,14 +11,14 @@
 .free-mid-title {
  font-size: 48px;
   font-weight: 700;
-  color: #1f2937;
+  color: #ffffff;
   margin: 0;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .free-mid-subtitle {
-  color: #555;
+  color: #ffffff;
   font-size: 1.15rem;
   margin-bottom: 32px;
 }
@@ -57,7 +60,7 @@
 }
 
 .free-mid-brand {
-  font-family: 'Pacifico', cursive, sans-serif;
+   font-family: 'Myriad', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 18px 0;

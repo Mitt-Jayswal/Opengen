@@ -1,6 +1,6 @@
 .con-attbox-main-section-tact {
   padding: 80px 20px;
-  background-color: #f5f5f5;
+  background-color: #000000;
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useRef, useState } from "react"
 import { FaAward, FaLinkedin, FaUsers, FaGithub } from "react-icons/fa"
 import "../Design About Component/AboutSection.css"

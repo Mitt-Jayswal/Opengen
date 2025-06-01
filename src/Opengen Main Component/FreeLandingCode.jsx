@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const FreeMidCode = () => {
   return (
+    <section className="bodyfree">
     <div className="free-mid-wrapper">
       <h1 className="free-mid-title">Loved by Companies of all Tiers</h1>
       <p className="free-mid-subtitle">
@@ -31,6 +32,7 @@ const FreeMidCode = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

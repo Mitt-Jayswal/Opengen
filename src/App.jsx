@@ -91,6 +91,7 @@ function App() {
                      <ServiceDev/>
                      <ServiceDev3/>
                      <ServiceDev2/>
+                      <CollaborativeAppsPage/>
                       
                      
                     <FooterSection/>  
@@ -111,8 +112,9 @@ function App() {
                     <>
                      <OpenNavbar/>
                      <MainBrandHeader/>
-                     <CollaborativeAppsPage/>
                      <ContentBrand/>
+                     
+                      
                      <WhatWeOffer/>
                     <FooterSection/>   
                     </>

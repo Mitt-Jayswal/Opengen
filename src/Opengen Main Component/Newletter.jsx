@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
 import { FaEnvelope, FaBell, FaArrowRight, FaCheckCircle } from "react-icons/fa"
 import "../Design Opengen Component/Newsletter.css"
@@ -61,6 +59,7 @@ const Newsletter = () => {
   }
 
   return (
+    <div className="bodynewsteller">
     <section ref={sectionRef} className={`newsletter-container ${isVisible ? "animate-in" : ""}`}>
       <div className="newsletter-content">
         <div className="newsletter-left">
@@ -133,6 +132,7 @@ const Newsletter = () => {
         </div>
       </div>
     </section>
+    </div>
   )
 }
 

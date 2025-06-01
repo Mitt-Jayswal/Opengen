@@ -57,7 +57,7 @@ const Services = () => {
       <div className="modern-container">
         <div className="header-section">
           <div className="resources-tag">Services</div>
-          <h1 className="main-heading">Explore Developer Advocacy Services & Resources</h1>
+          <h1 className="main-heading" style={{color:'#ffffff'}}>Explore Developer Advocacy Services & Resources</h1>
         </div>
 
         <div className="cards-grid">
