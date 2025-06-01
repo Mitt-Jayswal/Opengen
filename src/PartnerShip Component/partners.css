@@ -1,8 +1,8 @@
 :root {
-  --google-primary: #4285f4;
-  --google-secondary: #ea4335;
+  --google-primary: #ffffff;
+  --google-secondary: #e6c068;
   --google-dark: #202124;
-  --google-light: #f8f9fa;
+  --google-light: #000000;
   --google-gradient: linear-gradient(135deg, #4285f4 0%, #ea4335 100%);
 }
 
@@ -81,7 +81,7 @@
   color: var(--google-dark);
   margin-bottom: 30px;
   line-height: 1.2;
-  background: var(--google-gradient);
+  background: #e6c068;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +89,7 @@
 
 .google-section-description {
   font-size: 1.1rem;
-  color: #5f6368;
+  color: #ffffff;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;

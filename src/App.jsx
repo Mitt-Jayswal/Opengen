@@ -39,7 +39,7 @@ import Services from "./Opengen Main Component/ServicesSection";
 
 
  import PartnersPage from "./PartnerShip Component/Partners";
- import MainBrandHeaderPartner from "./PartnerShip Component/MainHeaderPartner";
+
 
 
  import CollaborativeAppsPage from "./BrandAmplification Component/Collaborative";
@@ -104,7 +104,7 @@ function App() {
                 <Route path="/partnerships/Opengen" element={
                     <>
                      <OpenNavbar/>
-                     <MainBrandHeaderPartner/>
+                     
                       <PartnersPage/>
 
                     <FooterSection/>   

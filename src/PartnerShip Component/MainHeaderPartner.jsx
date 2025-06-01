@@ -1,14 +1,16 @@
 import { useEffect, useRef } from "react";
-import "../Design BrandAmplification Component/MainBrandHeader.css";
+import "../Design Service Component/MainHeaderService.css";
+import servicemainImg from "../assets/servicemaini.png"; // Import image
 
-const MainBrandHeaderPartner = () => {
+const MainHeaderPartner = () => {
   const headerRef = useRef(null);
+  const imgRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (headerRef.current) {
+      if (imgRef.current) {
         const scrollPosition = window.scrollY;
-        headerRef.current.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+        imgRef.current.style.objectPosition = `center ${50 + scrollPosition * 0.5}px`;
       }
     };
 
@@ -17,14 +19,21 @@ const MainBrandHeaderPartner = () => {
   }, []);
 
   return (
-    <div className="partner-page-container-ner" ref={headerRef}>
-      <div className="partner-page-overlay-ner">
-        <div className="partner-page-content-ner">
-          <h1 className="partner-page-heading-ner">Our Trusted Partners</h1>
+    <div className="page1-container" ref={headerRef}>
+      <img
+        ref={imgRef}
+        src={servicemainImg}
+        alt="OpenGen Services"
+        className="page1-bg-img"
+        draggable={false}
+      />
+      <div className="page1-overlay">
+        <div className="page1-content">
+          <h1>OpenGen Services</h1>
         </div>
       </div>
     </div>
   );
 };
 
-export default MainBrandHeaderPartner;
+export default MainHeaderPartner;
