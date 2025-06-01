@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../Design Service Component/MainHeaderService.css";
-import servicemainImg from "../assets/servicemaini.png"; // Import image
+import servicemainImg from "../assets/servicemaini.png"; 
 
 const MainHeaderServices = () => {
   const headerRef = useRef(null);
@@ -25,7 +25,7 @@ const MainHeaderServices = () => {
         src={servicemainImg}
         alt="OpenGen Services"
         className="page1-bg-img"
-        draggable={false}
+        draggable={false} 
       />
       <div className="page1-overlay">
         <div className="page1-content">

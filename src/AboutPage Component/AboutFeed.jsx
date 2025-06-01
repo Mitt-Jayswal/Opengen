@@ -198,18 +198,7 @@ const AboutNewFeed = () => {
           ))}
         </div>
 
-        <div className="media-contact">
-          <div className="media-contact-content">
-            <div className="media-contact-header">
-              <ExternalLink className="media-contact-icon" />
-              <span className="media-contact-text">Want to feature us in your publication?</span>
-            </div>
-            <Link to="/contact" className="media-contact-button">
-              Contact our media team
-              <ArrowRight className="contact-button-icon" />
-            </Link>
-          </div>
-        </div>
+         
       </section>
     </div>
   )

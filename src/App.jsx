@@ -7,7 +7,7 @@ import Newsletter from "./Opengen Main Component/Newletter";
  import ContactRedirectBox from "./Opengen Main Component/ContactredirectBox";
 import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
- import HeaderSection from "./Opengen Main Component/HeaderSection";
+  
  import PartnersGoogle from "./Opengen Main Component/Partners";
  import AdvancedService from "./Opengen Main Component/AdvancedService";
  import FreeMidCode from "./Opengen Main Component/FreeLandingCode";
@@ -48,6 +48,9 @@ import Services from "./Opengen Main Component/ServicesSection";
  import ContentBrand from "./BrandAmplification Component/ContentBrand";
 
 
+ import Headernew from "./Opengen Main Component/NewHeader";
+
+
   
 
 function App() {
@@ -61,7 +64,8 @@ function App() {
                     <>
                      
                     <OpenNavbar/>
-                    <HeaderSection/>
+                    <Headernew/>
+                    
                     <PartnersGoogle/>
                     <DeveloperEngagementRate/>
                     <Services/>
