@@ -1,6 +1,7 @@
 .bodyfree{
   background-color: #000000;
 }
+
 .free-mid-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -9,7 +10,7 @@
 }
 
 .free-mid-title {
- font-size: 48px;
+  font-size: 48px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
@@ -57,10 +58,11 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   height: 20px;
   width: 130px;
+  font-family: 'Myriad', Arial, sans-serif;  
 }
 
 .free-mid-brand {
-   font-family: 'Myriad', Arial, sans-serif;
+  font-family: 'Myriad', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 18px 0;
@@ -72,6 +74,7 @@
   color: #222;
   margin-bottom: 24px;
   line-height: 1.6;
+  font-family: 'Myriad', Arial, sans-serif;  
 }
 
 .free-mid-author {
@@ -109,13 +112,16 @@
   background: #222;
 }
 
+/* --- UPDATED IMAGE AND RIGHT CARD STYLES FOR COOL BLEND --- */
 .free-mid-card-right {
   flex: 1 1 0;
   min-width: 220px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background: transparent;
+  background: transparent !important;
+  position: relative;
+  overflow: hidden;
 }
 
 .free-mid-img {
@@ -125,8 +131,70 @@
   max-height: 320px;
   border-radius: 0 20px 20px 0;
   display: block;
+  opacity: 0.85;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  transition: opacity 0.4s;
+  mix-blend-mode: multiply;
 }
 
+.free-mid-card-right::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0 20px 20px 0;
+  background: linear-gradient(120deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.22) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+
+@media (max-width: 768px) {
+  .free-mid-wrapper {
+    padding: 20px 4px 32px 4px;
+  }
+  .free-mid-title {
+    font-size: 1.5rem;
+  }
+  .free-mid-card {
+    max-width: 100%;
+    border-radius: 12px;
+    flex-direction: column;
+    min-height: unset;
+    text-align: left;
+  }
+  .free-mid-card-left,
+  .free-mid-card-right {
+    padding: 18px 12px 12px 12px;
+    border-radius: 0;
+  }
+  .free-mid-card-right {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+    background: transparent !important;
+    position: relative;
+  }
+  .free-mid-img {
+    max-height: 180px;
+    min-height: 120px;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    opacity: 1 !important; /* FULLY VISIBLE */
+    mix-blend-mode: normal !important; /* Remove blend mode for clarity */
+    box-shadow: none;
+    display: block;
+    object-fit: cover;
+  }
+  .free-mid-card-right::after {
+    background: none !important; /* No overlay on mobile */
+    border-radius: 0 0 12px 12px;
+    content: none !important;
+  }
+}
+
+
+/* --- RESPONSIVE STYLES --- */
 @media (max-width: 900px) {
   .free-mid-card {
     flex-direction: column;
@@ -141,11 +209,18 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 32px;
+    background: transparent !important;
   }
   .free-mid-img {
     border-radius: 0 0 20px 20px;
     max-height: 220px;
     width: 100%;
+    opacity: 0.92;
+    mix-blend-mode: multiply;
+  }
+  .free-mid-card-right::after {
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(120deg, rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.18) 100%);
   }
 }
 
@@ -169,5 +244,10 @@
   .free-mid-img {
     max-height: 160px;
     border-radius: 0 0 12px 12px;
+    opacity: 0.95;
+  }
+  .free-mid-card-right::after {
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(120deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.16) 100%);
   }
 }
