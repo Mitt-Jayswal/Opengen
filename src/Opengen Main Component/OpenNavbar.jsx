@@ -1,16 +1,33 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { FaCode, FaBullhorn, FaHandshake, FaUsers, FaBookOpen, FaEnvelope } from "react-icons/fa";
 import "../Design Opengen Component/navbar.css";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 const OpenNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const dropdownTimeout = useRef(null);
+  const dropdownContainerRef = useRef(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-  const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOpen);
+  
+  // Dropdown open/close with delay to prevent flickering on hover out
+  const handleMouseEnter = () => {
+    if (dropdownTimeout.current) {
+      clearTimeout(dropdownTimeout.current);
+      dropdownTimeout.current = null;
+    }
+    setServicesDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimeout.current = setTimeout(() => {
+      setServicesDropdownOpen(false);
+      dropdownTimeout.current = null;
+    }, 150); // small delay to allow smooth hover transition
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,33 +48,29 @@ const OpenNavbar = () => {
         <div className="left-section">
           <div className="logo-container">
             <Link to="/" className="logo">
-              <img src={logo} alt="okokoko" style={{width:'50px',height:'50px'}}/>
+              <img src={logo} alt="okokoko" style={{ width: '50px', height: '50px' }} />
             </Link>
           </div>
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <ul className="nav-links">
               <li>
-                <Link to="/about/Opengen">
-                    About
-                </Link>
+                <Link to="/about/Opengen">About</Link>
               </li>
-              <li className="services-dropdown-container"
-                  onMouseLeave={() => setServicesDropdownOpen(false)}>
+              <li
+                className="services-dropdown-container"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                ref={dropdownContainerRef}
+              >
                 <button
                   className="dropdown-button"
-                  onMouseEnter={() => setServicesDropdownOpen(true)}
                   style={{ fontFamily: "Poppins, Arial, sans-serif" }}
                 >
-                   
                   Services
                 </button>
                 {servicesDropdownOpen && (
-                  <div
-                    className="dropdown-content modern-dropdown"
-                    onMouseEnter={() => setServicesDropdownOpen(true)}
-                    onMouseLeave={() => setServicesDropdownOpen(false)}
-                  >
+                  <div className="dropdown-content modern-dropdown">
                     <Link to="/services/Opengen">
                       <FaCode style={{ marginRight: 8, color: "#0078d4" }} />
                       Developer Advocacy
@@ -74,19 +87,13 @@ const OpenNavbar = () => {
                 )}
               </li>
               <li>
-                <Link to="/community/Opengen">
-                   Community
-                </Link>
+                <Link to="/community/Opengen">Community</Link>
               </li>
               <li>
-                <Link to="/learn/Opengen">
-                    Learn
-                </Link>
+                <Link to="/learn/Opengen">Learn</Link>
               </li>
               <li>
-                <Link to="/support/Opengen">
-                    Contact Us
-                </Link>
+                <Link to="/support/Opengen">Contact Us</Link>
               </li>
             </ul>
           </nav>
@@ -121,7 +128,7 @@ const OpenNavbar = () => {
               </Link>
             </li>
             <li className="mobile-dropdown">
-              <button className="mobile-dropdown-button" onClick={toggleServicesDropdown} type="button">
+              <button className="mobile-dropdown-button" onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)} type="button">
                 <FaCode style={{ marginRight: 10, color: "#0078d4" }} />
                 Services
               </button>
@@ -171,3 +178,4 @@ const OpenNavbar = () => {
 };
 
 export default OpenNavbar;
+
