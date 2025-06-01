@@ -28,6 +28,8 @@ import Services from "./Opengen Main Component/ServicesSection";
 
  import ServiceDev2 from "./ServicesPage Component/Sample";
 
+ import MainHeaderServices from "./ServicesPage Component/MainHeaderService";
+
   
  import CommunityEvents from "./Community Component/CommunityEvents";
 
@@ -87,6 +89,7 @@ function App() {
             <Route path="/services/Opengen" element={
                     <>
                      <OpenNavbar/>
+                     <MainHeaderServices/>
                      <ServicesHero/>
                      <ServiceDev/>
                      <ServiceDev3/>

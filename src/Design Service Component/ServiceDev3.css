@@ -4,6 +4,7 @@
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .servicedev3vo-main-section.servicedev3vo-visible {
@@ -197,8 +198,8 @@
 }
 
 .servicedev3vo-link-button.primary {
-  background-color: #3b82f6;
-  color: #ffffff;
+  background-color: #000000;
+  color: #e6c068;
 }
 
 .servicedev3vo-link-button.primary:hover {
@@ -209,8 +210,8 @@
 
 .servicedev3vo-link-button.secondary {
   background-color: transparent;
-  color: #3b82f6;
-  border: 2px solid #3b82f6;
+  color: #e6c068;
+  border: 2px solid #000000;
 }
 
 .servicedev3vo-link-button.secondary:hover {

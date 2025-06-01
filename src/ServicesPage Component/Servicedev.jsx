@@ -53,7 +53,10 @@ const ServiceDev = () => {
                   technical community and drive adoption.
                 </p>
                 <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
-                <button className="ser-hero-button-dev">Learn more</button></Link>
+                <button className="ser-hero-button-dev">Learn more
+                
+                </button></Link>
+                
               </div>
             </div>
           </div>

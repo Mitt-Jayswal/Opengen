@@ -96,6 +96,7 @@
   margin-bottom: 10px;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .ser-hero-description-dev {
@@ -105,11 +106,12 @@
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-family: "Times New Roman", Times, serif;
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .ser-hero-button-dev {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  background-color: white;
+  color: #e6c068;
   border: 2px solid white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -189,6 +191,7 @@
   color: #252525;
   margin-bottom: 12px;
   line-height: 1.3;
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .ser-card-description-dev {
@@ -197,6 +200,7 @@
   line-height: 1.5;
   flex-grow: 1;
   margin-bottom: 20px;
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .ser-learn-button-dev {
@@ -225,7 +229,7 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  background-color: #4b53bc;
+  background-color: #e6c068;
   border-radius: 50%;
   margin-left: 8px;
   color: white;
