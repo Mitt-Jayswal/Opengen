@@ -18,9 +18,6 @@ import Services from "./Opengen Main Component/ServicesSection";
  import MainBrandHeaderAbout from "./AboutPage Component/MainHeader";
  
   
-
-
- import ServicesHero from "./ServicesPage Component/ServicesHero";
   
  import ServiceDev from "./ServicesPage Component/Servicedev";
 
@@ -63,7 +60,7 @@ function App() {
                 <Route path="/" element={
                     <>
                      
-                    <OpenNavbar/>
+                     
                     <Headernew/>
                     
                     <PartnersGoogle/>
@@ -94,7 +91,7 @@ function App() {
                     <>
                      <OpenNavbar/>
                      <MainHeaderServices/>
-                     <ServicesHero/>
+                      
                      <ServiceDev/>
                      <ServiceDev3/>
                      <ServiceDev2/>
