@@ -1,0 +1,254 @@
+/* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.article-section-container {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+.article-section-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.dev-advocacy-container {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  /* Optional: for desktops, limit width */
+  max-width: 500px;
+}
+
+.dev-advocacy-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  background: linear-gradient(90deg, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dev-advocacy-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.dev-advocacy-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dev-advocacy-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-button {
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  border: 1px solid #e6c068;
+  color: #e6c068;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(58, 123, 213, 0.4);
+}
+
+.secondary-button {
+  background: transparent;
+  border: 1px solid #e6c068;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.secondary-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.articles-container {
+  flex: 2;
+  display: flex;
+  gap: 30px;
+}
+
+.article-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  display: block;
+}
+
+.article-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.article-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.article-link svg {
+  transition: transform 0.2s ease;
+}
+
+.article-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* ----- MOBILE / TABLET STYLES (MAX-WIDTH 768px) ----- */
+@media (max-width: 768px) {
+  .article-section-container {
+    padding: 32px 8vw;
+  }
+
+  .article-section-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .dev-advocacy-container,
+  .articles-container {
+    width: 100%;
+    max-width: 98vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 16px 4vw;
+  }
+
+  .articles-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .article-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .article-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-section-container {
+    padding: 20px 4vw;
+  }
+
+  .dev-advocacy-title {
+    font-size: 1.3rem;
+  }
+
+  .dev-advocacy-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dev-advocacy-container,
+  .articles-container {
+    max-width: 98vw;
+    padding: 16px 4vw;
+    box-sizing: border-box;
+  }
+
+  .articles-container {
+    gap: 16px;
+  }
+
+  .article-image-container {
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-advocacy-container {
+    padding: 18px 6vw;    
+    margin: 0 auto;      
+    max-width: 98vw;      
+  }
+}

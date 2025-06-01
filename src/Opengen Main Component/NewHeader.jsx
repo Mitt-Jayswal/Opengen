@@ -242,31 +242,14 @@ const Headernew = () => {
 
       <div className="header-background">
         {/* 3D Geometric Background */}
-        <div className="geometric-background">
-          <div className="geometric-shape shape1"></div>
-          <div className="geometric-shape shape2"></div>
-          <div className="geometric-shape shape3"></div>
-          <div className="geometric-shape shape4"></div>
-          <div className="geometric-shape shape5"></div>
-          <div className="geometric-shape shape6"></div>
-          <div className="geometric-shape shape7"></div>
-          <div className="geometric-shape shape8"></div>
-        </div>
-
+        
         <div className="wave-container">
           <div className="wave wave1"></div>
           <div className="wave wave2"></div>
           <div className="wave wave3"></div>
 
           {/* 3D Squares */}
-          <div className="squares-container">
-            <div className="square square1"></div>
-            <div className="square square2"></div>
-            <div className="square square3"></div>
-            <div className="square square4"></div>
-            <div className="square square5"></div>
-            <div className="square square6"></div>
-          </div>
+           
         </div>
 
         <div className="header-content">

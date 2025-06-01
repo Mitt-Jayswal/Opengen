@@ -47,6 +47,11 @@ import Services from "./Opengen Main Component/ServicesSection";
 
  import Headernew from "./Opengen Main Component/NewHeader";
 
+ import TrendsBlog from "./Learn Component/TrendBlog";
+import ArticleSection from "./Learn Component/BlogArticle";
+import ArticleSection2 from "./Learn Component/ArticleSection2";
+import ArticleSection3 from "./Learn Component/ArticleSection3";
+
 
   
 
@@ -141,6 +146,13 @@ function App() {
                  <Route path="/learn/Opengen" element={
                     <>
                      <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <br/>
+                     <TrendsBlog/>
+                     <ArticleSection/>
+                     <ArticleSection2/>
+                     <ArticleSection3/>
                     <FooterSection/>
                     </>
                 } />

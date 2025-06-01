@@ -65,7 +65,7 @@ const OpenNavbar = () => {
               >
                 <button
                   className="dropdown-button"
-                  style={{ fontFamily: "Poppins, Arial, sans-serif" }}
+                  style={{ fontFamily: "Poppins, Arial, sans-serif",color:'#ffffff' }}
                 >
                   Services
                 </button>
@@ -129,7 +129,7 @@ const OpenNavbar = () => {
             </li>
             <li className="mobile-dropdown">
               <button className="mobile-dropdown-button" onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)} type="button">
-                <FaCode style={{ marginRight: 10, color: "#0078d4" }} />
+                <FaCode style={{ marginRight: 10, color: "#ffffff" }} />
                 Services
               </button>
               <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
