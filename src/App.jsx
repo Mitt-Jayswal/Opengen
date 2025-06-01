@@ -123,6 +123,10 @@ function App() {
               <Route path="/community/Opengen" element={
                     <>
                      <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     
+                
                       
                      <CommunityEvents/>
                      

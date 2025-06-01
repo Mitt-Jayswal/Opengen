@@ -21,7 +21,7 @@
 .page2-header h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -50,7 +50,8 @@
 .page2-left-column li {
   margin-bottom: 12px;
   line-height: 1.5;
-  color: #333;
+  color: #ffffff;
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .page2-collaboration {
@@ -58,7 +59,6 @@
   padding: 25px;
   border-radius: 8px;
   margin-top: 30px;
-   
 }
 
 .page2-collaboration h3 {
@@ -133,6 +133,7 @@
   color: #ffffff;
 }
 
+/* Modern, mobile-optimized links section */
 .page2-links {
   display: flex;
   flex-wrap: wrap;
@@ -147,6 +148,9 @@
   border-radius: 4px;
   transition: all 0.3s;
   font-size: 0.9rem;
+  background: transparent;
+  font-weight: 500;
+  display: inline-block;
 }
 
 .page2-link:hover {
@@ -154,45 +158,116 @@
   color: white;
 }
 
+/* ---------- TABLET (≤900px) ---------- */
 @media (max-width: 900px) {
   .page2-content {
     flex-direction: column;
+    gap: 28px;
   }
-
   .page2-left-column {
     padding-right: 0;
   }
-
   .page2-header h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 600px) {
+/* ---------- MOBILE & TABLET (≤768px) ---------- */
+@media (max-width: 768px) {
   .page2-container {
-    padding: 30px 15px;
+    padding: 28px 8px;
   }
-
   .page2-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
-
   .page2-left-column h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
-
   .page2-collaboration h3,
   .page2-text-container h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
-
   .page2-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
+    width: 100%;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
   }
-
   .page2-link {
     width: 100%;
     text-align: center;
+    box-sizing: border-box;
+    font-size: 1.08rem;
+    border-radius: 999px; /* pill shape */
+    background: linear-gradient(90deg, #e3f0ff 0%, #cbe3ff 100%);
+    border: 2px solid #0078d4;
+    color: #0078d4;
+    padding: 15px 0;
+    margin: 0;
+    transition: 
+      background 0.3s, 
+      color 0.3s, 
+      box-shadow 0.3s, 
+      border-color 0.3s;
+    box-shadow: 0 2px 12px rgba(0,120,212,0.09);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  .page2-link:active,
+  .page2-link:hover,
+  .page2-link:focus {
+    background: linear-gradient(90deg, #0078d4 0%, #005a9e 100%);
+    color: #fff;
+    border-color: #005a9e;
+    box-shadow: 0 4px 20px rgba(0,120,212,0.18);
+  }
+}
+
+/* ---------- SMALL MOBILE (≤600px) ---------- */
+@media (max-width: 600px) {
+  .page2-container {
+    padding: 18px 3vw;
+  }
+  .page2-header h1 {
+    font-size: 1.35rem;
+  }
+  .page2-left-column h2 {
+    font-size: 1.08rem;
+  }
+  .page2-collaboration h3,
+  .page2-text-container h3 {
+    font-size: 1rem;
+  }
+  .page2-links {
+    gap: 10px;
+  }
+  .page2-link {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+/* ---------- EXTRA SMALL (≤430px, iPhone 12/13/14) ---------- */
+@media (max-width: 430px) {
+  .page2-link {
+    font-size: 0.97rem;
+    padding: 11px 0;
+  }
+}
+
+/* ---------- ULTRA SMALL (≤360px) ---------- */
+@media (max-width: 360px) {
+  .page2-header h1 {
+    font-size: 1.05rem;
+  }
+  .page2-link {
+    font-size: 0.92rem;
+    padding: 9px 0;
   }
 }

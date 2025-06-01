@@ -1,8 +1,8 @@
 .advocacy-container {
-  background-color: #f5f5f5;
+  background-color: #000000;
   min-height: 100vh;
   padding: 60px 20px;
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 .advocacy-content {
@@ -13,14 +13,14 @@
 .advocacy-title {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #252525;
+  color: #ffffff;
   margin-bottom: 16px;
   text-align: left;
 }
 
 .advocacy-description {
   font-size: 1.1rem;
-  color: #505050;
+  color: #ffffff;
   max-width: 900px;
   margin-bottom: 40px;
   line-height: 1.6;
@@ -90,7 +90,7 @@
 .advocacy-subtitle {
   font-size: 2.2rem;
   font-weight: 600;
-  color: #252525;
+  color: #ffffff;
   margin-bottom: 40px;
   text-align: left;
 }
@@ -140,8 +140,8 @@
 }
 
 .advocacy-button {
-  background-color: #6264a7;
-  color: white;
+  background-color: #000000;
+  color: #e6c068;
   border: none;
   padding: 12px 24px;
   border-radius: 4px;

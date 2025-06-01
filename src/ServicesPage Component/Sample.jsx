@@ -65,6 +65,7 @@ const ServiceDev2 = () => {
   ]
 
   return (
+    <section className="samplebody">
     <div className="servicedev2-container">
       {/* Header Section */}
        
@@ -133,6 +134,7 @@ const ServiceDev2 = () => {
         </div>
       </section>
     </div>
+    </section>
   )
 }
 

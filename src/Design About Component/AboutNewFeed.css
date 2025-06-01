@@ -16,10 +16,10 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #1a2b3c;
+  
   margin-bottom: 1rem;
   letter-spacing: -0.01em;
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #e6c068 0%, #e6c068 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

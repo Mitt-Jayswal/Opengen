@@ -24,7 +24,7 @@ const FooterSection = () => {
                 <Link to="/about/Opengen">About OpenGen</Link>
               </li>
               <li>
-                <Link to="/services/Opengen">developer Advocacay</Link>
+                <Link to="/services/Opengen">Developer Advocacy</Link>
               </li>
               <li>
                 <Link to="/brandamplification/Opengen">Brand Amplification</Link>
@@ -44,14 +44,26 @@ const FooterSection = () => {
               <li>
                 <Link to="/community/Opengen">Events</Link>
               </li>
+              <li>
+                <Link to="/community/Opengen">Meetups</Link>
+              </li>
+              <li>
+                <Link to="/community/Opengen">LiveStreams</Link>
+              </li>
             </ul>
           </div>
 
           {/* Column 3 */}
           <div className="footer-section">
             <ul className="footer-links">
+            <li>
+                <Link to="/community/Opengen">Reports</Link>
+              </li>
               <li>
                 <Link to="/community/Opengen">Blogs</Link>
+              </li>
+              <li>
+                <Link to="/community/Opengen">Podcast</Link>
               </li>
               <li>
                 <Link to="/support/Opengen">Developer Support</Link>
@@ -71,7 +83,7 @@ const FooterSection = () => {
                 <Link to="/support/Opengen">Developers Community</Link>
               </li>
               <li>
-                <Link to="/">RESOURCES</Link>
+                <Link to="/">Resources</Link>
               </li>
             </ul>
           </div>

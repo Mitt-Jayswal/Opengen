@@ -1,6 +1,6 @@
 .ser-main-section-dev {
   padding: 60px 0;
-  background: linear-gradient(135deg, #f5f5f9 0%, #e8e8f0 30%, #ddd6fe 70%, #f5f5f9 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 30%, #000000 70%, #000000 100%);
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -20,7 +20,7 @@
 .ser-main-heading-dev {
   font-size: 36px;
   font-weight: 600;
-  color: #252525;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 30px;
 }

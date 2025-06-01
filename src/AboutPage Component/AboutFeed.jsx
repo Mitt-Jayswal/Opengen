@@ -79,8 +79,8 @@ const  AboutNewFeed = () => {
     <div ref={sectionRef} className="endorsed-news-sections">
       {/* Endorsed By Section */}
       <section className="endorsed-section">
-        <h2 className="section-title">Endorsed By</h2>
-        <p className="section-subtitle">
+        <h2 className="section-title" style={{color:'#e6c068'}}>Endorsed By</h2>
+        <p className="section-subtitle" style={{color:'#ffffff',fontFamily: "'Myriad', Arial, sans-serif"}}>
           At OpenGen we’re proud to be trusted by industry leaders, open-source contributors, and developer-first organizations around the world. Our advocacy has earned praise from those who matter most — the builders, engineers, and innovators shaping tomorrow.
         </p>
         <div className="testimonial-grid">
@@ -89,7 +89,7 @@ const  AboutNewFeed = () => {
               <div className="quote-icon">🗣️</div>
               <p className="testimonial-quote">"{testimonial.quote}"</p>
               <div className="testimonial-meta">
-                <span className="testimonial-role">{testimonial.role}</span>
+                <span className="testimonial-role" style={{fontFamily: "'Myriad', Arial, sans-serif",color:'#e6c068'}}>{testimonial.role}</span>
               </div>
             </div>
           ))}
@@ -98,8 +98,8 @@ const  AboutNewFeed = () => {
 
       {/* In The News Section */}
       <section className="news-section">
-        <h2 className="section-title">In The News</h2>
-        <p className="section-subtitle">
+        <h2 className="section-title"style={{color:'#e6c068'}}>In The News</h2>
+        <p className="section-subtitle" style={{color:'#ffffff',fontFamily: "'Myriad', Arial, sans-serif"}}>
           We’re making headlines across the tech world — not just for what we build, but for how we help others build with purpose and community.
         </p>
         <div className="news-grid">
@@ -109,14 +109,14 @@ const  AboutNewFeed = () => {
               <h3 className="news-title">"{item.title}"</h3>
               <div className="news-outlet">{item.outlet}</div>
               <div className="news-read-more">
-              <Link to="/services/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/services/Opengen" style={{textDecoration:'none',color:'#e6c068'}}>
               Read More →
               </Link></div>
             </a>
           ))}
         </div>
-        <div className="news-contact">
-          Want to feature us in your publication? <Link to="#" className="news-contact-link">Contact our media team</Link>
+        <div className="news-contact" style={{color:'#ffffff',fontFamily: "'Myriad', Arial, sans-serif"}}>
+          Want to feature us in your publication? <Link to="#" className="news-contact-link" style={{color:'#e6c068',fontFamily: "'Myriad', Arial, sans-serif"}}>Contact our media team</Link>
         </div>
       </section>
     </div>

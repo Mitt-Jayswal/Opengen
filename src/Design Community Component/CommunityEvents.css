@@ -1,5 +1,5 @@
 .opengen-page {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .opengen-section {
@@ -28,7 +28,7 @@
 .section-title {
   font-size: 2.5rem; /* Changed from 3rem to 2.5rem */
   font-weight: 700;
-  color: #1e293b;
+  color: #e6c068;
   margin-bottom: 15px; /* Changed from 20px to 15px */
   line-height: 1.2;
 }
@@ -43,7 +43,8 @@
 
 /* Community Section */
 .community-section {
-  background-color: #f8fafc;
+  background-color: #000000;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 .community-grid {
@@ -87,7 +88,7 @@
 .action-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -104,8 +105,8 @@
 }
 
 .primary-button {
-  background-color: #10b981;
-  color: white;
+  background-color: #ffffff;
+  color: #e6c068;
 }
 
 .primary-button:hover {
@@ -163,7 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #64748b;
+  color: #e6c068;
   transition: all 0.3s ease;
 }
 
@@ -174,12 +175,13 @@
 
 /* Events Section */
 .events-section {
-  background-color: #ffffff;
+  background-color: #000000;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 .events-button {
-  background-color: #10b981;
-  color: white;
+  background-color: #ffffff;
+  color: #e6c068;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -209,25 +211,26 @@
 }
 
 .empty-icon {
-  color: #d1d5db;
+  color: #e6c068;
   margin-bottom: 20px;
 }
 
 .empty-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #9ca3af;
+  color: #e6c068;
   margin-bottom: 10px;
 }
 
 .empty-description {
-  color: #9ca3af;
+  color: #000000;
   font-size: 1rem;
 }
 
 /* Livestreams Section */
 .livestreams-section {
-  background-color: #f8fafc;
+  background-color: #000000;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 .livestreams-content {
@@ -257,7 +260,7 @@
   gap: 12px;
   margin-bottom: 15px;
   font-size: 1.1rem;
-  color: #374151;
+  color: #ffffff;
 }
 
 .feature-icon {
@@ -265,8 +268,8 @@
 }
 
 .livestream-button {
-  background-color: #dc2626;
-  color: white;
+  background-color: #ffffff;
+  color: #e6c068;
   border: none;
   padding: 14px 28px;
   border-radius: 8px;
@@ -338,7 +341,8 @@
 
 /* Meetup Section */
 .meetup-section {
-  background-color: #ffffff;
+  background-color: #000000;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 .meetup-grid {
@@ -348,7 +352,7 @@
 }
 
 .meetup-card {
-  background-color: #f8fafc;
+  background-color: #000000;
   border-radius: 16px;
   padding: 40px;
 }
@@ -377,13 +381,13 @@
 .stat-item .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
 .stat-item .stat-label {
   font-size: 0.9rem;
-  color: #64748b;
+  color: #ffffff;
 }
 
 .meetup-actions {
@@ -401,8 +405,8 @@
 }
 
 .meetup-button.primary {
-  background-color: #3b82f6;
-  color: white;
+  background-color: #ffffff;
+  color: #e6c068;
 }
 
 .meetup-button.primary:hover {
@@ -485,15 +489,17 @@
 .coming-soon-title {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #64748b;
+  color: #e6c068;
   margin-bottom: 15px;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 .coming-soon-text {
-  color: #94a3b8;
+  color: #000000;
   font-size: 1.1rem;
   max-width: 300px;
   margin: 0 auto;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 /* Mobile Responsive */
@@ -510,6 +516,8 @@
   .section-description {
     font-size: 1.1rem;
     line-height: 1.7;
+    font-family: 'Myriad', Arial, sans-serif;
+    color: #ffffff;
   }
 
   .community-grid {

@@ -252,9 +252,9 @@
 }
 
 .signin-button {
-  background-color: #0078d4;
+  background-color: #000000;
   color: white;
-  border: 1px solid #0078d4;
+  border: 1px solid #ffffff;
 }
 
 .signin-button:hover {
