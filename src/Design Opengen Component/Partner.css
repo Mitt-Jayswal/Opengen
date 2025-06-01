@@ -1,6 +1,6 @@
 .partners-page-section {
   width: 100%;
-  background: #ffffff;
+  background: #000000;
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
   padding: 0;
@@ -24,7 +24,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  background: #ffffff;
+  background: #000000;
 }
 
 .partners-scroll-track {
