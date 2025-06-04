@@ -95,7 +95,7 @@ const CommunityEvents = () => {
               </div>
               <h3 className="action-title">Host a Meetup</h3>
               <ScrollToTopLink to="/support/Opengen">
-              <button className="action-button secondary-button">
+              <button className="action-button secondary-button" style={{color:'white'}}>
                 Schedule a Call
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
