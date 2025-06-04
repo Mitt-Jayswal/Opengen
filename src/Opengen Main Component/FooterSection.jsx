@@ -109,7 +109,7 @@ const FooterSection = () => {
               <Link to="/" className="social-icon">
                 <FaXTwitter />
               </Link>
-              <Link to="/" className="social-icon">
+              <Link to="https://www.linkedin.com/in/vinijaiswal/" className="social-icon">
                 <RxLinkedinLogo />
               </Link>
               <Link to="/" className="social-icon">

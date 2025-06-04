@@ -1,72 +1,90 @@
-.opengen-page {
+.andy-opengen-page {
   background-color: #000000;
 }
 
-.opengen-section {
-   
+.laptop-opengen-section {
+  padding: 120px 0;
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.8s ease;
 }
 
-.opengen-section.visible {
+.laptop-opengen-section.andy-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.section-container {
+.nity-section-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.section-header {
+.andy-section-headerrt {
   text-align: center;
-  margin-bottom: 40px; /* Changed from 60px to 40px */
+  margin-bottom: 40px;
 }
 
-.section-title {
-  font-size: 2.5rem; /* Changed from 3rem to 2.5rem */
-  font-weight: 700;
+.laptop-section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
   color: #e6c068;
-  margin-bottom: 15px; /* Changed from 20px to 15px */
-  line-height: 1.2;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(230, 192, 104, 0.3);
+  letter-spacing: -0.02em;
 }
 
-.section-description {
-  font-size: 1.2rem;
-  color: #64748b;
-  line-height: 1.6;
+.nity-main-heading {
+  background: linear-gradient(135deg, #e6c068, #f4d03f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nity-events-heading,
+.nity-livestream-heading,
+.nity-meetup-heading {
+  color: #e6c068 !important;
+  text-shadow: 2px 2px 4px rgba(230, 192, 104, 0.4);
+  font-weight: 800;
+}
+
+.andy-section-description {
+  font-size: 1.3rem;
+  color: #ffffff;
+  line-height: 1.7;
   max-width: 800px;
   margin: 0 auto;
+  font-weight: 400;
+}
+
+.nity-main-text,
+.nity-events-text,
+.nity-livestream-text,
+.nity-meetup-text {
+  color: #ffffff !important;
+  opacity: 0.9;
 }
 
 /* Community Section */
-.community-section {
+.nity-community-section {
   background-color: #000000;
-  font-family: 'Myriad', Arial, sans-serif; 
+  font-family: "Myriad", Arial, sans-serif;
 }
 
-.community-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-/* Update the community grid to have only two columns */
-.community-grid-two {
+.laptop-community-grid-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
 }
 
-.community-action {
+.nity-community-action {
   text-align: center;
 }
 
-.action-icon {
+.andy-action-icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -75,24 +93,25 @@
   justify-content: center;
   margin: 0 auto 20px;
   color: white;
+  font-size: 24px;
 }
 
-.discord-icon {
+.laptop-discord-icon {
   background-color: #5865f2;
 }
 
-.story-icon {
+.laptop-story-icon {
   background-color: #f59e0b;
 }
 
-.action-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+.nity-action-title {
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.action-button {
+.andy-action-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -104,60 +123,36 @@
   transition: all 0.3s ease;
 }
 
-.primary-button {
+.laptop-primary-button {
   background-color: #000000;
   color: #ffffff;
+  border: 2px solid #e6c068;
 }
 
-.primary-button:hover {
-  background-color: #000000;
+.laptop-primary-button:hover {
+  background-color: #e6c068;
+  color: #000000;
   transform: translateY(-2px);
 }
 
-.secondary-button {
+.laptop-secondary-button {
   background-color: #f59e0b;
   color: white;
 }
 
-.secondary-button:hover {
+.laptop-secondary-button:hover {
   background-color: #d97706;
   transform: translateY(-2px);
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.stat-card {
-  border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 30px 20px;
-  text-align: center;
-  background-color: white;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 8px;
-}
-
-.stat-label {
-  font-size: 1rem;
-  color: #64748b;
-}
-
-.social-links {
+.nity-social-links {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
 }
 
-.social-link {
+.andy-social-link {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -166,23 +161,31 @@
   justify-content: center;
   color: #e6c068;
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
-.social-link:hover {
+.andy-social-link:hover {
   color: #1e293b;
-  transform: translateY(-2px);
+  background-color: #e6c068;
+  transform: translateY(-2px) scale(1.1);
+  border-color: #e6c068;
 }
 
 /* Events Section */
-.events-section {
+.nity-events-section {
   background-color: #000000;
-  font-family: 'Myriad', Arial, sans-serif; 
+  font-family: "Myriad", Arial, sans-serif;
 }
 
-.events-button {
+.andy-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nity-events-button {
   background-color: #000000;
   color: #e6c068;
-  border: none;
+  border: 2px solid #e6c068;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
@@ -192,71 +195,148 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 40px;
-  border: 1px solid #ffffff;
 }
 
-.events-button:hover {
-  background-color: #000000;
+.nity-events-button:hover {
+  background-color: #e6c068;
+  color: #000000;
   transform: translateY(-2px);
-  border: 1px solid #ffffff;
 }
 
-.events-container {
+.laptop-events-container {
   border: 2px solid #10b981;
   border-radius: 12px;
   padding: 80px 40px;
   background-color: #f0fdf4;
 }
 
-.empty-state {
+.andy-empty-state {
   text-align: center;
+  position: relative;
 }
 
-.empty-icon {
+/* Floating Animation for Coming Soon Icons */
+.andy-floating-icon {
+  animation: andyFloatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes andyFloatUpDown {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Coming Soon Tooltip Styles */
+.nity-coming-soon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.nity-celebration-tooltip {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.nity-coming-soon-wrapper:hover .nity-celebration-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.andy-tooltip-content {
+  text-align: center;
+  color: white;
+}
+
+.laptop-celebration-icons {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  animation: laptopCelebrationPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes laptopCelebrationPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.nity-tooltip-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.andy-tooltip-subtext {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.laptop-empty-icon {
   color: #e6c068;
   margin-bottom: 20px;
 }
 
-.empty-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+.laptop-empty-title {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #e6c068;
   margin-bottom: 10px;
 }
 
-.empty-description {
+.andy-empty-description {
   color: #000000;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* Livestreams Section */
-.livestreams-section {
+.nity-livestreams-section {
   background-color: #000000;
-  font-family: 'Myriad', Arial, sans-serif; 
+  font-family: "Myriad", Arial, sans-serif;
 }
 
-.livestreams-content {
+.andy-livestreams-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.livestreams-text .section-title {
+.laptop-livestreams-text .laptop-section-title {
   text-align: left;
   margin-bottom: 20px;
 }
 
-.livestreams-text .section-description {
+.laptop-livestreams-text .andy-section-description {
   text-align: left;
   margin-bottom: 30px;
 }
 
-.livestream-features {
+.nity-livestream-features {
   margin-bottom: 30px;
 }
 
-.feature-item {
+.andy-feature-item {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -265,11 +345,11 @@
   color: #ffffff;
 }
 
-.feature-icon {
+.laptop-feature-icon {
   font-size: 1.2rem;
 }
 
-.livestream-button {
+.nity-livestream-button {
   background-color: #ffffff;
   color: #e6c068;
   border: none;
@@ -283,175 +363,19 @@
   transition: all 0.3s ease;
 }
 
-.livestream-button:hover {
-  background-color: #b91c1c;
+.nity-livestream-button:hover {
+  background-color: #e6c068;
+  color: #000000;
   transform: translateY(-2px);
 }
 
-.video-placeholder {
-  background: linear-gradient(135deg, #1e293b, #334155);
-  border-radius: 12px;
-  aspect-ratio: 16 / 9;
+.laptop-livestreams-visual {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
 }
 
-.play-button {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1e293b;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.play-button:hover {
-  transform: scale(1.1);
-}
-
-.video-info {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  gap: 15px;
-}
-
-.live-indicator {
-  background-color: #dc2626;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.viewer-count {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
-
-/* Meetup Section */
-.meetup-section {
-  background-color: #000000;
-  font-family: 'Myriad', Arial, sans-serif; 
-}
-
-.meetup-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 60px;
-}
-
-.meetup-card {
-  background-color: #000000;
-  border-radius: 16px;
-  padding: 40px;
-}
-
-.meetup-header .section-title {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.meetup-header .section-description {
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-.meetup-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-item .stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 5px;
-}
-
-.stat-item .stat-label {
-  font-size: 0.9rem;
-  color: #ffffff;
-}
-
-.meetup-actions {
-  display: flex;
-  gap: 15px;
-}
-
-.meetup-button {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.meetup-button.primary {
-  background-color: #ffffff;
-  color: #e6c068;
-}
-
-.meetup-button.primary:hover {
-  background-color: #2563eb;
-  transform: translateY(-2px);
-}
-
-.meetup-button.secondary {
-  background-color: white;
-  color: #3b82f6;
-  border: 2px solid #3b82f6;
-}
-
-.meetup-button.secondary:hover {
-  background-color: #3b82f6;
-  color: white;
-  transform: translateY(-2px);
-}
-
-.locations-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 20px;
-}
-
-.locations-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.location-item {
-  background-color: #f1f5f9;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-weight: 500;
-  color: #475569;
-  text-align: center;
-}
-
-/* Add styles for the coming soon containers */
-.coming-soon-container {
+.andy-coming-soon-container {
   background-color: #f8fafc;
   border-radius: 12px;
   padding: 60px 40px;
@@ -463,206 +387,283 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  position: relative;
 }
 
-.coming-soon-container:hover {
+.andy-coming-soon-container:hover {
   border-color: #cbd5e1;
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-.livestreams-visual .coming-soon-container {
+.laptop-livestreams-visual .andy-coming-soon-container {
   background: linear-gradient(135deg, #fef2f2, #fee2e2);
   border-color: #fecaca;
   aspect-ratio: 16 / 9;
 }
 
-.meetup-coming-soon {
+.nity-meetup-coming-soon {
   background: linear-gradient(135deg, #eff6ff, #dbeafe);
   border-color: #bfdbfe;
   height: 100%;
 }
 
-.coming-soon-icon {
+.laptop-coming-soon-icon {
   color: #94a3b8;
   margin-bottom: 20px;
 }
 
-.coming-soon-title {
-  font-size: 1.8rem;
-  font-weight: 600;
+.laptop-coming-soon-title {
+  font-size: 2rem;
+  font-weight: 700;
   color: #e6c068;
   margin-bottom: 15px;
-  font-family: 'Myriad', Arial, sans-serif; 
+  font-family: "Myriad", Arial, sans-serif;
 }
 
-.coming-soon-text {
+.andy-coming-soon-text {
   color: #000000;
   font-size: 1.1rem;
   max-width: 300px;
   margin: 0 auto;
-  font-family: 'Myriad', Arial, sans-serif; 
+  font-family: "Myriad", Arial, sans-serif;
+}
+
+/* Meetup Section */
+.nity-meetup-section {
+  background-color: #000000;
+  font-family: "Myriad", Arial, sans-serif;
+}
+
+.andy-meetup-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+}
+
+.laptop-meetup-card {
+  background-color: #000000;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.nity-meetup-header .laptop-section-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.nity-meetup-header .andy-section-description {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.laptop-meetup-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.andy-stat-item {
+  text-align: center;
+}
+
+.nity-stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.laptop-stat-label {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.nity-meetup-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.andy-meetup-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.andy-meetup-button.laptop-primary {
+  background-color: #ffffff;
+  color: #e6c068;
+  border: 2px solid #e6c068;
+}
+
+.andy-meetup-button.laptop-primary:hover {
+  background-color: #e6c068;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+.laptop-meetup-locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .opengen-section {
+  .laptop-opengen-section {
     padding: 80px 0;
   }
 
-  .section-title {
-    font-size: 2.4rem;
+  .laptop-section-title {
+    font-size: 2.8rem;
     margin-bottom: 15px;
   }
 
-  .section-description {
+  .andy-section-description {
     font-size: 1.1rem;
     line-height: 1.7;
-    font-family: 'Myriad', Arial, sans-serif;
+    font-family: "Myriad", Arial, sans-serif;
     color: #ffffff;
   }
 
-  .community-grid {
+  .laptop-community-grid-two {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .community-grid-two {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .livestreams-content {
+  .andy-livestreams-content {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .livestreams-text .section-title,
-  .livestreams-text .section-description {
+  .laptop-livestreams-text .laptop-section-title,
+  .laptop-livestreams-text .andy-section-description {
     text-align: center;
   }
 
-  .meetup-grid {
+  .andy-meetup-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .meetup-header .section-title,
-  .meetup-header .section-description {
+  .nity-meetup-header .laptop-section-title,
+  .nity-meetup-header .andy-section-description {
     text-align: center;
   }
 
-  .meetup-stats {
+  .laptop-meetup-stats {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .meetup-actions {
+  .nity-meetup-actions {
     flex-direction: column;
   }
 
-  .locations-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .coming-soon-container {
+  .andy-coming-soon-container {
     padding: 40px 20px;
   }
 
-  .coming-soon-title {
+  .laptop-coming-soon-title {
     font-size: 1.5rem;
   }
 
-  .coming-soon-text {
+  .andy-coming-soon-text {
     font-size: 1rem;
   }
 
-  .section-container {
+  .nity-section-container {
     padding: 0 25px;
   }
 
-  .action-button,
-  .events-button,
-  .livestream-button,
-  .meetup-button {
+  .andy-action-button,
+  .nity-events-button,
+  .nity-livestream-button,
+  .andy-meetup-button {
     width: 100%;
     justify-content: center;
   }
 
-  .meetup-card {
+  .laptop-meetup-card {
     border-radius: 20px;
   }
 
-  /* Cool mobile enhancements */
-  .action-icon,
-  .social-link {
+  .andy-action-icon,
+  .andy-social-link {
     transform: scale(1.1);
+  }
+
+  .nity-celebration-tooltip {
+    top: -100px;
+    min-width: 180px;
   }
 }
 
 @media (max-width: 480px) {
-  .section-container {
+  .nity-section-container {
     padding: 0 15px;
   }
 
-  .section-title {
-    font-size: 2rem;
+  .laptop-section-title {
+    font-size: 2.2rem;
   }
 
-  .section-description {
+  .andy-section-description {
     font-size: 1rem;
   }
 
-  .meetup-card {
+  .laptop-meetup-card {
     padding: 25px;
   }
 
-  .social-links {
+  .nity-social-links {
     gap: 15px;
   }
 
-  .social-link {
+  .andy-social-link {
     width: 40px;
     height: 40px;
   }
 
-  .coming-soon-container {
+  .andy-coming-soon-container {
     padding: 30px 15px;
   }
 
-  .coming-soon-title {
+  .laptop-coming-soon-title {
     font-size: 1.3rem;
   }
 
-  .coming-soon-text {
+  .andy-coming-soon-text {
     font-size: 0.9rem;
   }
 
-  .action-button,
-  .events-button,
-  .livestream-button,
-  .meetup-button {
+  .andy-action-button,
+  .nity-events-button,
+  .nity-livestream-button,
+  .andy-meetup-button {
     padding: 14px 20px;
   }
 
-  .opengen-section {
+  .laptop-opengen-section {
     padding: 60px 0;
   }
 }
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-  .opengen-section,
-  .action-button,
-  .events-button,
-  .livestream-button,
-  .meetup-button,
-  .play-button {
+  .laptop-opengen-section,
+  .andy-action-button,
+  .nity-events-button,
+  .nity-livestream-button,
+  .andy-meetup-button,
+  .andy-floating-icon,
+  .laptop-celebration-icons {
+    animation: none;
     transition: none;
   }
 }
