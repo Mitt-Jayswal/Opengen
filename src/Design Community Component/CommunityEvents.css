@@ -105,12 +105,12 @@
 }
 
 .primary-button {
-  background-color: #ffffff;
-  color: #e6c068;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .primary-button:hover {
-  background-color: #059669;
+  background-color: #000000;
   transform: translateY(-2px);
 }
 
@@ -180,7 +180,7 @@
 }
 
 .events-button {
-  background-color: #ffffff;
+  background-color: #000000;
   color: #e6c068;
   border: none;
   padding: 12px 24px;
@@ -192,11 +192,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 40px;
+  border: 1px solid #ffffff;
 }
 
 .events-button:hover {
-  background-color: #059669;
+  background-color: #000000;
   transform: translateY(-2px);
+  border: 1px solid #ffffff;
 }
 
 .events-container {

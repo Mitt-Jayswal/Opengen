@@ -1,16 +1,16 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../Design Service Component/MainHeaderService.css";
-import servicemainImg from "../assets/servicemaini.png"; 
+import servicemainImg from "../assets/servicemaini.png";
 
 const MainHeaderServices = () => {
-  const headerRef = useRef(null);
-  const imgRef = useRef(null);
+  const servLionMalRef = useRef(null);
+  const servTigerMalRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (imgRef.current) {
+      if (servTigerMalRef.current) {
         const scrollPosition = window.scrollY;
-        imgRef.current.style.objectPosition = `center ${50 + scrollPosition * 0.5}px`;
+        servTigerMalRef.current.style.objectPosition = `center ${50 + scrollPosition * 0.5}px`;
       }
     };
 
@@ -19,17 +19,17 @@ const MainHeaderServices = () => {
   }, []);
 
   return (
-    <div className="page1-container" ref={headerRef}>
+    <div className="serv-lion-mal" ref={servLionMalRef}>
       <img
-        ref={imgRef}
+        ref={servTigerMalRef}
         src={servicemainImg}
         alt="OpenGen Services"
-        className="page1-bg-img"
-        draggable={false} 
+        className="serv-tiger-mal"
+        draggable={false}
       />
-      <div className="page1-overlay">
-        <div className="page1-content">
-          <h1>OpenGen Services</h1>
+      <div className="serv-bear-mal">
+        <div className="serv-elephant-mal">
+          <h1>Developer Advocacy</h1>
         </div>
       </div>
     </div>

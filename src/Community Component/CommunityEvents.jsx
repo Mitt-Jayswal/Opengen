@@ -75,7 +75,7 @@ const CommunityEvents = () => {
               <h3 className="action-title">Join our community</h3>
               <Link to="/brandamplification/Opengen">
               <button className="action-button primary-button">
-                Know More about OpenGen Brand Amplification
+               Want to Amplify your Brand ?
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5 12h14m-7-7l7 7-7 7"

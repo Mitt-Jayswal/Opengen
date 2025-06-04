@@ -7,7 +7,7 @@ const ServiceDev2 = () => {
   const sectionRef = useRef(null)
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const observer = new window.IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
@@ -45,7 +45,6 @@ const ServiceDev2 = () => {
       successStory:
         "Previously scaled projects like Delta Lake and Apache Spark from internal projects to industry-trusted OSS used by 10,000+ companies.",
     },
-     
     {
       id: 3,
       icon: "📈",
@@ -65,75 +64,74 @@ const ServiceDev2 = () => {
   ]
 
   return (
-    <section className="samplebody">
-    <div className="servicedev2-container">
-      {/* Header Section */}
-       
-      {/* Services Grid Section */}
-      <section ref={sectionRef} className={`services-grid-section ${isVisible ? "services-visible" : ""}`}>
-        <div className="services-container">
-          <div className="services-grid">
-            {services.map((service, index) => (
-              <div key={service.id} className="service-card" style={{ animationDelay: `${index * 0.2}s` }}>
-                <div className="service-header">
-                  <div
-                    className="service-icon"
-                    style={{ backgroundColor: `${service.iconColor}15`, color: service.iconColor }}
-                  >
-                    {service.icon}
+    <section className="ser-otter-shirt-ics">
+      <div className="ser-elephant-shirt-ics">
+        {/* Services Grid Section */}
+        <section ref={sectionRef} className={`ser-tiger-shirt-ics ${isVisible ? "ser-tiger-visible-shirt-ics" : ""}`}>
+          <div className="ser-dolphin-shirt-ics">
+            <div className="ser-lion-shirt-ics">
+              {services.map((service, index) => (
+                <div
+                  key={service.id}
+                  className="ser-bear-shirt-ics"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <div className="ser-wolf-shirt-ics">
+                    <div
+                      className="ser-panda-shirt-ics"
+                      style={{ backgroundColor: `${service.iconColor}15`, color: service.iconColor }}
+                    >
+                      {service.icon}
+                    </div>
+                    <h3 className="ser-giraffe-shirt-ics">{service.title}</h3>
                   </div>
-                  <h3 className="service-title">{service.title}</h3>
+                  <p className="ser-fox-shirt-ics">{service.description}</p>
+                  <ul className="ser-horse-shirt-ics">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="ser-koala-shirt-ics">
+                        <span className="ser-leopard-shirt-ics" style={{ color: service.iconColor }}>
+                          ⭐
+                        </span>
+                        <span className="ser-zebra-shirt-ics">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="ser-whale-shirt-ics">
+                    <p className="ser-rabbit-shirt-ics">{service.successStory}</p>
+                  </div>
                 </div>
-
-                <p className="service-description">{service.description}</p>
-
-                <ul className="service-features">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="feature-item">
-                      <span className="feature-bullet" style={{ color: service.iconColor }}>
-                        ⭐
-                      </span>
-                      <span className="feature-text">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="success-story">
-                  <p className="success-text">{service.successStory}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="cta-content">
-          <h2 className="cta-heading">Ready to build a thriving developer community?</h2>
-          <p className="cta-description">
-            Join the growing number of projects that have transformed their developer experience with our advocacy
-            services.
-          </p>
-          <div className="cta-buttons">
-          <Link to="/support/Opengen">
-            <button className="cta-button primary">
-              Schedule a Consultation
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5 12h14m-7-7l7 7-7 7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            </Link>
+        {/* CTA Section */}
+        <section className="ser-monkey-shirt-ics">
+          <div className="ser-sheep-shirt-ics">
+            <h2 className="ser-camel-shirt-ics">Ready to build a thriving developer community?</h2>
+            <p className="ser-bison-shirt-ics">
+              Join the growing number of projects that have transformed their developer experience with our advocacy
+              services.
+            </p>
+            <div className="ser-cow-shirt-ics">
+              <Link to="/support/Opengen">
+                <button className="ser-cat-shirt-ics ser-cat-primary-shirt-ics">
+                  Schedule a Consultation
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5 12h14m-7-7l7 7-7 7"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </section>
   )
 }

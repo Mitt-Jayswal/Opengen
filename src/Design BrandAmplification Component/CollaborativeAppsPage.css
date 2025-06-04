@@ -51,8 +51,8 @@
 }
 
 .advocacy-icon {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -60,19 +60,6 @@
   margin-bottom: 24px;
   color: white;
 }
-
-.trust-icon {
-  background-color: #8c52ff;
-}
-
-.connect-icon {
-  background-color: #6264a7;
-}
-
-.insight-icon {
-  background-color: #7b83eb;
-}
-
 .advocacy-card-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -153,7 +140,9 @@
 }
 
 .advocacy-button:hover {
-  background-color: #5558a0;
+  background-color: #ffffff;
+   color: #e6c068;
+  border: 1px solid #000000;
 }
 
 /* Animation classes */

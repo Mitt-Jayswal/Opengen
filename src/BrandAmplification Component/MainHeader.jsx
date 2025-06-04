@@ -1,16 +1,14 @@
-"use client"
-
 import { useEffect, useRef } from "react"
 import "../Design BrandAmplification Component/MainBrandHeader.css"
 
 const MainBrandHeader = () => {
-  const headerRef = useRef(null)
+  const brandLionShirtIcsRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
-      if (headerRef.current) {
+      if (brandLionShirtIcsRef.current) {
         const scrollPosition = window.scrollY
-        headerRef.current.style.backgroundPositionY = `${scrollPosition * 0.5}px`
+        brandLionShirtIcsRef.current.style.backgroundPositionY = `${scrollPosition * 0.5}px`
       }
     }
 
@@ -19,9 +17,9 @@ const MainBrandHeader = () => {
   }, [])
 
   return (
-    <div className="page1-container" ref={headerRef}>
-      <div className="page1-overlay">
-        <div className="page1-content">
+    <div className="brand-lion-shirt-ics" ref={brandLionShirtIcsRef}>
+      <div className="brand-tiger-shirt-ics">
+        <div className="brand-elephant-shirt-ics">
           <h1>Brand Amplification</h1>
         </div>
       </div>
