@@ -1,4 +1,4 @@
-.call-open-end-support-container {
+.support-bear-shirt-ics {
   position: relative;
   width: 100%;
   height: 300px;
@@ -8,51 +8,49 @@
   overflow: hidden;
 }
 
-.call-open-end-support-overlay {
+.support-wolf-shirt-ics {
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 86, 145, 0.85);
+  background-color: rgba(0, 0, 0, 0.85); /* Black overlay */
   display: flex;
   align-items: center;
   padding-left: 10%;
 }
 
-.call-open-end-support-content {
+.support-fox-shirt-ics {
   width: 100%;
 }
 
-.call-open-end-support-heading {
-  color: white;
+.support-leopard-shirt-ics {
+  color: #FFD700; /* Gold, or use #fff for white */
   font-size: 2.5rem;
   font-weight: 500;
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
 @media (max-width: 768px) {
-  .call-open-end-support-overlay {
+  .support-wolf-shirt-ics {
     width: 70%;
     padding-left: 5%;
   }
-
-  .call-open-end-support-heading {
+  .support-leopard-shirt-ics {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .call-open-end-support-container {
+  .support-bear-shirt-ics {
     height: 200px;
   }
-
-  .call-open-end-support-overlay {
+  .support-wolf-shirt-ics {
     width: 100%;
   }
-
-  .call-open-end-support-heading {
+  .support-leopard-shirt-ics {
     font-size: 1.8rem;
   }
 }

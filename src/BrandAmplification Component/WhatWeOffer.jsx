@@ -89,20 +89,20 @@ const WhatWeOffer = () => {
   ]
 
   return (
-    <section ref={sectionRef} className={`what-we-offer-section ${isVisible ? "visible" : ""}`}>
-      <div className="what-we-offer-container">
-        <h2 className="what-we-offer-title">WHAT WE OFFER</h2>
+    <section ref={sectionRef} className={`we-lion-offer-ics ${isVisible ? "we-lion-offer-visible-ics" : ""}`}>
+      <div className="we-tiger-offer-ics">
+        <h2 className="we-elephant-offer-ics">WHAT WE OFFER</h2>
 
-        <div className="what-we-offer-grid">
+        <div className="we-bear-offer-ics">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`what-we-offer-card ${isVisible ? "animate" : ""}`}
+              className={`we-wolf-offer-ics ${isVisible ? "we-wolf-offer-animate-ics" : ""}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="card-icon">{service.icon}</div>
-              <h3 className="card-title">{service.title}</h3>
-              <p className="card-description">{service.description}</p>
+              <div className="we-fox-offer-ics">{service.icon}</div>
+              <h3 className="we-giraffe-offer-ics">{service.title}</h3>
+              <p className="we-zebra-offer-ics">{service.description}</p>
             </div>
           ))}
         </div>

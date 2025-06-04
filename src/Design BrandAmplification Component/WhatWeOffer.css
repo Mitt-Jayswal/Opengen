@@ -1,4 +1,4 @@
-.what-we-offer-section {
+.we-lion-offer-ics {
   background-color: #000000;
   padding: 80px 0;
   min-height: 100vh;
@@ -6,14 +6,14 @@
   align-items: center;
 }
 
-.what-we-offer-container {
+.we-tiger-offer-ics {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   width: 100%;
 }
 
-.what-we-offer-title {
+.we-elephant-offer-ics {
   font-size: 48px;
   font-weight: 800;
   color: #ffffff;
@@ -25,19 +25,19 @@
   transition: all 0.8s ease;
 }
 
-.what-we-offer-section.visible .what-we-offer-title {
+.we-lion-offer-visible-ics .we-elephant-offer-ics {
   opacity: 1;
   transform: translateY(0);
 }
 
-.what-we-offer-grid {
+.we-bear-offer-ics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
 }
 
-.what-we-offer-card {
+.we-wolf-offer-ics {
   background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
   border-radius: 20px;
   padding: 40px 30px;
@@ -54,17 +54,17 @@
   cursor: pointer;
 }
 
-.what-we-offer-card.animate {
+.we-wolf-offer-animate-ics {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
 
-.what-we-offer-card:hover {
+.we-wolf-offer-ics:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(30, 58, 138, 0.3);
 }
 
-.what-we-offer-card::before {
+.we-wolf-offer-ics::before {
   content: "";
   position: absolute;
   top: 0;
@@ -76,22 +76,22 @@
   transition: opacity 0.3s ease;
 }
 
-.what-we-offer-card:hover::before {
+.we-wolf-offer-ics:hover::before {
   opacity: 1;
 }
 
-.card-icon {
+.we-fox-offer-ics {
   margin-bottom: 20px;
   opacity: 0.9;
 }
 
-.card-icon svg {
+.we-fox-offer-ics svg {
   width: 40px;
   height: 40px;
   color: white;
 }
 
-.card-title {
+.we-giraffe-offer-ics {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -99,122 +99,122 @@
   line-height: 1.2;
 }
 
-.card-description {
+.we-zebra-offer-ics {
   font-size: 16px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
   flex-grow: 1;
-   font-family: 'Myriad', Arial, sans-serif;
+  font-family: 'Myriad', Arial, sans-serif;
 }
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
-  .what-we-offer-container {
+  .we-tiger-offer-ics {
     padding: 0 30px;
   }
 
-  .what-we-offer-grid {
+  .we-bear-offer-ics {
     gap: 25px;
   }
 
-  .what-we-offer-title {
+  .we-elephant-offer-ics {
     font-size: 42px;
     margin-bottom: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  .what-we-offer-section {
+  .we-lion-offer-ics {
     padding: 60px 0;
   }
 
-  .what-we-offer-container {
+  .we-tiger-offer-ics {
     padding: 0 20px;
   }
 
-  .what-we-offer-title {
+  .we-elephant-offer-ics {
     font-size: 36px;
     margin-bottom: 40px;
     letter-spacing: 1px;
   }
 
-  .what-we-offer-grid {
+  .we-bear-offer-ics {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  .what-we-offer-card {
+  .we-wolf-offer-ics {
     padding: 30px 25px;
     min-height: 250px;
   }
 
-  .card-title {
+  .we-giraffe-offer-ics {
     font-size: 20px;
     margin-bottom: 12px;
   }
 
-  .card-description {
+  .we-zebra-offer-ics {
     font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .what-we-offer-section {
+  .we-lion-offer-ics {
     padding: 50px 0;
   }
 
-  .what-we-offer-container {
+  .we-tiger-offer-ics {
     padding: 0 15px;
   }
 
-  .what-we-offer-title {
+  .we-elephant-offer-ics {
     font-size: 28px;
     margin-bottom: 30px;
   }
 
-  .what-we-offer-grid {
+  .we-bear-offer-ics {
     grid-template-columns: 1fr;
     gap: 15px;
   }
 
-  .what-we-offer-card {
+  .we-wolf-offer-ics {
     padding: 25px 20px;
     min-height: 220px;
     border-radius: 15px;
   }
 
-  .card-icon svg {
+  .we-fox-offer-ics svg {
     width: 35px;
     height: 35px;
   }
 
-  .card-title {
+  .we-giraffe-offer-ics {
     font-size: 18px;
     margin-bottom: 10px;
   }
 
-  .card-description {
+  .we-zebra-offer-ics {
     font-size: 13px;
     line-height: 1.4;
   }
 }
 
 @media (max-width: 360px) {
-  .what-we-offer-title {
+  .we-elephant-offer-ics {
     font-size: 24px;
   }
 
-  .what-we-offer-card {
+  .we-wolf-offer-ics {
     padding: 20px 15px;
     min-height: 200px;
   }
 
-  .card-title {
+  .we-giraffe-offer-ics {
     font-size: 16px;
   }
 
-  .card-description {
+  .we-zebra-offer-ics {
     font-size: 12px;
   }
 }

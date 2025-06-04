@@ -1,11 +1,11 @@
-.page1-container {
+.partner-lion-shirt-ics {
   position: relative;
   width: 100%;
   height: 300px;
   overflow: hidden;
 }
 
-.page1-bg-img {
+.partner-tiger-shirt-ics {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,52 +18,53 @@
   user-select: none;
 }
 
-.page1-overlay {
+.partner-bear-shirt-ics {
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 86, 145, 0.85);
+  background-color: rgba(0, 0, 0, 0.85);  
   display: flex;
   align-items: center;
   padding-left: 10%;
   z-index: 1;
 }
 
-.page1-content {
+.partner-elephant-shirt-ics {
   width: 100%;
 }
 
-.page1-content h1 {
-  color: white;
+.partner-giraffe-shirt-ics {
+  color: #FFD700;  
   font-size: 2.5rem;
   font-weight: 500;
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
 @media (max-width: 768px) {
-  .page1-overlay {
+  .partner-bear-shirt-ics {
     width: 70%;
     padding-left: 5%;
   }
 
-  .page1-content h1 {
+  .partner-giraffe-shirt-ics {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .page1-container {
+  .partner-lion-shirt-ics {
     height: 200px;
   }
 
-  .page1-overlay {
+  .partner-bear-shirt-ics {
     width: 100%;
   }
 
-  .page1-content h1 {
+  .partner-giraffe-shirt-ics {
     font-size: 1.8rem;
   }
 }

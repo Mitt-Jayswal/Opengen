@@ -2,13 +2,13 @@ import { useEffect, useRef } from "react";
 import "../Design Support Component/OpengenHelp.css";
 
 const MainBrandHeaderSupport = () => {
-  const headerRef = useRef(null);
+  const supportBearShirtIcsRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (headerRef.current) {
+      if (supportBearShirtIcsRef.current) {
         const scrollPosition = window.scrollY;
-        headerRef.current.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+        supportBearShirtIcsRef.current.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
       }
     };
 
@@ -17,10 +17,10 @@ const MainBrandHeaderSupport = () => {
   }, []);
 
   return (
-    <div className="call-open-end-support-container" ref={headerRef}>
-      <div className="call-open-end-support-overlay">
-        <div className="call-open-end-support-content">
-          <h1 className="call-open-end-support-heading">Get in Touch with OpenGen</h1>
+    <div className="support-bear-shirt-ics" ref={supportBearShirtIcsRef}>
+      <div className="support-wolf-shirt-ics">
+        <div className="support-fox-shirt-ics">
+          <h1 className="support-leopard-shirt-ics">Get in Touch with OpenGen</h1>
         </div>
       </div>
     </div>

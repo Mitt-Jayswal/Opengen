@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
 import "../Design Service Component/MainHeaderService.css";
-import servicemainImg from "../assets/servicemaini.png"; // Import image
+import servicemainImg from "../assets/servicemaini.png";  
 
 const MainHeaderPartner = () => {
-  const headerRef = useRef(null);
-  const imgRef = useRef(null);
+  const partnerLionShirtIcsRef = useRef(null);
+  const partnerTigerShirtIcsRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (imgRef.current) {
+      if (partnerTigerShirtIcsRef.current) {
         const scrollPosition = window.scrollY;
-        imgRef.current.style.objectPosition = `center ${50 + scrollPosition * 0.5}px`;
+        partnerTigerShirtIcsRef.current.style.objectPosition = `center ${50 + scrollPosition * 0.5}px`;
       }
     };
 
@@ -19,17 +19,17 @@ const MainHeaderPartner = () => {
   }, []);
 
   return (
-    <div className="page1-container" ref={headerRef}>
+    <div className="partner-lion-shirt-ics" ref={partnerLionShirtIcsRef}>
       <img
-        ref={imgRef}
+        ref={partnerTigerShirtIcsRef}
         src={servicemainImg}
         alt="OpenGen Services"
-        className="page1-bg-img"
+        className="partner-tiger-shirt-ics"
         draggable={false}
       />
-      <div className="page1-overlay">
-        <div className="page1-content">
-          <h1>OpenGen Services</h1>
+      <div className="partner-bear-shirt-ics">
+        <div className="partner-elephant-shirt-ics">
+          <h1 className="partner-giraffe-shirt-ics">OpenGen Services</h1>
         </div>
       </div>
     </div>
