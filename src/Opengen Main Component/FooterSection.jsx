@@ -5,6 +5,7 @@ import { RxLinkedinLogo } from "react-icons/rx";
 import { FcGoogle } from "react-icons/fc";
 import "../Design Opengen Component/Footer.css";
 import { Link } from "react-router-dom";
+import logore from '../assets/logore.jpg';
 
 const FooterSection = () => {
   return (
@@ -13,7 +14,9 @@ const FooterSection = () => {
         <div className="footer-content">
           {/* Logo Section */}
           <div className="footer-section logo-section">
-          <Link to="/"><h2 className="logo">LOGO</h2></Link>
+          <Link to="/"><h2 className="logo">
+            <img src={logore} alt="yeret" style={{width:'50px',height:'50px'}}/>
+          </h2></Link>
             <Link to="/"><p className="tagline">OpenGen</p></Link>
           </div>
 

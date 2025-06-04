@@ -5,6 +5,7 @@ import "../Design Opengen Component/Headernew.css"
 import { Link } from "react-router-dom"
 import square1 from '../assets/C.jpeg'
 import square2 from '../assets/M.jpeg'
+import logore from '../assets/logore.jpg'
  
 const Headernew = () => {
   const [displayText, setDisplayText] = useState("")
@@ -99,16 +100,9 @@ const Headernew = () => {
           <div className="harlem-left">
             <div className="soho-brand">
               <Link to="/" className="tribeca-logo">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
-                    fill={isDarkMode ? "#e6c068" : "#0078d4"}
-                    stroke={isDarkMode ? "#e6c068" : "#0078d4"}
-                    strokeWidth="1"
-                  />
-                </svg>
+                 <img src={logore} alt="keratey" style={{width:'50px',height:'50px'}}/>
                 <span className="chelsea-text" style={{ color: isDarkMode ? "#e6c068" : "#0078d4" }}>
-                  OpenGen
+                  
                 </span>
               </Link>
             </div>

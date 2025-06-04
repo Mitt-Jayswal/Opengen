@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { FaCode, FaBullhorn, FaHandshake, FaUsers, FaBookOpen, FaEnvelope } from "react-icons/fa";
 import "../Design Opengen Component/navbar.css";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.png';
+import logo from '../assets/logore.jpg';
 
 const OpenNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
