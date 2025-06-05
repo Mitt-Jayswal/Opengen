@@ -124,7 +124,7 @@ const OpenNavbar = () => {
           <ul className="mobile-nav-links">
             <li>
               <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaUsers style={{ marginRight: 10, color: "#0078d4" }} /> About Us
+                <FaUsers style={{ marginRight: 10, color: "#0078d4" }} /> <span style={{color:'black'}}>About Us</span>
               </Link>
             </li>
             <li className="mobile-dropdown">
@@ -149,17 +149,17 @@ const OpenNavbar = () => {
             </li>
             <li>
               <Link to="/community/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaUsers style={{ marginRight: 10, color: "#0078d4" }} /> Community Connect
+                <FaUsers style={{ marginRight: 10, color: "#0078d4" }} /> <span style={{color:'black'}}>Community Connect</span>
               </Link>
             </li>
             <li>
               <Link to="/learn/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaBookOpen style={{ marginRight: 10, color: "#0078d4" }} /> Learn
+                <FaBookOpen style={{ marginRight: 10, color: "#0078d4" }} /> <span style={{color:'black'}}>Learn</span>
               </Link>
             </li>
             <li>
               <Link to="/support/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaEnvelope style={{ marginRight: 10, color: "#0078d4" }} /> Contact Us
+                <FaEnvelope style={{ marginRight: 10, color: "#0078d4" }} /> <span style={{color:'black'}}>Contact Us</span>
               </Link>
             </li>
           </ul>

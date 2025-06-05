@@ -35,7 +35,7 @@
   color: #ffffff;
   margin: 0 0 24px 0;
   letter-spacing: -0.02em;
-  font-family: 'Myriad', Arial, sans-serif;
+  font-family: "Myriad", Arial, sans-serif;
 }
 
 .about-description {
@@ -43,7 +43,7 @@
   line-height: 1.6;
   color: #ffffff;
   margin-bottom: 20px;
-  font-family: 'Myriad', Arial, sans-serif;
+  font-family: "Myriad", Arial, sans-serif;
 }
 
 .achievements-list {
@@ -58,7 +58,7 @@
   margin-bottom: 10px;
   font-size: 16px;
   color: #ffffff;
-  font-family: 'Myriad', Arial, sans-serif;
+  font-family: "Myriad", Arial, sans-serif;
 }
 
 .achievement-icon {
@@ -134,9 +134,11 @@
   background-image: url("../assets/H.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: 1;
   border-radius: 8px;
-  opacity: 0.1;
+  opacity: 0.8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .image-collage {
@@ -152,12 +154,15 @@
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   z-index: 4;
+  border: 3px solid white;
 }
 
 .circle-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .top-circle {
@@ -187,6 +192,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e293b;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 5;
 }
 
 .arrow-icon {
@@ -216,7 +230,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(234, 179, 8, 0.3);
+  background-color: rgba(234, 179, 8, 0.2);
   z-index: 1;
 }
 
@@ -240,113 +254,143 @@
   }
 }
 
+/* Tablet and Mobile Layout */
 @media (max-width: 992px) {
-  .about-container {
-    flex-direction: column;
-  }
-
-  .about-content {
-    max-width: 100%;
-  }
-
-  .about-title {
-    font-size: 32px;
-  }
-
-  .about-visuals {
-    width: 100%;
-    height: 400px;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .background-square {
-    width: 320px;
-    height: 320px;
-  }
-}
-
-@media (max-width: 768px) {
   .about-section {
     padding: 60px 0;
   }
 
   .about-container {
-    padding: 0 20px;
+    flex-direction: column;
+    gap: 0; /* Remove gap, we'll handle spacing differently */
+    align-items: stretch;
+  }
+
+  .about-content {
+    max-width: 100%;
+    order: 1;
+    padding: 0 20px 60px 20px; /* Add bottom padding for separation */
+    background-color: #000000;
+    position: relative;
+    z-index: 10;
   }
 
   .about-title {
-    font-size: 28px;
+    font-size: 32px;
+    text-align: left; /* Keep left aligned like desktop */
+    margin-bottom: 20px;
   }
 
-  .about-description,
-  .achievement-item {
-    font-size: 15px;
+  .about-description {
+    text-align: left; /* Keep left aligned like desktop */
+    margin-bottom: 18px;
+  }
+
+  .achievements-list {
+    margin-bottom: 25px;
+  }
+
+  .explore-button {
+    display: inline-block; /* Keep inline like desktop */
+    margin-top: 15px;
   }
 
   .about-visuals {
+    width: 100%;
+    height: 400px;
+    order: 2;
+    max-width: none; /* Allow full width */
+    margin: 0;
+    position: relative;
+  }
+
+  .background-square {
+    width: 350px;
     height: 350px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.7;
   }
 
-  .top-circle {
-    width: 140px;
-    height: 140px;
-  }
-
-  .center-circle {
+  .arrow-container {
     width: 80px;
     height: 80px;
   }
 
+  .arrow-icon {
+    width: 28px;
+    height: 28px;
+  }
+
   .bottom-left-circle {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
+    bottom: 50px;
+    left: 15%;
   }
 
-  .bottom-right-circle {
-    width: 170px;
-    height: 170px;
+  .triangle-top {
+    border-width: 0 100px 100px 0;
   }
 
-  .background-square {
-    width: 280px;
-    height: 280px;
+  .triangle-bottom {
+    border-width: 100px 0 0 100px;
   }
 }
 
-@media (max-width: 576px) {
+/* Mobile Phones */
+@media (max-width: 768px) {
   .about-section {
-    padding: 40px 0;
+    padding: 50px 0;
+  }
+
+  .about-content {
+    padding: 0 15px 50px 15px;
   }
 
   .about-title {
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .achievement-item {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .achievements-list {
+    margin-bottom: 20px;
+  }
+
+  .explore-button {
+    font-size: 15px;
+    padding: 11px 22px;
   }
 
   .about-visuals {
-    height: 300px;
+    height: 380px; /* Increased height to accommodate larger background */
+    margin: 0 10px;
+    overflow: hidden; /* Ensure content stays within bounds */
   }
 
-  .top-circle {
-    width: 120px;
-    height: 120px;
+  .background-square {
+    width: 320px;
+    height: 320px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 12px;
   }
 
-  .center-circle {
+  .arrow-container {
     width: 70px;
     height: 70px;
-  }
-
-  .bottom-left-circle {
-    width: 130px;
-    height: 130px;
-    left: 10%;
-  }
-
-  .bottom-right-circle {
-    width: 140px;
-    height: 140px;
-    right: 5%;
   }
 
   .arrow-icon {
@@ -354,64 +398,207 @@
     height: 24px;
   }
 
-  .triangle-top,
-  .triangle-bottom {
+  .bottom-left-circle {
+    width: 120px;
+    height: 120px;
+    bottom: 45px;
+    left: 12%;
+  }
+
+  .triangle-top {
     border-width: 0 80px 80px 0;
   }
 
   .triangle-bottom {
     border-width: 80px 0 0 80px;
   }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 576px) {
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-content {
+    padding: 0 15px 40px 15px;
+  }
+
+  .about-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .about-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .achievement-item {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .achievement-icon {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .achievements-list {
+    margin-bottom: 18px;
+  }
+
+  .explore-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .about-visuals {
+    height: 340px; /* Adjusted for smaller screens */
+    margin: 0 5px;
+    overflow: hidden;
+  }
 
   .background-square {
-    width: 240px;
-    height: 240px;
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+  }
+
+  .arrow-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .bottom-left-circle {
+    width: 100px;
+    height: 100px;
+    bottom: 40px;
+    left: 10%;
+  }
+
+  .triangle-top {
+    border-width: 0 60px 60px 0;
+  }
+
+  .triangle-bottom {
+    border-width: 60px 0 0 60px;
   }
 }
 
-.background-square {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../assets/H.jpeg");
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  border-radius: 8px;
-  opacity: 0.8; /* Increased from 0.1 to 0.8 for better visibility */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+/* Extra Small Mobile Phones */
+@media (max-width: 480px) {
+  .about-content {
+    padding: 0 10px 35px 10px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-description {
+    font-size: 13px;
+  }
+
+  .achievement-item {
+    font-size: 13px;
+  }
+
+  .about-visuals {
+    height: 320px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .background-square {
+    width: 260px;
+    height: 260px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+  }
+
+  .arrow-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .bottom-left-circle {
+    width: 90px;
+    height: 90px;
+    bottom: 35px;
+    left: 8%;
+  }
+
+  .triangle-top {
+    border-width: 0 50px 50px 0;
+  }
+
+  .triangle-bottom {
+    border-width: 50px 0 0 50px;
+  }
 }
 
-/* Ensure images in circles are sharp and clear */
-.circle-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  image-rendering: -webkit-optimize-contrast; /* Improves image sharpness on webkit browsers */
-  image-rendering: crisp-edges; /* Modern browsers */
+/* Landscape Mobile Orientation */
+@media (max-width: 992px) and (orientation: landscape) {
+  .about-container {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .about-content {
+    flex: 1;
+    padding: 0 20px;
+    order: 1;
+  }
+
+  .about-visuals {
+    flex: 1;
+    order: 2;
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
 }
 
-/* Adjust the yellow overlay to be less intrusive */
-.yellow-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(234, 179, 8, 0.2); /* Reduced from 0.3 to 0.2 */
-  z-index: 1;
-}
+/* Ensure proper stacking and no overlap */
+@media (max-width: 992px) {
+  .about-content {
+    position: relative;
+    z-index: 10;
+    background-color: #000000;
+  }
 
-/* Add a subtle border to make images pop */
-.image-circle {
-  position: absolute;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  z-index: 4;
-  border: 3px solid white; /* Added white border */
-}
+  .about-visuals {
+    position: relative;
+    z-index: 1;
+  }
 
+  /* Ensure button doesn't overlap with visuals */
+  .explore-button {
+    position: relative;
+    z-index: 11;
+  }
+}

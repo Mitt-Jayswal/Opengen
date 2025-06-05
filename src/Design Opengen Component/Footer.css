@@ -2,7 +2,7 @@
   background-color: #000000;
   color: #ffffff;
   padding: 60px 0 30px 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   border-radius: 8px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .logo {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   font-weight: bold;
   color: #ffffff;
@@ -38,7 +38,7 @@
 }
 
 .tagline {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 28px;
   color: #ffffff;
   margin: 0;
@@ -59,7 +59,7 @@
   color: #cccccc;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0.2px;
   transition: color 0.3s ease;
@@ -104,7 +104,7 @@
   color: #cccccc;
   text-decoration: none;
   font-size: 13px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   transition: color 0.3s ease;
 }
 
@@ -116,7 +116,7 @@
 .developer-text {
   color: #cccccc;
   font-size: 13px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -142,13 +142,13 @@
   text-decoration: none;
   font-size: 22px;
   transition: all 0.3s ease;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .social-icon:hover {
   color: #ffffff;
   border-color: #ffffff;
-  background: rgba(255,255,255,0.10);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .copyright {
@@ -158,7 +158,7 @@
 .copyright p {
   color: #cccccc;
   font-size: 13px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
 }
 

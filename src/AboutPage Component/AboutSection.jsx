@@ -4,7 +4,6 @@ import "../Design About Component/AboutSection.css"
 import sample from '../assets/H.jpeg'
 import sample2 from '../assets/AIimage.png'
 import { Link } from "react-router-dom"
-
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
@@ -76,41 +75,18 @@ const AboutSection = () => {
           <Link to="/services/Opengen" className="explore-button">
             Explore Our Services
           </Link>
-          
         </div>
 
         <div className="about-visuals">
           <div className="visual-element triangle-top"></div>
-          
-
           <div className="background-square"></div>
 
           <div className="image-collage">
-            
-
-           
-              <div className="arrow-container">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon">
-                  <path
-                    d="M9 6L15 12L9 18"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
              
 
             <div className="image-circle bottom-left-circle">
-              <img
-               src={sample2}
-                alt="Tech team"
-                className="circle-img"
-              />
+              <img src={sample2} alt="Tech team" className="circle-img" />
             </div>
-
-            
           </div>
         </div>
       </div>
