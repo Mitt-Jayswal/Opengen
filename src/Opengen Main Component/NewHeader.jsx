@@ -312,7 +312,7 @@ const Headernew = () => {
                     <FaBookOpen />
                   </div>
                   <div className="chelsea-content">
-                    <h4>Documentation</h4>
+                    <h4>Brand Promoting</h4>
                     <p>Explore our guides</p>
                   </div>
                 </div>

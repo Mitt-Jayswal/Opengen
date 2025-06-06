@@ -7,6 +7,7 @@ import Newsletter from "./Opengen Main Component/Newletter";
  import ContactRedirectBox from "./Opengen Main Component/ContactredirectBox";
 import Services from "./Opengen Main Component/ServicesSection";
  import DeveloperEngagementRate from "./Opengen Main Component/DeveloperEngagementRate";
+ import EventsToast from "./Opengen Main Component/ToastEvent";
   
  import PartnersGoogle from "./Opengen Main Component/Partners";
  import AdvancedService from "./Opengen Main Component/AdvancedService";
@@ -65,6 +66,7 @@ function App() {
             <Routes>
                 <Route path="/" element={
                     <>
+                    <EventsToast/>
                      
                      
                     <Headernew/>
