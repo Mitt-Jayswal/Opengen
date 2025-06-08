@@ -1,13 +1,14 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom"
 import Blog3 from '../assets/Blog3.png'
+import blog4 from '../assets/blog4.png'
 
 const ArticleSection2 = () => {
   return (
     <div className="article-section-container">
       <div className="article-section-content">
         <div className="dev-advocacy-container">
-          <h2 className="dev-advocacy-title">Developer Advocacy Insights</h2>
+          <h2 className="dev-advocacy-title">United Nations Office for Digital and Emerging Technologies</h2>
           <p className="dev-advocacy-description">
             As I stepped into the United Nations headquarters in New York, I felt a surge of excitement and pride. The Open Source assembly was about to unfold, and I was honored to be a part of it.
           </p>
@@ -50,14 +51,14 @@ const ArticleSection2 = () => {
           <div className="article-card">
             <div className="article-image-container">
               <img
-                src="/"
+                src={blog4}
                 alt="OpenGen"
                 className="article-image"
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">United Nations Office for Digital and Emerging Technologies Digital Public Goods Alliance</h3>
-            <a href="#" className="article-link">
+            <h3 className="article-title">Grace Hopper Open Source Day 2024</h3>
+            <Link to="https://www.linkedin.com/pulse/grace-hopper-open-source-day-2024-vini-jaiswal-xbfmc?trk=news-guest_share-article" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -68,7 +69,7 @@ const ArticleSection2 = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
 

@@ -9,7 +9,7 @@ const ArticleSection = () => {
     <div className="article-section-container">
       <div className="article-section-content">
         <div className="dev-advocacy-container">
-          <h2 className="dev-advocacy-title">Developer Advocacy Insights</h2>
+          <h2 className="dev-advocacy-title">Data Council Austin</h2>
           <p className="dev-advocacy-description">
            I am building machine learning models, but my data is siloed”. “I need to ensure that the models I am building are based on reliable data, so my company can make quality decisions.
           </p>

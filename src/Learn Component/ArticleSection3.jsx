@@ -1,12 +1,13 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom";
+import blog5 from '../assets/blog5.png'
 
 const ArticleSection3 = () => {
   return (
     <div className="article-section-container">
       <div className="article-section-content">
         <div className="dev-advocacy-container">
-          <h2 className="dev-advocacy-title">Developer Advocacy Insights</h2>
+          <h2 className="dev-advocacy-title">Contributions to our Planet Earth... every act counts!</h2>
           <p className="dev-advocacy-description">
             Explore the latest trends, best practices, and strategies in developer advocacy. Our experts share insights
             to help you build stronger developer communities.
@@ -26,14 +27,14 @@ const ArticleSection3 = () => {
           <div className="article-card">
             <div className="article-image-container">
               <img
-                src="/"
+                src={blog5}
                 alt="OpenGen"
                 className="article-image"
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">United Nations Office for Digital and Emerging Technologies Digital Public Goods Alliance</h3>
-            <a href="#" className="article-link">
+            <h3 className="article-title">Contributions to our Planet Earth... every act counts!</h3>
+            <Link to="https://www.linkedin.com/pulse/contributions-our-planet-earth-every-act-counts-vini-jaiswal?trk=news-guest_share-article" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -44,20 +45,20 @@ const ArticleSection3 = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="article-card">
             <div className="article-image-container">
               <img
-                src="/"
+                src={blog5}
                 alt="OpenGen"
                 className="article-image"
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">United Nations Office for Digital and Emerging Technologies Digital Public Goods Alliance</h3>
-            <a href="#" className="article-link">
+            <h3 className="article-title">Contributions to our Planet Earth... every act counts!</h3>
+            <Link to="https://www.linkedin.com/pulse/contributions-our-planet-earth-every-act-counts-vini-jaiswal?trk=news-guest_share-article" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -68,7 +69,7 @@ const ArticleSection3 = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
 
