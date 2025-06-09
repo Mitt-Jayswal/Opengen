@@ -254,7 +254,7 @@
 .signin-button {
   background-color: #e6c068;
   color: #000000;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
 }
 
 .signin-button:hover {
@@ -400,7 +400,8 @@
 /* Mobile Action Buttons */
 .mobile-action-buttons {
   padding: 16px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #000000;
+  border: 1px solid #000000;
   background-color: #e6c068;
 }
 
@@ -417,9 +418,9 @@
 }
 
 .mobile-download-button {
-  border: 1px solid #0078d4;
-  color: #0078d4;
-  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #e6c068;
 }
 
 .mobile-download-button:hover {
@@ -427,9 +428,9 @@
 }
 
 .mobile-signin-button {
-  background-color: #0078d4;
-  color: white;
-  border: 1px solid #0078d4;
+  background-color: #e6c068;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .mobile-signin-button:hover {

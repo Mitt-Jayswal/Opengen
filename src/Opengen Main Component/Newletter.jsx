@@ -64,7 +64,7 @@ const Newsletter = () => {
       <div className="newsletter-content">
         <div className="newsletter-left">
           <div className="newsletter-icon-container">
-            <FaBell className="newsletter-icon" />
+            <FaBell className="newsletter-icon" style={{color:'#e6c068'}} />
           </div>
           <div className="newsletter-text">
             <h2 className="newsletter-title">Get our newsletter</h2>
@@ -126,7 +126,7 @@ const Newsletter = () => {
             </div>
             <div className="feature">
               <div className="feature-dot"></div>
-              <span>Monthly digest</span>
+              <span>Informative Blogs and Podcast</span>
             </div>
           </div>
         </div>

@@ -74,77 +74,7 @@
   flex-grow: 1;
 }
 
-.advocacy-subtitle {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 40px;
-  text-align: left;
-}
-
-.advocacy-banner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  height: 350px;
-}
-
-.advocacy-banner-image {
-  height: 100%;
-  overflow: hidden;
-}
-
-.advocacy-banner-image img {
-  width:500px;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.advocacy-banner-content {
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.advocacy-banner-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #252525;
-  margin-bottom: 16px;
-}
-
-.advocacy-banner-description {
-  font-size: 1rem;
-  color: #505050;
-  margin-bottom: 24px;
-  line-height: 1.6;
-}
-
-.advocacy-button {
-  background-color: #000000;
-  color: #e6c068;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  align-self: flex-start;
-}
-
-.advocacy-button:hover {
-  background-color: #ffffff;
-   color: #e6c068;
-  border: 1px solid #000000;
-}
-
+ 
 /* Animation classes */
 .animate-on-scroll {
   opacity: 0;

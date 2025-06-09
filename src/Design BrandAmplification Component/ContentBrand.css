@@ -55,14 +55,14 @@
 }
 
 .page2-collaboration {
-  background-color: #7096D1;
+  background-color: #ffffff;
   padding: 25px;
   border-radius: 8px;
   margin-top: 30px;
 }
 
 .page2-collaboration h3 {
-  color: #000000;
+  color: #e6c068;
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 1.4rem;
@@ -71,7 +71,7 @@
 .page2-collaboration p {
   line-height: 1.6;
   margin-bottom: 20px;
-  color: white;
+  color: #000000;
 }
 
 .page2-contact-button {
@@ -115,13 +115,13 @@
 
 .page2-text-container {
   flex: 1;
-  background-color: #081F5C;
+  background-color: #ffffff;
   padding: 25px;
   border-radius: 8px;
 }
 
 .page2-text-container h3 {
-  color: #ffffff;
+  color: #e6c068;
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 1.4rem;
@@ -130,7 +130,7 @@
 .page2-text-container p {
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Modern, mobile-optimized links section */
@@ -142,21 +142,24 @@
 }
 
 .page2-link {
-  color: #0078d4;
+  color: #000000;
   text-decoration: none;
   padding: 8px 15px;
-  border: 1px solid #0078d4;
+  border: 1px solid #000000;
   border-radius: 4px;
   transition: all 0.3s;
   font-size: 0.9rem;
   background: transparent;
   font-weight: 500;
   display: inline-block;
+  background-color: #e6c068;
+  font-weight: bold;
+  font-family: 'Myriad', Arial, sans-serif; 
 }
 
 .page2-link:hover {
   background-color: #000000;
-  color: white;
+  color:  #e6c068;
 }
 
 /* ---------- TABLET (≤900px) ---------- */
@@ -201,10 +204,10 @@
     text-align: center;
     box-sizing: border-box;
     font-size: 1.08rem;
-    border-radius: 999px; /* pill shape */
-    background: linear-gradient(90deg, #e3f0ff 0%, #cbe3ff 100%);
-    border: 2px solid #0078d4;
-    color: #0078d4;
+    border-radius: 8px; /* pill shape */
+    background: linear-gradient(90deg, #e6c068 0%, #e6c068 100%);
+    border: 2px solid #000000;
+    color: #000000;
     padding: 15px 0;
     margin: 0;
     transition: 
@@ -223,9 +226,9 @@
   .page2-link:active,
   .page2-link:hover,
   .page2-link:focus {
-    background: linear-gradient(90deg, #0078d4 0%, #005a9e 100%);
-    color: #fff;
-    border-color: #005a9e;
+    background: linear-gradient(90deg, #e6c068 0%, #e6c068 100%);
+    color: #000000;
+    border-color: #000000;
     box-shadow: 0 4px 20px rgba(0,120,212,0.18);
   }
 }

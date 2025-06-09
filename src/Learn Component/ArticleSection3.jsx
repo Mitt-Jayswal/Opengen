@@ -1,6 +1,7 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom";
 import blog5 from '../assets/blog5.png'
+import blog6 from '../assets/blog 1.png'
 
 const ArticleSection3 = () => {
   return (
@@ -51,13 +52,13 @@ const ArticleSection3 = () => {
           <div className="article-card">
             <div className="article-image-container">
               <img
-                src={blog5}
+                src={blog6}
                 alt="OpenGen"
                 className="article-image"
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">Contributions to our Planet Earth... every act counts!</h3>
+            <h3 className="article-title">Delta Lake 1.2.1 Annoucement</h3>
             <Link to="https://www.linkedin.com/pulse/contributions-our-planet-earth-every-act-counts-vini-jaiswal?trk=news-guest_share-article" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

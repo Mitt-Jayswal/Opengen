@@ -75,6 +75,7 @@ const AboutSection = () => {
           <Link to="/services/Opengen" className="explore-button">
             Explore Our Services
           </Link>
+          
         </div>
 
         <div className="about-visuals">

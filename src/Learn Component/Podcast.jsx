@@ -158,15 +158,15 @@ const Podcast = () => {
             <div className="info-features">
               <div className="feature-item">
                 <Code className="feature-icon" />
-                <span>Technical Deep Dives</span>
+                <span>Building Trust & Credibility</span>
               </div>
               <div className="feature-item">
                 <Users className="feature-icon" />
-                <span>Community Building</span>
+                <span>Community Engagement</span>
               </div>
               <div className="feature-item">
                 <TrendingUp className="feature-icon" />
-                <span>Growth Strategies</span>
+                <span>Thought Leadership</span>
               </div>
               <div className="feature-item">
                 <Globe className="feature-icon" />

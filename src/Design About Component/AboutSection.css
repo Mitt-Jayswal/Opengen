@@ -70,8 +70,8 @@
 
 .explore-button {
   display: inline-block;
-  background-color: #ffffff;
-  color: #e6c068;
+  background-color: #e6c068;
+  color: #000000;
   font-size: 16px;
   font-weight: 600;
   padding: 12px 24px;
@@ -82,8 +82,9 @@
 }
 
 .explore-button:hover {
-  background-color: #dc2626;
+  background-color: #e6c068;
   transform: translateY(-2px);
+  color: #000000;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 

@@ -79,10 +79,10 @@ const OpenNavbar = () => {
                       <FaBullhorn style={{ marginRight: 8, color: "#0078d4" }} />
                       Brand Amplification
                     </Link>
-                    <Link to="/partnerships/Opengen">
+                    {/* <Link to="/partnerships/Opengen">
                       <FaHandshake style={{ marginRight: 8, color: "#0078d4" }} />
                       Partnership
-                    </Link>
+                    </Link> */}
                   </div>
                 )}
               </li>
@@ -141,10 +141,10 @@ const OpenNavbar = () => {
                   <FaBullhorn style={{ marginRight: 10, color: "#0078d4" }} />
                   Brand Amplification
                 </Link>
-                <Link to="/partnerships/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                {/* <Link to="/partnerships/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   <FaHandshake style={{ marginRight: 10, color: "#0078d4" }} />
                   Partnership
-                </Link>
+                </Link> */}
               </div>
             </li>
             <li>

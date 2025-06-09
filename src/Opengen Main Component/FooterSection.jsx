@@ -32,9 +32,9 @@ const FooterSection = () => {
                 />
               </h2>
             </Link>
-            <Link to="/" onClick={handleNavClick}>
+            {/* <Link to="/" onClick={handleNavClick}>
               <p className="tagline">OpenGen</p>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Column 1 */}

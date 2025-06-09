@@ -13,7 +13,7 @@ const FreeMidCode = () => {
         </p>
         <div className="free-mid-card">
           <div className="free-mid-card-left">
-            <span className="free-mid-badge">OpenGen story</span>
+            {/* <span className="free-mid-badge">OpenGen story</span> */}
             <h2 className="free-mid-brand">OpenGen</h2>
             <p className="free-mid-quote">
               OpenGen has been a game-changer in our pursuit of operational excellence. By streamlining our processes and providing powerful tools, it has enhanced our team's productivity and the quality of our development outcomes. OpenGen empowers developers to work smarter,

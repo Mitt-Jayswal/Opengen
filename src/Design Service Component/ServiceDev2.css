@@ -97,10 +97,10 @@
   color: #475569;
 }
 .ser-whale-shirt-ics {
-  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #e6c068 0%, #e6c068 100%);
   border-radius: 12px;
   padding: 20px;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #000000;
 }
 .ser-rabbit-shirt-ics {
   font-size: 0.9rem;
@@ -112,7 +112,7 @@
 
 /* CTA Section */
 .ser-monkey-shirt-ics {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   padding: 80px 20px;
   text-align: center;
 }
@@ -152,9 +152,9 @@
   gap: 8px;
 }
 .ser-cat-primary-shirt-ics {
-  background-color: #ffffff;
-  color: #1e293b;
-  border-color: #ffffff;
+  background-color: #e6c068;
+  color: #000000;
+  border-color: #000000;
 }
 .ser-cat-primary-shirt-ics:hover {
   background-color: #f8fafc;

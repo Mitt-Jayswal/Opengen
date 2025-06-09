@@ -129,10 +129,10 @@ const Headernew = () => {
                         <FaBullhorn style={{ marginRight: 8, color: "#0078d4" }} />
                         Brand Amplification
                       </Link>
-                      <Link to="/partnerships/Opengen">
+                      {/* <Link to="/partnerships/Opengen">
                         <FaHandshake style={{ marginRight: 8, color: "#0078d4" }} />
                         Partnership
-                      </Link>
+                      </Link> */}
                     </div>
                   )}
                 </li>
@@ -200,10 +200,10 @@ const Headernew = () => {
                     <FaBullhorn style={{ marginRight: 10, color: "#ffffff" }} />
                     <span style={{color:'#ffffff'}}>Brand Amplification</span>
                   </Link>
-                  <Link to="/partnerships/Opengen" onClick={toggleMenu} className="lenox-link">
+                  {/* <Link to="/partnerships/Opengen" onClick={toggleMenu} className="lenox-link">
                     <FaHandshake style={{ marginRight: 10, color: "#ffffff" }} />
                     <span style={{color:'#ffffff'}}>Partnership</span>
-                  </Link>
+                  </Link> */}
                 </div>
               </li>
               <li>
@@ -331,7 +331,7 @@ const Headernew = () => {
         </div>
 
         {/* Theme Toggle */}
-        <div className="midtown-toggle">
+        {/* <div className="midtown-toggle">
           <div className="village-line"></div>
           <div className="williamsburg-buttons">
             <button
@@ -358,7 +358,7 @@ const Headernew = () => {
               </svg>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

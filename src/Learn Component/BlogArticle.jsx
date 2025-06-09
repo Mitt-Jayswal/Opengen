@@ -1,6 +1,6 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom"
-import Blog1 from '../assets/Blog 1.png'
+import Blog1 from '../assets/newblog.png'
 import Blog2 from '../assets/Blog2.png'
 
 
@@ -9,7 +9,7 @@ const ArticleSection = () => {
     <div className="article-section-container">
       <div className="article-section-content">
         <div className="dev-advocacy-container">
-          <h2 className="dev-advocacy-title">Data Council Austin</h2>
+          <h2 className="dev-advocacy-title">Data AI Summit 2025</h2>
           <p className="dev-advocacy-description">
            I am building machine learning models, but my data is siloed”. “I need to ensure that the models I am building are based on reliable data, so my company can make quality decisions.
           </p>
@@ -34,8 +34,8 @@ const ArticleSection = () => {
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">Data Lake 1.2.1 Launches with Performance Boosts and Spark Compatibility Fixes</h3>
-            <Link to="https://www.linkedin.com/pulse/delta-lake-121-release-announcement-vini-jaiswal/" className="article-link">
+            <h3 className="article-title">My Top Open Source Picks at Data + AI Summit 2025</h3>
+            <Link to="https://www.linkedin.com/pulse/my-top-open-source-picks-data-ai-summit-2025-vini-jaiswal-vkhrc/?trackingId=E%2BoW4IGzQO%2BiTuehN2H2Xw%3D%3D" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

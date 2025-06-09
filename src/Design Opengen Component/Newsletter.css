@@ -1,6 +1,6 @@
 /* Newsletter Component Styles */
 .newsletter-container {
-  background-color: #1a2b36;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 16px;
   padding: 40px;
@@ -70,7 +70,7 @@
 }
 
 .newsletter-icon-container {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ffffff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -78,6 +78,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+   
 
   /* Icon animation */
   transform: scale(0.8);
@@ -200,8 +201,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: #ffffff;
-  color: #1a2b36;
+  background-color: #e6c068;
+  color: #000000;
   border: none;
   border-radius: 30px;
   padding: 0 24px;
@@ -214,7 +215,7 @@
 }
 
 .newsletter-button:hover {
-  background-color: #f0f0f0;
+  background-color: #e6c068;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -259,14 +260,16 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: rgba(52, 211, 153, 0.1);
+  background-color: #e6c068;
   border-radius: 8px;
   padding: 16px;
   margin-top: 16px;
+  color: #000000;
+  font-weight: bolder;
 }
 
 .success-icon {
-  color: #34d399;
+  color: #ffffff;
   font-size: 20px;
   flex-shrink: 0;
 }
@@ -331,7 +334,7 @@
 .feature-dot {
   width: 8px;
   height: 8px;
-  background-color: #4d9fff;
+  background-color: #e6c068;
   border-radius: 50%;
 
   /* Dot pulse animation */

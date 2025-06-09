@@ -366,7 +366,7 @@
 .feature-icon {
   width: 30px;
   height: 30px;
-  color: #ffffff;
+  color: #e6c068;
 }
 
 .info-buttons {
@@ -390,8 +390,8 @@
 }
 
 .subscribe-btn {
-  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
-  color: #e6c068;
+  background: linear-gradient(135deg, #e6c068 0%, #e6c068 100%);
+  color: #000000;
 }
 
 .subscribe-btn:hover {
@@ -400,13 +400,13 @@
 }
 
 .explore-btn {
-  background: transparent;
-  color: #ffffff;
+  background-color: #e6c068;
+  color: #000000;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .explore-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #e6c068;
   border-color: rgba(255, 255, 255, 0.5);
 }
 

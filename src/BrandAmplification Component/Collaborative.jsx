@@ -73,29 +73,7 @@ const Collaborativepage = () => {
           </div>
         </div>
 
-        <h1 className="advocacy-subtitle animate-on-scroll">
-          Transform your strategy into developer advocacy excellence
-        </h1>
-
-        <div className="advocacy-banner animate-on-scroll">
-          <div className="advocacy-banner-image">
-            <img
-              src={image}
-              alt="Developer Advocacy Visualization"
-            />
-          </div>
-          <div className="advocacy-banner-content">
-            <h2 className="advocacy-banner-title">Get started building your developer advocacy program</h2>
-            <p className="advocacy-banner-description">
-              Strategic advocacy makes your developer relations more personal and impactful. Our experts make your
-              advocacy program more capable.
-            </p>
-            <Link to="/about/Opengen">
-            <button className="advocacy-button">Know More about OpenGen
-            </button>
-            </Link>
-          </div>
-        </div>
+         
       </div>
     </div>
   )
