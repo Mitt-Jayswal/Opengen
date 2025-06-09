@@ -3,6 +3,7 @@ import { FaCode, FaUsers, FaRocket, FaChartLine, FaTools, FaBullhorn, FaBook, Fa
 import "../Design Opengen Component/AdvancedService.css"
 import recimage from '../assets/rec image.avif'
 import recimage2 from '../assets/L.jpeg'
+import hackathonImage from '../assets/newimage.png'  
 import { Link } from "react-router-dom"
 
 const AdvancedService = () => {
@@ -88,12 +89,16 @@ const AdvancedService = () => {
             />
           </div>
 
-          {/* Top Right Container - Hackathons */}
+          {/* Top Right Container - Now an Image */}
           <div
             className={`rec-penguin-open-card rec-penguin-open-hackathon ${isVisible ? "rec-shark-open-animate" : ""}`}
-            style={{ animationDelay: "0.1s" }}
+            style={{ animationDelay: "0.1s", padding: 0, display: 'flex', alignItems: 'stretch', justifyContent: 'center' }}
           >
-            <h3 className="rec-walrus-open-card-title-big">Hackathons</h3>
+            <img
+              src={hackathonImage}
+              alt="Hackathon"
+              style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "16px" }}
+            />
           </div>
 
           {/* Top Far Right Container - Community */}
@@ -109,7 +114,7 @@ const AdvancedService = () => {
             className={`rec-penguin-open-card rec-penguin-open-content ${isVisible ? "rec-shark-open-animate" : ""}`}
             style={{ animationDelay: "0.3s" }}
           >
-            <h3 className="rec-walrus-open-card-title-big">Content</h3>
+            <h3 className="rec-walrus-open-card-title-big">Hackathons</h3>
           </div>
 
           {/* Bottom Far Right Container - Scale */}
@@ -145,8 +150,8 @@ const AdvancedService = () => {
         </div>
 
         <div className="rec-peacock-open-cta">
-        <Link to="/community/Opengen">
-          <button className="rec-flamingo-open-browse">Join Opengen Community →</button>
+          <Link to="/community/Opengen">
+            <button className="rec-flamingo-open-browse">Join Opengen Community →</button>
           </Link>
         </div>
       </div>

@@ -3,8 +3,8 @@ import { Menu, X } from "lucide-react"
 import { FaCode, FaBullhorn, FaHandshake, FaUsers, FaBookOpen, FaEnvelope } from "react-icons/fa"
 import "../Design Opengen Component/Headernew.css"
 import { Link } from "react-router-dom"
-import square1 from '../assets/C.jpeg'
-import square2 from '../assets/M.jpeg'
+import square1 from '../assets/newimage2.png'
+import square2 from '../assets/C.jpeg'
 import logore from '../assets/logore.jpg'
  
 const Headernew = () => {

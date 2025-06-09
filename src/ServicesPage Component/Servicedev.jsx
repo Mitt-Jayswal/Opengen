@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import "../Design Service Component/ServiceDev.css"
-import devimage from '../assets/newimage2.png'
+import devimage from '../assets/C.jpeg'
 import { Link } from "react-router-dom"
 const ServiceDev = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -46,7 +46,7 @@ const ServiceDev = () => {
                 alt="Developer working on code"
                 className="ser-hero-image-dev"
               />
-              {/* <div className="ser-hero-text-overlay-dev">
+              <div className="ser-hero-text-overlay-dev">
                 <h2 className="ser-hero-title-dev">Developer Advocacy for Growing Tech Companies</h2>
                 <p className="ser-hero-description-dev">
                   Build thriving developer ecosystems with comprehensive advocacy programs designed to scale your
@@ -57,7 +57,7 @@ const ServiceDev = () => {
                 
                 </button></Link>
                 
-              </div> */}
+              </div>
             </div>
           </div>
 
