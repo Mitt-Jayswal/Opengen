@@ -1,7 +1,7 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom";
 import blog5 from '../assets/blog5.png'
-import blog6 from '../assets/blog 1.png'
+import blog6 from '../assets/Blog 1.png'
 
 const ArticleSection3 = () => {
   return (
