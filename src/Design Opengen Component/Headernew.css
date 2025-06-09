@@ -697,9 +697,10 @@
 }
 
 .brooklyn-dark .greenwich-menu {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #ffffff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
+   
 }
 
 .queens-light .greenwich-menu {
@@ -717,7 +718,7 @@
 }
 
 .brooklyn-dark .greenwich-menu a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .queens-light .greenwich-menu a {
