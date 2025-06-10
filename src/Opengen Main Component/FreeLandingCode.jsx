@@ -20,7 +20,7 @@ const FreeMidCode = () => {
               fostering innovation and helping us achieve new heights in growth and success."
             </p>
             <Link to="/about/Opengen">
-              <button className="free-mid-btn">Read story</button>
+              <button className="free-mid-btn">Know About OpenGen Founder</button>
             </Link>
           </div>
           <div className="free-mid-card-right">
