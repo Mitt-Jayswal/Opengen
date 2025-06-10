@@ -636,6 +636,7 @@
   transition: color 0.2s;
   font-weight: 600;
   font-family: "Poppins", Arial, sans-serif;
+  
 }
 
 .brooklyn-dark .village-links a {
@@ -651,7 +652,7 @@
 }
 
 .queens-light .village-links a:hover {
-  color: #0078d4;
+  color: #e6c068;
 }
 
 /* Services Dropdown */

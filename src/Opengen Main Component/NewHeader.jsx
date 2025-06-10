@@ -122,11 +122,11 @@ const Headernew = () => {
                   {servicesDropdownOpen && (
                     <div className="greenwich-menu">
                       <Link to="/services/Opengen">
-                        <FaCode style={{ marginRight: 8, color: "#0078d4" }} />
+                        <FaCode style={{ marginRight: 8, color: "#e6c068" }} />
                         Developer Advocacy
                       </Link>
                       <Link to="/brandamplification/Opengen">
-                        <FaBullhorn style={{ marginRight: 8, color: "#0078d4" }} />
+                        <FaBullhorn style={{ marginRight: 8, color: "#e6c068" }} />
                         Brand Amplification
                       </Link>
                       {/* <Link to="/partnerships/Opengen">
@@ -166,7 +166,7 @@ const Headernew = () => {
             <div className="eastvillage-brand">
               <span
                 className="chelsea-text"
-                style={{ color: isDarkMode ? "#e6c068" : "#0078d4", fontFamily: "Poppins, Arial, sans-serif" }}
+                style={{ color: isDarkMode ? "#e6c068" : "#e6c068", fontFamily: "Poppins, Arial, sans-serif" }}
               >
                 OpenGen
               </span>
@@ -193,11 +193,11 @@ const Headernew = () => {
                 </button>
                 <div className={`hamilton-menu ${servicesDropdownOpen ? "open" : ""}`}>
                   <Link to="/services/Opengen" onClick={toggleMenu} className="lenox-link">
-                    <FaCode style={{ marginRight: 10, color: "#ffffff" }} />
+                    <FaCode style={{ marginRight: 10, color: "#e6c068" }} />
                     <span style={{color:'#ffffff'}}>Developer Advocacy</span>
                   </Link>
                   <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="lenox-link">
-                    <FaBullhorn style={{ marginRight: 10, color: "#ffffff" }} />
+                    <FaBullhorn style={{ marginRight: 10, color: "#e6c068" }} />
                     <span style={{color:'#ffffff'}}>Brand Amplification</span>
                   </Link>
                   {/* <Link to="/partnerships/Opengen" onClick={toggleMenu} className="lenox-link">

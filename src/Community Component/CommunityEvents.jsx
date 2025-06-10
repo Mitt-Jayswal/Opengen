@@ -4,6 +4,9 @@ import { SiGooglemeet } from "react-icons/si"
 import { Link } from "react-router-dom"
 import '../Design Community Component/CommunityEvents.css'
 import Event from '../assets/events.jpeg'
+import { RiLiveFill } from "react-icons/ri";
+import { MdLiveHelp } from "react-icons/md";
+import { MdInsights } from "react-icons/md";
 
 const AndyLaptopCommunity = () => {
   const [nityVisibleSections, setNityVisibleSections] = useState(new Set())
@@ -160,7 +163,7 @@ const AndyLaptopCommunity = () => {
           <div className="andy-section-header">
             <h2 className="laptop-section-title nity-events-heading">Upcoming Events</h2>
             <p className="andy-section-description nity-events-text">
-              Join us in our upcoming in-person or online events 💙
+              Join us in our upcoming in-person or online events 
             </p>
             <button className="nity-events-button">
               See the upcoming events
@@ -377,15 +380,21 @@ const AndyLaptopCommunity = () => {
               </p>
               <div className="nity-livestream-features">
                 <div className="andy-feature-item">
-                  <span className="laptop-feature-icon">🎥</span>
+                  <span className="laptop-feature-icon">
+                    <RiLiveFill style={{color:'#e6c068'}}/>
+                  </span>
                   <span>Weekly live sessions</span>
                 </div>
                 <div className="andy-feature-item">
-                  <span className="laptop-feature-icon">💬</span>
+                  <span className="laptop-feature-icon">
+                    <MdLiveHelp style={{color:'#e6c068'}}/>
+                  </span>
                   <span>Interactive Q&A</span>
                 </div>
                 <div className="andy-feature-item">
-                  <span className="laptop-feature-icon">📚</span>
+                  <span className="laptop-feature-icon">
+                    <MdInsights style={{color:'#e6c068'}}/>
+                  </span>
                   <span>Expert insights</span>
                 </div>
               </div>

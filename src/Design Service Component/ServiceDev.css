@@ -124,7 +124,7 @@
 
 .ser-hero-button-dev:hover {
   background-color: white;
-  color: #4b53bc;
+  color: #e6c068;
 }
 
 .ser-cards-grid-dev {
@@ -162,27 +162,27 @@
 }
 
 .ser-community-icon-dev {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #e6c068, #e6c068);
 }
 
 .ser-hackathon-icon-dev {
-  background: linear-gradient(135deg, #f093fb, #f5576c);
+  background: linear-gradient(135deg, #e6c068, #e6c068);
 }
 
 .ser-ambassador-icon-dev {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background: linear-gradient(135deg, #e6c068, #e6c068);
 }
 
 .ser-content-icon-dev {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  background: linear-gradient(135deg, #e6c068, #e6c068);
 }
 
 .ser-events-icon-dev {
-  background: linear-gradient(135deg, #fa709a, #fee140);
+  background: linear-gradient(135deg, #e6c068, #e6c068);
 }
 
 .ser-analytics-icon-dev {
-  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  background: linear-gradient(135deg, #e6c068, #e6c068);
 }
 
 .ser-card-title-dev {
@@ -208,19 +208,21 @@
   align-items: center;
   background: none;
   border: none;
-  color: #4b53bc;
+  color: #e6c068;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
   padding: 8px 12px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
   margin-top: auto;
   align-self: flex-start;
+  
 }
 
 .ser-learn-button-dev:hover {
-  background-color: rgba(75, 83, 188, 0.1);
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .ser-arrow-icon-dev {
@@ -229,7 +231,7 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  background-color: #e6c068;
+  background-color: #000000;
   border-radius: 50%;
   margin-left: 8px;
   color: white;

@@ -71,7 +71,7 @@
 }
 .ser-fox-shirt-ics {
   font-size: 1rem;
-  color: #64748b;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 24px;
 }
@@ -94,7 +94,7 @@
   flex-shrink: 0;
 }
 .ser-zebra-shirt-ics {
-  color: #475569;
+  color: #000000;
 }
 .ser-whale-shirt-ics {
   background: linear-gradient(135deg, #e6c068 0%, #e6c068 100%);

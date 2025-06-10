@@ -52,7 +52,7 @@ const ServiceDev = () => {
                   Build thriving developer ecosystems with comprehensive advocacy programs designed to scale your
                   technical community and drive adoption.
                 </p>
-                <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+                <Link to="/brandamplification/Opengen" style={{textDecoration:'none',color:'#e6c068'}}>
                 <button className="ser-hero-button-dev">Learn more
                 
                 </button></Link>

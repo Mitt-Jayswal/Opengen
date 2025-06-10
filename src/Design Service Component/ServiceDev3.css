@@ -111,7 +111,7 @@
 .servicedev3vo-overlay-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   line-height: 1;
 }
@@ -119,7 +119,7 @@
 .servicedev3vo-overlay-subtitle {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   line-height: 1;
 }
@@ -151,7 +151,7 @@
 
 .servicedev3vo-service-description {
   font-size: 0.95rem;
-  color: #64748b;
+  color: #000000;
   line-height: 1.5;
   margin: 0;
 }
@@ -198,14 +198,16 @@
 }
 
 .servicedev3vo-link-button.primary {
-  background-color: #000000;
-  color: #e6c068;
+  background-color: #e6c068;
+  color: #000000;
+  font-weight: bolder;
 }
 
 .servicedev3vo-link-button.primary:hover {
-  background-color: #2563eb;
+  background-color: #000000;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  color: #e6c068;
 }
 
 .servicedev3vo-link-button.secondary {
@@ -215,21 +217,21 @@
 }
 
 .servicedev3vo-link-button.secondary:hover {
-  background-color: #3b82f6;
+  background-color: #000000;
   color: #ffffff;
   transform: translateY(-2px);
 }
 
 .servicedev3vo-link-button.tertiary {
   background-color: transparent;
-  color: #3b82f6;
+  color: #000000;
   padding: 6px 0;
   border-radius: 0;
   font-weight: 400;
 }
 
 .servicedev3vo-link-button.tertiary:hover {
-  color: #2563eb;
+  color: #000000;
   background-color: rgba(59, 130, 246, 0.05);
   padding: 6px 10px;
   border-radius: 6px;
@@ -373,7 +375,7 @@
 
 /* Accessibility */
 .servicedev3vo-link-button:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #000000;
   outline-offset: 2px;
 }
 
