@@ -19,6 +19,14 @@ import {
 import "../Design About Component/AboutNewFeed.css"
 
 const AboutNewFeed = () => {
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -189,7 +197,7 @@ const AboutNewFeed = () => {
                 <div className="news-card-footer">
                   <span className="news-outlet">{item.outlet}</span>
                   <div className="read-more">
-                    <span className="read-more-text">Read More</span>
+                    <span className="read-more-text" onClick={handleNavClick}>Read More</span>
                     <ArrowRight className="read-more-icon" />
                   </div>
                 </div>

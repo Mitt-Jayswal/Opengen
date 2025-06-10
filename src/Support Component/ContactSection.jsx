@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
 import { FaUser, FaBuilding, FaEnvelope, FaComment, FaPaperPlane, FaArrowRight, FaCheckCircle } from "react-icons/fa"
 import { IoMdCall } from "react-icons/io"
@@ -7,6 +5,13 @@ import "../Design Support Component/ContactSection.css"
 import { Link } from "react-router-dom"
 
 const ContactPageSection = () => {
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -104,7 +109,7 @@ const ContactPageSection = () => {
           </ul>
 
           <div className="palm-buttons">
-            <Link to="/community/Opengen" className="camel-secondary">
+            <Link to="/community/Opengen" className="camel-secondary" onClick={handleNavClick}>
               Know more about OpenGen Events <FaArrowRight className="scorpion-arrow" />
             </Link>
           </div>

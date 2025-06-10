@@ -8,6 +8,14 @@ import square2 from '../assets/C.jpeg'
 import logore from '../assets/logore.jpg'
  
 const Headernew = () => {
+
+   const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [displayText, setDisplayText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -99,7 +107,7 @@ const Headernew = () => {
         <div className="staten-navbar">
           <div className="harlem-left">
             <div className="soho-brand">
-              <Link to="/" className="tribeca-logo">
+              <Link to="/" className="tribeca-logo" onClick={handleNavClick}>
                  <img src={logore} alt="keratey" style={{width:'50px',height:'50px'}}/>
                 <span className="chelsea-text" style={{ color: isDarkMode ? "#e6c068" : "#0078d4" }}>
                   
@@ -110,7 +118,7 @@ const Headernew = () => {
             <nav className="midtown-desktop">
               <ul className="village-links">
                 <li>
-                  <Link to="/about/Opengen">About</Link>
+                  <Link to="/about/Opengen" onClick={handleNavClick}>About</Link>
                 </li>
                 <li
                   className="williamsburg-services"
@@ -121,11 +129,11 @@ const Headernew = () => {
                   <button className="dumbo-dropdown">Services</button>
                   {servicesDropdownOpen && (
                     <div className="greenwich-menu">
-                      <Link to="/services/Opengen">
+                      <Link to="/services/Opengen" onClick={handleNavClick}>
                         <FaCode style={{ marginRight: 8, color: "#e6c068" }} />
                         Developer Advocacy
                       </Link>
-                      <Link to="/brandamplification/Opengen">
+                      <Link to="/brandamplification/Opengen" onClick={handleNavClick}>
                         <FaBullhorn style={{ marginRight: 8, color: "#e6c068" }} />
                         Brand Amplification
                       </Link>
@@ -137,20 +145,20 @@ const Headernew = () => {
                   )}
                 </li>
                 <li>
-                  <Link to="/community/Opengen">Community</Link>
+                  <Link to="/community/Opengen" onClick={handleNavClick}>Community</Link>
                 </li>
                 <li>
-                  <Link to="/learn/Opengen">Learn</Link>
+                  <Link to="/learn/Opengen" onClick={handleNavClick}>Learn</Link>
                 </li>
                 <li>
-                  <Link to="/support/Opengen">Contact Us</Link>
+                  <Link to="/support/Opengen" onClick={handleNavClick}>Contact Us</Link>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="nolita-right">
             <div className="flatiron-actions">
-              <Link to="/support/Opengen" className="meatpacking-signin">
+              <Link to="/support/Opengen" className="meatpacking-signin" onClick={handleNavClick}>
                 <FaEnvelope style={{ marginRight: 6, verticalAlign: "middle" }} />
                 Get in Touch
               </Link>
@@ -178,7 +186,7 @@ const Headernew = () => {
           <nav className="uppereast-nav">
             <ul className="upperwest-links">
               <li>
-                <Link to="/about/Opengen" onClick={toggleMenu} className="morningside-link">
+                <Link to="/about/Opengen" onClick={toggleMenu} className="morningside-link" >
                   <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> About Us
                 </Link>
               </li>
@@ -224,7 +232,7 @@ const Headernew = () => {
             </ul>
           </nav>
           <div className="riverside-actions">
-            <Link to="/support/Opengen" className="central-signin" onClick={toggleMenu}>
+            <Link to="/support/Opengen" className="central-signin" onClick={toggleMenu} >
               <FaEnvelope style={{ marginRight: 10, color: "#fff" }} />
               Get in Touch
             </Link>
@@ -263,7 +271,7 @@ const Headernew = () => {
               developer engagement.
             </p>
 
-            <Link to="/community/Opengen">
+            <Link to="/community/Opengen" onClick={handleNavClick}>
               <button className="columbus-button">
                 Explore Our Community
                 <svg

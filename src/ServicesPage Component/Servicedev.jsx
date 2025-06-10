@@ -3,6 +3,14 @@ import "../Design Service Component/ServiceDev.css"
 import devimage from '../assets/C.jpeg'
 import { Link } from "react-router-dom"
 const ServiceDev = () => {
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -52,7 +60,7 @@ const ServiceDev = () => {
                   Build thriving developer ecosystems with comprehensive advocacy programs designed to scale your
                   technical community and drive adoption.
                 </p>
-                <Link to="/brandamplification/Opengen" style={{textDecoration:'none',color:'#e6c068'}}>
+                <Link to="/brandamplification/Opengen" style={{textDecoration:'none',color:'#e6c068'}} onClick={handleNavClick}>
                 <button className="ser-hero-button-dev">Learn more
                 
                 </button></Link>
@@ -79,7 +87,7 @@ const ServiceDev = () => {
                 Create vibrant, engaged developer communities around your technology stack with strategic community
                 management, content creation, and ecosystem partnerships.
               </p>
-              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="ser-learn-button-dev">
                 Learn more
                 <span className="ser-arrow-icon-dev">
@@ -114,7 +122,7 @@ const ServiceDev = () => {
                 Design and execute high-impact hackathons, coding competitions, and technical challenges that showcase
                 your platform while building developer engagement.
               </p>
-              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="ser-learn-button-dev">
                 Learn more
                 <span className="ser-arrow-icon-dev">
@@ -163,7 +171,7 @@ const ServiceDev = () => {
                 Launch comprehensive ambassador programs with top-tier developers who become authentic advocates for
                 your technology and drive organic adoption.
               </p>
-              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="ser-learn-button-dev">
                 Learn more
                 <span className="ser-arrow-icon-dev">
@@ -226,7 +234,7 @@ const ServiceDev = () => {
                 Develop world-class technical documentation, tutorials, and educational content that accelerates
                 developer onboarding and reduces time-to-value.
               </p>
-              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="ser-learn-button-dev">
                 Learn more
                 <span className="ser-arrow-icon-dev">
@@ -276,7 +284,7 @@ const ServiceDev = () => {
                 Organize impactful developer conferences, meetups, and workshops that position your company as a thought
                 leader in the developer ecosystem.
               </p>
-              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="ser-learn-button-dev">
                 Learn more
                 <span className="ser-arrow-icon-dev">
@@ -325,7 +333,7 @@ const ServiceDev = () => {
                 Leverage data-driven insights to measure developer engagement, track adoption metrics, and optimize your
                 advocacy strategies for maximum impact.
               </p>
-              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="ser-learn-button-dev">
                 Learn more
                 <span className="ser-arrow-icon-dev">

@@ -20,6 +20,14 @@ const ScrollToTopLink = ({ children, to, className, ...props }) => {
 };
 
 const ContactRedirectBox = () => {
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
     const location=useLocation();
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
@@ -62,7 +70,7 @@ const ContactRedirectBox = () => {
               community insights, and strategic guidance to help you build thriving developer ecosystems that your
               customers will love.
             </p>
-            <ScrollToTopLink to="/support/Opengen" className="con-attbox-link-tact">
+            <Link to="/support/Opengen" className="con-attbox-link-tact" onClick={handleNavClick}>
               Contact our team
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -73,7 +81,7 @@ const ContactRedirectBox = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </ScrollToTopLink>
+            </Link>
           </div>
           <div className="con-attbox-image-container-tact">
             <div className="con-attbox-image-wrapper-tact">

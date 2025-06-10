@@ -6,6 +6,13 @@ import sample3 from '../assets/brandamplification.png'
 import { Link, useLocation } from "react-router-dom"
 
 const Services = () => {
+
+   const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
   const location =useLocation();
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
@@ -73,7 +80,7 @@ const Services = () => {
               <h3 className="card-heading">Developer Advocacy</h3>
               <p className="card-text">Explore comprehensive how-to articles, tutorials, and instructional content to enhance your development skills.</p>
               <button className="action-button">
-              <Link to="/services/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/services/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
                <span style={{color:"#000000",fontWeight:'bold'}}>Know More</span>
                 </Link>
                 
@@ -93,7 +100,7 @@ const Services = () => {
               <h3 className="card-heading">Brand Amplification</h3>
               <p className="card-text">Access adoption and training resources to quickly onboard and maximize your Teams experience.</p>
               <button className="action-button">
-               <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}}>
+               <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
                 <span style={{color:"#000000",fontWeight:'bold'}}>Know More</span>
                 </Link>
                  
@@ -113,7 +120,7 @@ const Services = () => {
               <h3 className="card-heading">Partnership</h3>
               <p className="card-text">Explore strategic partnership opportunities with us to leverage advanced solutions, foster industry leadership, and unlock new pathways for growth.</p>
               <button className="action-button">
-               <Link to="/partnerships/Opengen" style={{textDecoration:'none'}}>
+               <Link to="/support/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
                 <span style={{color:"#000000",fontWeight:'bold'}}>Know More</span>
                 </Link>
                  

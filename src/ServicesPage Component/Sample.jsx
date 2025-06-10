@@ -3,6 +3,14 @@ import "../Design Service Component/ServiceDev2.css"
 import { Link } from "react-router-dom"
 
 const ServiceDev2 = () => {
+
+   const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -114,7 +122,7 @@ const ServiceDev2 = () => {
               services.
             </p>
             <div className="ser-cow-shirt-ics">
-              <Link to="/support/Opengen">
+              <Link to="/support/Opengen" onClick={handleNavClick}>
                 <button className="ser-cat-shirt-ics ser-cat-primary-shirt-ics">
                   Schedule a Consultation
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

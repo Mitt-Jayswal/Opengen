@@ -4,6 +4,12 @@ import blog5 from '../assets/blog5.png'
 import blog6 from '../assets/Blog 1.png'
 
 const ArticleSection3 = () => {
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
   return (
     <div className="article-section-container">
       <div className="article-section-content">
@@ -18,7 +24,7 @@ const ArticleSection3 = () => {
             <Link to="https://www.youtube.com/watch?v=HWxPv3iSDTg&ab_channel=ViniJaiswal" style={{textDecoration:'none'}}>
             <button className="primary-button">Subscribe</button>
             </Link>
-            <Link to="/about/Opengen">
+            <Link to="/about/Opengen" onClick={handleNavClick}>
             <button className="secondary-button">Know More about OpenGen</button>
             </Link>
           </div>

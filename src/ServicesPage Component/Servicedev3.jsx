@@ -4,6 +4,14 @@ import lalalala from "../assets/storytelling.webp"
 import { Link } from "react-router-dom"
 
 const ServiceDev3 = () => {
+
+   const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -63,7 +71,7 @@ const ServiceDev3 = () => {
               </p>
 
               <div className="servicedev3vo-action-links">
-              <Link to="/brandamplification/Opengen">
+              <Link to="/brandamplification/Opengen" onClick={handleNavClick}>
                 <button className="servicedev3vo-link-button primary">
                   Get Started
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

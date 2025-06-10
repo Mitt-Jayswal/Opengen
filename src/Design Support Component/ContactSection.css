@@ -110,7 +110,7 @@
 }
 
 .camel-secondary:hover {
-  color: #4f46e5;
+  color: #e6c068;
   transform: translateX(2px);
 }
 
@@ -217,7 +217,7 @@
   gap: 6px;
   margin-bottom: 6px;
   font-size: 14px;
-  color: #64748b;
+  color: #000000;
   font-weight: 500;
 }
 
@@ -230,7 +230,7 @@
 .sahara-textarea {
   width: 100%;
   padding: 10px 14px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #000000;
   border-radius: 6px;
   font-size: 14px;
   background-color: #f8fafc;
@@ -241,7 +241,7 @@
 .dune-input:focus,
 .sahara-textarea:focus {
   outline: none;
-  border-color: #6366f1;
+  border-color: #000000;
   background-color: #fff;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
@@ -257,17 +257,17 @@
   width: 18px;
   height: 18px;
   margin: 0;
-  accent-color: #6366f1;
+  accent-color: #e6c068;
 }
 
 .mirage-terms {
   margin: 0;
   font-size: 14px;
-  color: #64748b;
+  color: #000000;
 }
 
 .camel-link {
-  color: #6366f1;
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
 }
@@ -277,8 +277,8 @@
 }
 
 .desert-submit {
-  background-color: #6366f1;
-  color: white;
+  background-color: #000000;
+  color: #e6c068;
   border: none;
   border-radius: 6px;
   padding: 12px 20px;
@@ -302,7 +302,7 @@
 }
 
 .desert-submit:not(:disabled):hover {
-  background-color: #4f46e5;
+  background-color: #000000;
   transform: translateY(-1px);
   box-shadow: 0 4px 6px rgba(99, 102, 241, 0.25);
 }

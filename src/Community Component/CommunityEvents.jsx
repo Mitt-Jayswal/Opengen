@@ -9,6 +9,16 @@ import { MdLiveHelp } from "react-icons/md";
 import { MdInsights } from "react-icons/md";
 
 const AndyLaptopCommunity = () => {
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
+
+  
   const [nityVisibleSections, setNityVisibleSections] = useState(new Set())
   const andySectionRefs = useRef([])
 
@@ -75,7 +85,7 @@ const AndyLaptopCommunity = () => {
                 <RiUserCommunityFill />
               </div>
               <h3 className="nity-action-title">Join our community</h3>
-              <Link href="/brandamplification/Opengen">
+              <Link to="/support/Opengen" onClick={handleNavClick}>
                 <button className="andy-action-button laptop-primary-button">
                   Want to Amplify your Brand ?
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +106,7 @@ const AndyLaptopCommunity = () => {
                 <SiGooglemeet />
               </div>
               <h3 className="nity-action-title">Host a Meetup</h3>
-              <LaptopScrollToTopLink to="/support/Opengen">
+              <Link to="/support/Opengen">
                 <button className="andy-action-button laptop-secondary-button">
                   Schedule a Call
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +119,7 @@ const AndyLaptopCommunity = () => {
                     />
                   </svg>
                 </button>
-              </LaptopScrollToTopLink>
+              </Link>
             </div>
           </div>
 

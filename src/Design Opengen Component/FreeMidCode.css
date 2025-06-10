@@ -89,12 +89,12 @@
 
 .free-mid-author-role {
   display: block;
-  color: #666;
+  color: #000000;
   font-size: 0.98rem;
 }
 
 .free-mid-btn {
-  background: #111;
+  background: #000000;
   color: #e6c068;
   border: none;
   border-radius: 8px;
@@ -104,7 +104,7 @@
   cursor: pointer;
   margin-top: 10px;
   transition: background 0.2s;
-  width: 150px;
+  width: 300px;
   height: 40px;
 }
 

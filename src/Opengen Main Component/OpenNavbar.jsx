@@ -6,6 +6,13 @@ import { Link } from "react-router-dom";
 import logo from '../assets/logore.jpg';
 
 const OpenNavbar = () => {
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const dropdownTimeout = useRef(null);
@@ -55,7 +62,7 @@ const OpenNavbar = () => {
           <nav className="desktop-nav">
             <ul className="nav-links">
               <li>
-                <Link to="/about/Opengen">About</Link>
+                <Link to="/about/Opengen" onClick={handleNavClick}>About</Link>
               </li>
               <li
                 className="services-dropdown-container"
@@ -71,11 +78,11 @@ const OpenNavbar = () => {
                 </button>
                 {servicesDropdownOpen && (
                   <div className="dropdown-content modern-dropdown">
-                    <Link to="/services/Opengen">
+                    <Link to="/services/Opengen" onClick={handleNavClick}>
                       <FaCode style={{ marginRight: 8, color: "#e6c068" }} />
                       Developer Advocacy
                     </Link>
-                    <Link to="/brandamplification/Opengen">
+                    <Link to="/brandamplification/Opengen" onClick={handleNavClick}>
                       <FaBullhorn style={{ marginRight: 8, color: "#e6c068" }} />
                       Brand Amplification
                     </Link>
@@ -87,20 +94,20 @@ const OpenNavbar = () => {
                 )}
               </li>
               <li>
-                <Link to="/community/Opengen">Community</Link>
+                <Link to="/community/Opengen" onClick={handleNavClick}>Community</Link>
               </li>
               <li>
-                <Link to="/learn/Opengen">Learn</Link>
+                <Link to="/learn/Opengen" onClick={handleNavClick}>Learn</Link>
               </li>
               <li>
-                <Link to="/support/Opengen">Contact Us</Link>
+                <Link to="/support/Opengen" onClick={handleNavClick}>Contact Us</Link>
               </li>
             </ul>
           </nav>
         </div>
         <div className="right-section">
           <div className="action-buttons">
-            <Link to="/support/Opengen" className="signin-button">
+            <Link to="/support/Opengen" className="signin-button" onClick={handleNavClick}>
               <FaEnvelope style={{ marginRight: 6, verticalAlign: "middle" }} />
               Get in Touch
             </Link>

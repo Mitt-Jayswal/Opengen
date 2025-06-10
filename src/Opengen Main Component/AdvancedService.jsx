@@ -7,6 +7,14 @@ import hackathonImage from '../assets/newimage.png'
 import { Link } from "react-router-dom"
 
 const AdvancedService = () => {
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -150,7 +158,7 @@ const AdvancedService = () => {
         </div>
 
         <div className="rec-peacock-open-cta">
-          <Link to="/community/Opengen">
+          <Link to="/community/Opengen" onClick={handleNavClick}>
             <button className="rec-flamingo-open-browse">Join Opengen Community →</button>
           </Link>
         </div>

@@ -5,6 +5,14 @@ import sample from '../assets/H.jpeg'
 import sample2 from '../assets/AIimage.png'
 import { Link } from "react-router-dom"
 const AboutSection = () => {
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -72,7 +80,7 @@ const AboutSection = () => {
             support projects that deserve visibility, adoption, and developer mindshare.
           </p>
 
-          <Link to="/services/Opengen" className="explore-button">
+          <Link to="/services/Opengen" className="explore-button" onClick={handleNavClick}>
             Explore Our Services
           </Link>
           
