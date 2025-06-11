@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { FaCode, FaUsers, FaRocket, FaChartLine, FaTools, FaBullhorn, FaBook, FaStar } from "react-icons/fa"
 import "../Design Opengen Component/AdvancedService.css"
-import recimage from '../assets/rec image.avif'
+import recimage from '../assets/recimagecopy.png'
 import recimage2 from '../assets/L.jpeg'
 import hackathonImage from '../assets/newimage.png'  
 import { Link } from "react-router-dom"
