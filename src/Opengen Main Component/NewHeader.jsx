@@ -176,7 +176,9 @@ const Headernew = () => {
                 className="chelsea-text"
                 style={{ color: isDarkMode ? "#e6c068" : "#e6c068", fontFamily: "Poppins, Arial, sans-serif" }}
               >
+              <Link to="/" style={{textDecoration:'none',color:'#e6c068'}} onClick={handleNavClick}>
                 OpenGen
+                </Link>
               </span>
             </div>
             <button className="westvillage-close" onClick={toggleMenu} type="button">
@@ -216,7 +218,7 @@ const Headernew = () => {
               </li>
               <li>
                 <Link to="/community/Opengen" onClick={toggleMenu} className="morningside-link">
-                  <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> Community Connect
+                  <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> Community
                 </Link>
               </li>
               <li>

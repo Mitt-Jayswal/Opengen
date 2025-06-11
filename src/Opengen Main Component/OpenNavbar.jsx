@@ -131,22 +131,22 @@ const OpenNavbar = () => {
           <ul className="mobile-nav-links">
             <li>
               <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaUsers style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'black'}}>About Us</span>
+                <FaUsers style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>About Us</span>
               </Link>
             </li>
             <li className="mobile-dropdown">
               <button className="mobile-dropdown-button" onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)} type="button">
                 <FaCode style={{ marginRight: 10, color: "#e6c068" }} />
-                Services
+                <span style={{color:'#ffffff'}}>Services</span>
               </button>
               <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
                 <Link to="/services/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   <FaCode style={{ marginRight: 10, color: "#e6c068" }} />
-                  Developer Advocacy
+                  <span style={{color:'#ffffff'}}>Developer Advocacy</span>
                 </Link>
                 <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   <FaBullhorn style={{ marginRight: 10, color: "#e6c068" }} />
-                  Brand Amplification
+                  <span style={{color:'#ffffff'}}>Brand Amplification</span>
                 </Link>
                 {/* <Link to="/partnerships/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   <FaHandshake style={{ marginRight: 10, color: "#0078d4" }} />
@@ -156,17 +156,17 @@ const OpenNavbar = () => {
             </li>
             <li>
               <Link to="/community/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaUsers style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'black'}}>Community Connect</span>
+                <FaUsers style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>Community</span>
               </Link>
             </li>
             <li>
               <Link to="/learn/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaBookOpen style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'black'}}>Learn</span>
+                <FaBookOpen style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>Learn</span>
               </Link>
             </li>
             <li>
               <Link to="/support/Opengen" onClick={toggleMenu} className="mobile-nav-link">
-                <FaEnvelope style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'black'}}>Contact Us</span>
+                <FaEnvelope style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>Contact Us</span>
               </Link>
             </li>
           </ul>

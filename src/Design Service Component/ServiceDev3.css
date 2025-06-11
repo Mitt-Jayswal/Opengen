@@ -256,149 +256,52 @@
   .servicedev3vo-content-wrapper {
     grid-template-columns: 1fr;
     gap: 0;
-    min-height: auto;
+    min-height: unset;
+    height: auto; /* Let content define height */
   }
-
   .servicedev3vo-image-container {
-    min-height: 250px;
-    order: -1;
+    min-height: 260px; /* Increase for mobile */
+    height: 260px;
+    width: 100%;
   }
-
   .servicedev3vo-main-image {
     width: 100%;
     height: 100%;
-    transform: translateX(0);
-  }
-
-  .servicedev3vo-overlay-title {
-    font-size: 1.5rem;
-  }
-
-  .servicedev3vo-overlay-subtitle {
-    font-size: 1.2rem;
+    object-fit: cover;
+    transform: none;
+    opacity: 1;
   }
 }
 
 @media (max-width: 768px) {
-  .servicedev3vo-main-section {
-    padding: 60px 0;
-  }
-
-  .servicedev3vo-container {
-    padding: 0 15px;
-  }
-
-  .servicedev3vo-main-title {
-    font-size: 2rem;
-  }
-
   .servicedev3vo-content-wrapper {
-    gap: 0;
+    min-height: unset;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   }
-
-  .servicedev3vo-text-content {
-    padding: 25px 20px;
-  }
-
-  .servicedev3vo-service-title {
-    font-size: 1.4rem;
-  }
-
-  .servicedev3vo-action-links {
-    flex-direction: column;
-  }
-
-  .servicedev3vo-link-button.primary,
-  .servicedev3vo-link-button.secondary {
-    width: 100%;
-    justify-content: center;
-  }
-
   .servicedev3vo-image-container {
-    min-height: 200px;
-  }
-
-  .servicedev3vo-image-overlay {
-    bottom: 20px;
-    left: 20px;
+    min-height: 220px;
+    height: 220px;
   }
 }
 
 @media (max-width: 480px) {
   .servicedev3vo-main-section {
-    padding: 40px 0;
+    padding: 32px 0;
   }
-
-  .servicedev3vo-main-title {
-    font-size: 1.8rem;
+  .servicedev3vo-container {
+    padding: 0 6px;
   }
-
-  .servicedev3vo-text-content {
-    padding: 20px 15px;
-    gap: 20px;
-  }
-
-  .servicedev3vo-service-title {
-    font-size: 1.2rem;
-  }
-
-  .servicedev3vo-service-description {
-    font-size: 0.9rem;
-  }
-
-  .servicedev3vo-section-title {
-    font-size: 1.1rem;
-  }
-
-  .servicedev3vo-link-button {
-    padding: 8px 14px;
-    font-size: 0.85rem;
-  }
-
   .servicedev3vo-image-container {
     min-height: 180px;
+    height: 180px;
+    border-radius: 10px;
   }
-
-  .servicedev3vo-overlay-title {
-    font-size: 1.3rem;
+  .servicedev3vo-main-image {
+    border-radius: 10px;
   }
-
-  .servicedev3vo-overlay-subtitle {
-    font-size: 1rem;
+  .servicedev3vo-content-wrapper {
+    border-radius: 8px;
   }
-
-  .servicedev3vo-image-overlay {
-    bottom: 15px;
-    left: 15px;
-  }
-}
-
-/* Accessibility */
-.servicedev3vo-link-button:focus {
-  outline: 2px solid #000000;
-  outline-offset: 2px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .servicedev3vo-main-section,
-  .servicedev3vo-header,
-  .servicedev3vo-content-wrapper,
-  .servicedev3vo-main-image,
-  .servicedev3vo-link-button {
-    transition: none;
-    animation: none;
-  }
-}
-
-/* Performance optimizations */
-.servicedev3vo-content-wrapper {
-  will-change: transform, opacity;
-}
-
-.servicedev3vo-main-image {
-  will-change: transform;
-}
-
-.servicedev3vo-link-button {
-  will-change: transform;
 }

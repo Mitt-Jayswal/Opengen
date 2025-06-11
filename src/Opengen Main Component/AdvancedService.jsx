@@ -1,3 +1,5 @@
+// AdvancedService.jsx
+
 import { useState, useEffect, useRef } from "react"
 import { FaCode, FaUsers, FaRocket, FaChartLine, FaTools, FaBullhorn, FaBook, FaStar } from "react-icons/fa"
 import "../Design Opengen Component/AdvancedService.css"
@@ -7,7 +9,6 @@ import hackathonImage from '../assets/newimage.png'
 import { Link } from "react-router-dom"
 
 const AdvancedService = () => {
-
   const handleNavClick = () => {
     window.scrollTo({
       top: 0,
@@ -97,7 +98,7 @@ const AdvancedService = () => {
             />
           </div>
 
-          {/* Top Right Container - Now an Image */}
+          {/* Top Right Container - Hackathon Image */}
           <div
             className={`rec-penguin-open-card rec-penguin-open-hackathon ${isVisible ? "rec-shark-open-animate" : ""}`}
             style={{ animationDelay: "0.1s", padding: 0, display: 'flex', alignItems: 'stretch', justifyContent: 'center' }}
@@ -117,7 +118,7 @@ const AdvancedService = () => {
             <h3 className="rec-walrus-open-card-title-big">Community</h3>
           </div>
 
-          {/* Bottom Right Container - Content */}
+          {/* Bottom Right Container - Hackathons */}
           <div
             className={`rec-penguin-open-card rec-penguin-open-content ${isVisible ? "rec-shark-open-animate" : ""}`}
             style={{ animationDelay: "0.3s" }}
@@ -125,7 +126,7 @@ const AdvancedService = () => {
             <h3 className="rec-walrus-open-card-title-big">Hackathons</h3>
           </div>
 
-          {/* Bottom Far Right Container - Scale */}
+          {/* Bottom Far Right Container - Scale Image */}
           <div
             className={`rec-penguin-open-card rec-penguin-open-red ${isVisible ? "rec-shark-open-animate" : ""}`}
             style={{ animationDelay: "0.4s" }}

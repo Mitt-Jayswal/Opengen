@@ -148,14 +148,18 @@
 }
 
 
+/* Update the mobile styles to ensure the image is fully visible */
 
+/* Update the mobile media query for better image display */
 @media (max-width: 768px) {
   .free-mid-wrapper {
     padding: 20px 4px 32px 4px;
   }
+
   .free-mid-title {
     font-size: 1.5rem;
   }
+
   .free-mid-card {
     max-width: 100%;
     border-radius: 12px;
@@ -163,91 +167,60 @@
     min-height: unset;
     text-align: left;
   }
-  .free-mid-card-left,
-  .free-mid-card-right {
-    padding: 18px 12px 12px 12px;
-    border-radius: 0;
-  }
-  .free-mid-card-right {
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 12px;
-    background: transparent !important;
-    position: relative;
-  }
-  .free-mid-img {
-    max-height: 180px;
-    min-height: 120px;
-    width: 100%;
-    border-radius: 0 0 12px 12px;
-    opacity: 1 !important; /* FULLY VISIBLE */
-    mix-blend-mode: normal !important; /* Remove blend mode for clarity */
-    box-shadow: none;
-    display: block;
-    object-fit: cover;
-  }
-  .free-mid-card-right::after {
-    background: none !important; /* No overlay on mobile */
-    border-radius: 0 0 12px 12px;
-    content: none !important;
-  }
-}
 
-
-/* --- RESPONSIVE STYLES --- */
-@media (max-width: 900px) {
-  .free-mid-card {
-    flex-direction: column;
-    min-height: unset;
-    text-align: left;
-  }
-  .free-mid-card-left, .free-mid-card-right {
-    padding: 32px;
-    border-radius: 0;
-  }
-  .free-mid-card-right {
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 32px;
-    background: transparent !important;
-  }
-  .free-mid-img {
-    border-radius: 0 0 20px 20px;
-    max-height: 220px;
-    width: 100%;
-    opacity: 0.92;
-    mix-blend-mode: multiply;
-  }
-  .free-mid-card-right::after {
-    border-radius: 0 0 20px 20px;
-    background: linear-gradient(120deg, rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.18) 100%);
-  }
-}
-
-@media (max-width: 600px) {
-  .free-mid-wrapper {
-    padding: 20px 4px 32px 4px;
-  }
-  .free-mid-title {
-    font-size: 1.5rem;
-  }
-  .free-mid-card {
-    max-width: 100%;
-    border-radius: 12px;
-  }
   .free-mid-card-left {
-    padding: 18px 12px 12px 12px;
+    padding: 24px 16px 16px 16px;
+    border-radius: 0;
   }
+
   .free-mid-card-right {
-    padding: 0 0 12px 0;
+    padding: 0;
+    height: 220px; /* Fixed height for mobile */
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
   }
+
   .free-mid-img {
-    max-height: 160px;
+    height: 100%;
+    width: 100%;
+    min-height: 220px;
     border-radius: 0 0 12px 12px;
-    opacity: 0.95;
+    opacity: 1; /* Full opacity for better visibility */
+    mix-blend-mode: normal; /* Remove blend mode for clarity */
+    object-fit: cover;
+    object-position: center; /* Center the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
+
   .free-mid-card-right::after {
-    border-radius: 0 0 12px 12px;
-    background: linear-gradient(120deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.16) 100%);
+    content: none; /* Remove overlay on mobile */
+  }
+
+  .free-mid-btn {
+    width: 100%; /* Full width button on mobile */
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+}
+
+/* Add a smaller screen breakpoint for even better mobile optimization */
+@media (max-width: 480px) {
+  .free-mid-card-right {
+    height: 180px; /* Slightly smaller but still visible */
+  }
+
+  .free-mid-img {
+    min-height: 180px;
+  }
+
+  .free-mid-brand {
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+  }
+
+  .free-mid-quote {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
   }
 }

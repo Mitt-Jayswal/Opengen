@@ -1,3 +1,5 @@
+/* AdvancedService.css */
+
 .rec-lion-open-section {
   background-color: #000000;
   padding: 60px 0;
@@ -40,6 +42,7 @@
   transform: translateY(80px);
   transition: all 1s ease;
   overflow: hidden;
+  
 }
 
 .rec-shrimp-open-img {
@@ -64,6 +67,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 .rec-penguin-open-card:hover {
@@ -84,8 +88,10 @@
 }
 
 .rec-penguin-open-red {
-   
   padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .rec-walrus-open-card-title-big {
@@ -213,191 +219,61 @@
     font-size: 20px;
   }
 }
+/* Update the mobile media queries to increase image container heights */
 
-/* --- MOBILE OPTIMIZATION --- */
 @media (max-width: 768px) {
-  .rec-tiger-open-container {
-    padding: 0 8px;
-  }
-
-  .rec-elephant-open-title {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  .rec-giraffe-open-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 30px;
-    height: auto;
-  }
-
   .rec-whale-open-main {
     width: 100%;
-    height: 180px;
-    min-height: 120px;
-    border-radius: 12px;
+    height: 280px; /* Increased from 200px */
+    min-height: 240px; /* Increased from 140px */
+    border-radius: 14px;
     margin-bottom: 0;
-  }
-
-  .rec-shrimp-open-img {
-    border-radius: 12px;
-  }
-
-  .rec-penguin-open-card {
-    min-height: 90px;
-    padding: 28px 12px;
-    border-radius: 12px;
-    font-size: 17px;
-    margin-bottom: 0;
-    width: 100%;
-    font-weight: 600;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    /* Make boxes bigger and more tappable */
-    flex: 1 1 120px;
   }
 
   .rec-penguin-open-hackathon,
   .rec-penguin-open-community,
   .rec-penguin-open-content,
   .rec-penguin-open-red {
-    min-height: 110px;
+    min-height: 220px; /* Increased from 140px */
     font-size: 18px;
-    border-radius: 12px;
+    border-radius: 14px;
   }
 
   .rec-penguin-open-red {
     padding: 0;
-    min-height: 110px;
+    min-height: 220px; /* Increased from 140px */
     display: flex;
     align-items: stretch;
     justify-content: center;
   }
 
   .rec-scale-open-full-img {
-    border-radius: 12px;
+    border-radius: 14px;
     width: 100%;
     height: 100%;
-    min-height: 110px;
+    min-height: 220px; /* Increased from 140px */
     object-fit: cover;
-  }
-
-  .rec-walrus-open-card-title-big {
-    font-size: 18px;
-  }
-
-  .rec-eagle-open-services {
-    margin-top: 20px;
-  }
-
-  .rec-hawk-open-services-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .rec-falcon-open-service-item {
-    padding: 12px;
-    gap: 10px;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-
-  .rec-owl-open-service-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 17px;
-    border-radius: 7px;
-  }
-
-  .rec-sparrow-open-service-title {
-    font-size: 13px;
-  }
-
-  .rec-robin-open-service-desc {
-    font-size: 11.5px;
-  }
-
-  .rec-peacock-open-cta {
-    margin-top: 18px;
-  }
-
-  .rec-flamingo-open-browse {
-    padding: 12px 20px;
-    font-size: 15px;
-    border-radius: 7px;
   }
 }
 
 @media (max-width: 480px) {
-  .rec-lion-open-section {
-    padding: 30px 0;
-  }
-
-  .rec-elephant-open-title {
-    font-size: 18px;
-  }
-
   .rec-whale-open-main {
-    height: 120px;
-    min-height: 80px;
-    border-radius: 10px;
-  }
-
-  .rec-shrimp-open-img {
-    border-radius: 10px;
-  }
-
-  .rec-penguin-open-card {
-    min-height: 70px;
-    padding: 18px 8px;
-    border-radius: 9px;
-    font-size: 15px;
+    height: 220px; /* Increased from 140px */
+    min-height: 180px; /* Increased from 100px */
+    border-radius: 12px;
   }
 
   .rec-penguin-open-hackathon,
   .rec-penguin-open-community,
   .rec-penguin-open-content,
   .rec-penguin-open-red {
-    min-height: 80px;
+    min-height: 180px; /* Increased from 100px */
     font-size: 16px;
-    border-radius: 9px;
+    border-radius: 12px;
   }
 
   .rec-scale-open-full-img {
-    border-radius: 9px;
-    min-height: 80px;
-  }
-
-  .rec-walrus-open-card-title-big {
-    font-size: 15px;
-  }
-
-  .rec-falcon-open-service-item {
-    padding: 9px;
-    gap: 8px;
-    border-radius: 7px;
-    font-size: 13px;
-  }
-
-  .rec-owl-open-service-icon {
-    width: 24px;
-    height: 24px;
-    font-size: 13px;
-    border-radius: 5px;
-  }
-
-  .rec-sparrow-open-service-title {
-    font-size: 12px;
-  }
-
-  .rec-robin-open-service-desc {
-    font-size: 10px;
-  }
-
-  .rec-flamingo-open-browse {
-    padding: 9px 14px;
-    font-size: 13px;
-    border-radius: 5px;
+    border-radius: 12px;
+    min-height: 180px; /* Increased from 100px */
   }
 }
