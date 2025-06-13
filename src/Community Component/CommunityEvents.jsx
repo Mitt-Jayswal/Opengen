@@ -190,12 +190,12 @@ const AndyLaptopCommunity = () => {
           </div>
 
           <div className="laptop-events-container">
-            {/* Full-width image */}
             <img
-              src={Event}
-              alt="Data + AI Summit 2025"
-              className="andy-event-image" style={{width:'1200px',height:'500px'}}
-            />
+  src={Event}
+  alt="Data + AI Summit 2025"
+  className="andy-event-image"
+/>
+
 
             {/* Event content */}
             <div className="nity-event-content">
