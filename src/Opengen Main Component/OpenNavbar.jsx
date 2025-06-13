@@ -123,14 +123,20 @@ const OpenNavbar = () => {
           <div className="mobile-logo">
             <span className="logo-text" style={{ color: "#e6c068", fontFamily: "Poppins, Arial, sans-serif" }}>OpenGen</span>
           </div>
-          <button className="close-sidebar" onClick={toggleMenu} type="button">
+          <button className="close-sidebar" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} type="button">
             <X size={24} />
           </button>
         </div>
         <nav className="mobile-nav">
           <ul className="mobile-nav-links">
             <li>
-              <Link to="/about/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/about/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="mobile-nav-link">
                 <FaUsers style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>About Us</span>
               </Link>
             </li>
@@ -140,11 +146,17 @@ const OpenNavbar = () => {
                 <span style={{color:'#ffffff'}}>Services</span>
               </button>
               <div className={`mobile-dropdown-content ${servicesDropdownOpen ? "open" : ""}`}>
-                <Link to="/services/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/services/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="mobile-dropdown-link">
                   <FaCode style={{ marginRight: 10, color: "#e6c068" }} />
                   <span style={{color:'#ffffff'}}>Developer Advocacy</span>
                 </Link>
-                <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
+                <Link to="/brandamplification/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="mobile-dropdown-link">
                   <FaBullhorn style={{ marginRight: 10, color: "#e6c068" }} />
                   <span style={{color:'#ffffff'}}>Brand Amplification</span>
                 </Link>
@@ -155,24 +167,36 @@ const OpenNavbar = () => {
               </div>
             </li>
             <li>
-              <Link to="/community/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/community/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="mobile-nav-link">
                 <FaUsers style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>Community</span>
               </Link>
             </li>
             <li>
-              <Link to="/learn/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/learn/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="mobile-nav-link">
                 <FaBookOpen style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>Learn</span>
               </Link>
             </li>
             <li>
-              <Link to="/support/Opengen" onClick={toggleMenu} className="mobile-nav-link">
+              <Link to="/support/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="mobile-nav-link">
                 <FaEnvelope style={{ marginRight: 10, color: "#e6c068" }} /> <span style={{color:'#ffffff'}}>Contact Us</span>
               </Link>
             </li>
           </ul>
         </nav>
         <div className="mobile-action-buttons">
-          <Link to="/support/Opengen" className="mobile-signin-button" onClick={toggleMenu}>
+          <Link to="/support/Opengen" className="mobile-signin-button" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }}>
             <FaEnvelope style={{ marginRight: 10, color: "#fff" }} />
             Get in Touch
           </Link>

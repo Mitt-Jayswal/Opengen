@@ -188,7 +188,10 @@ const Headernew = () => {
           <nav className="uppereast-nav">
             <ul className="upperwest-links">
               <li>
-                <Link to="/about/Opengen" onClick={toggleMenu} className="morningside-link" >
+                <Link to="/about/Opengen" onClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="morningside-link" >
                   <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> About Us
                 </Link>
               </li>
@@ -202,11 +205,17 @@ const Headernew = () => {
                   <span style={{color:'#ffffff'}}>Services</span>
                 </button>
                 <div className={`hamilton-menu ${servicesDropdownOpen ? "open" : ""}`}>
-                  <Link to="/services/Opengen" onClick={toggleMenu} className="lenox-link">
+                  <Link to="/services/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="lenox-link">
                     <FaCode style={{ marginRight: 10, color: "#e6c068" }} />
                     <span style={{color:'#ffffff'}}>Developer Advocacy</span>
                   </Link>
-                  <Link to="/brandamplification/Opengen" onClick={toggleMenu} className="lenox-link">
+                  <Link to="/brandamplification/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="lenox-link">
                     <FaBullhorn style={{ marginRight: 10, color: "#e6c068" }} />
                     <span style={{color:'#ffffff'}}>Brand Amplification</span>
                   </Link>
@@ -217,24 +226,36 @@ const Headernew = () => {
                 </div>
               </li>
               <li>
-                <Link to="/community/Opengen" onClick={toggleMenu} className="morningside-link">
+                <Link to="/community/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="morningside-link">
                   <FaUsers style={{ marginRight: 10, color: "#ffffff" }} /> Community
                 </Link>
               </li>
               <li>
-                <Link to="/learn/Opengen" onClick={toggleMenu} className="morningside-link">
+                <Link to="/learn/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="morningside-link">
                   <FaBookOpen style={{ marginRight: 10, color: "#ffffff" }} /> Learn
                 </Link>
               </li>
               <li>
-                <Link to="/support/Opengen" onClick={toggleMenu} className="morningside-link">
+                <Link to="/support/Opengen" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} className="morningside-link">
                   <FaEnvelope style={{ marginRight: 10, color: "#ffffff" }} /> Contact Us
                 </Link>
               </li>
             </ul>
           </nav>
           <div className="riverside-actions">
-            <Link to="/support/Opengen" className="central-signin" onClick={toggleMenu} >
+            <Link to="/support/Opengen" className="central-signin" nClick={e => {
+    toggleMenu(e);
+    handleNavClick(e);
+  }} >
               <FaEnvelope style={{ marginRight: 10, color: "#fff" }} />
               Get in Touch
             </Link>
