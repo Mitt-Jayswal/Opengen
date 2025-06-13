@@ -41,7 +41,7 @@ const FooterSection = () => {
           <div className="footer-section">
             <ul className="footer-links">
               <li>
-                <Link to="/about/Opengen" nClick={handleNavClick}>
+                <Link to="/about/Opengen" onClick={handleNavClick}>
                   About OpenGen
                 </Link>
               </li>
@@ -89,7 +89,7 @@ const FooterSection = () => {
             </ul>
           </div>
 
-          {/* Column 3 */}o
+          {/* Column 3 */}
           <div className="footer-section">
             <ul className="footer-links">
               <li>

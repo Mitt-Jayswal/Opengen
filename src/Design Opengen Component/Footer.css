@@ -164,85 +164,93 @@
 }
 
 /* Mobile Responsive */
-@media (max-width: 900px) {
+  @media (max-width: 786px) {
   .footer-content {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-  }
-  .logo-section {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 40px 0 20px 0;
-  }
-
-  .footer-content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 18px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    justify-items: center;
+    align-items: start;
   }
 
   .logo-section {
     grid-column: 1 / -1;
+    justify-self: center;
     text-align: center;
-    margin-bottom: 20px;
-    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .logo img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer-section {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    padding: 12px 8px;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .footer-links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .footer-links li {
+    margin-bottom: 0;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    padding: 2px 0;
+  }
+
+  .footer-divider {
+    margin: 18px 0;
   }
 
   .footer-bottom {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
     text-align: center;
-    gap: 15px;
-  }
-
-  .footer-left,
-  .footer-right {
-    justify-self: center;
-  }
-
-  .footer-center {
-    order: -1;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    text-align: center;
-  }
-
-  .logo-section {
-    margin-bottom: 20px;
   }
 
   .social-icons {
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
   }
 
   .social-icon {
     width: 32px;
     height: 32px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .footer-bottom {
-    gap: 10px;
-  }
-
-  .terms-link,
-  .developer-text,
-  .copyright p {
+  .copyright p,
+  .developer-text {
     font-size: 11px;
   }
+}
 
-  .footer {
-    border-radius: 0;
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 10px;
+    padding: 0 2px;
+  }
+  .footer-section {
+    padding: 10px 2px;
   }
 }
