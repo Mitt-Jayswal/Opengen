@@ -123,7 +123,7 @@ const OpenNavbar = () => {
           <div className="mobile-logo">
             <span className="logo-text" style={{ color: "#e6c068", fontFamily: "Poppins, Arial, sans-serif" }}>OpenGen</span>
           </div>
-          <button className="close-sidebar" nClick={e => {
+          <button className="close-sidebar" onClick={e => {
     toggleMenu(e);
     handleNavClick(e);
   }} type="button">
