@@ -277,3 +277,30 @@
     min-height: 180px; /* Increased from 100px */
   }
 }
+
+@media (max-width: 768px) {
+  .rec-hawk-open-services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for a 2x2 matrix */
+    gap: 20px; /* More space around each service */
+    margin: 0 10px 30px 10px; /* Space around the grid */
+  }
+
+  .rec-falcon-open-service-item {
+    padding: 20px; /* Comfortable padding */
+    font-size: 14px; /* Larger font for readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .rec-hawk-open-services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Maintain two columns on small screens */
+    gap: 15px; /* Slightly smaller gap for very small screens */
+    margin: 0 8px 20px 8px; /* Adjusted margin for smaller screens */
+  }
+
+  .rec-falcon-open-service-item {
+    padding: 16px; /* Adjust padding for smaller screens */
+    font-size: 13px; /* Adjust font size for smaller screens */
+  }
+}
+
