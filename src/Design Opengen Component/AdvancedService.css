@@ -280,27 +280,35 @@
 
 @media (max-width: 768px) {
   .rec-hawk-open-services-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for a 2x2 matrix */
-    gap: 20px; /* More space around each service */
-    margin: 0 10px 30px 10px; /* Space around the grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px; /* Tighter gap for compression */
+    margin: 0; /* Remove outer margin */
   }
 
   .rec-falcon-open-service-item {
-    padding: 20px; /* Comfortable padding */
-    font-size: 14px; /* Larger font for readability */
-  }
-}
-
-@media (max-width: 480px) {
-  .rec-hawk-open-services-grid {
-    grid-template-columns: repeat(2, 1fr); /* Maintain two columns on small screens */
-    gap: 15px; /* Slightly smaller gap for very small screens */
-    margin: 0 8px 20px 8px; /* Adjusted margin for smaller screens */
+    padding: 8px 4px; /* Compact padding */
+    font-size: 11px; /* Smaller font for compression */
+    min-width: 0;
+    min-height: 60px;
+    border-radius: 6px;
+    gap: 6px;
   }
 
-  .rec-falcon-open-service-item {
-    padding: 16px; /* Adjust padding for smaller screens */
-    font-size: 13px; /* Adjust font size for smaller screens */
+  .rec-owl-open-service-icon {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+  }
+
+  .rec-sparrow-open-service-title {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .rec-robin-open-service-desc {
+    font-size: 10px;
+    line-height: 1.2;
   }
 }
 
