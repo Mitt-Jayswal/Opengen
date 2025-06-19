@@ -1,6 +1,6 @@
 import "../Design Service Component/ProjectShowcase.css";
 import { GiTargetPrize } from "react-icons/gi";
-import project1 from '../assets/blog 1.png';
+import project1 from '../assets/Blog 1.png';
 import project2 from '../assets/project2.png';
 import project4 from '../assets/events.jpeg';
 import profilelogo from '../assets/profile logo.jpeg'
