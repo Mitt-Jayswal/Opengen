@@ -27,6 +27,7 @@ import Services from "./Opengen Main Component/ServicesSection";
  import ServiceDev2 from "./ServicesPage Component/Sample";
 
  import MainHeaderServices from "./ServicesPage Component/MainHeaderService";
+ import Projects from "./ServicesPage Component/Projects";
 
   
  import CommunityEvents from "./Community Component/CommunityEvents";
@@ -101,7 +102,9 @@ function App() {
                      <OpenNavbar/>
                      <MainHeaderServices/>
                       <CollaborativeAppsPage/>
+                      
                      <ServiceDev/>
+                      <Projects/>
                      <ServiceDev3/>
                      <ServiceDev2/>
                        

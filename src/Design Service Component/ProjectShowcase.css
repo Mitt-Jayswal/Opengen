@@ -1,0 +1,406 @@
+ 
+.proappleject-showcase {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 40px 0;
+  font-family: "Myriad", Arial, sans-serif;
+}
+
+.promangoject-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 24px;
+}
+
+.probananaject-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #e6c068, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.proorangeject-subtitle {
+  font-size: 1.125rem;
+  color: #b3b3b3;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.prograpeject-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 24px;
+}
+
+.proberryject-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.propeachject-card {
+  position: relative;
+  height: 370px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUpCompressed 0.6s ease-out forwards;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.propeachject-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.propeachject-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.propeachject-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.propeachject-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+ 
+
+.proplumject-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prolemanject-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promelanject-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 50%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.prococonutject-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.propineappleject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.prokiwiject-label {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.procheryject-icon {
+  font-size: 0.9rem;
+}
+
+.proavocadoject-category {
+  background: rgba(230, 192, 104, 0.2);
+  color: #e6c068;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prolimeject-profile {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  margin-top: 50px;
+}
+
+.prolemongrassject-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e6c068, #ffffff);
+  padding: 2px;
+  box-shadow: 0 4px 16px rgba(230, 192, 104, 0.3);
+}
+
+.prolemongrassject-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.propassionfruitject-main {
+  margin-top: 60px;
+  max-width: 70%;
+}
+
+.prodragonfruitject-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.proguavaject-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e6c068;
+  margin-bottom: 8px;
+}
+
+.propapayaject-description {
+  font-size: 0.9rem;
+  color: #cccccc;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.prolycheeject-author {
+  margin-top: 8px;
+}
+
+.prorambuntanject-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.prostarfruitject-role {
+  font-size: 0.75rem;
+  color: #999999;
+}
+
+ 
+
+ 
+
+.prodateject-info {
+  text-align: center;
+  max-width: 600px;
+}
+
+.proacaiject-details h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #e6c068;
+}
+
+.procranberryject-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #cccccc;
+}
+
+.prostrawberryject-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.proraspberryject-stat {
+  text-align: center;
+}
+
+.problackberryject-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e6c068;
+  margin-bottom: 4px;
+}
+
+.progooseberryject-label {
+  font-size: 0.75rem;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.promulberryject-button {
+  background: linear-gradient(135deg, #e6c068, #f4d484);
+  color: #000000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: "Myriad", Arial, sans-serif;
+}
+
+ 
+
+.proelderberryject-arrow {
+  transition: transform 0.3s ease;
+}
+
+ 
+
+.prohuckleberryject-external {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.procloudberryject-action {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(230, 192, 104, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: "Myriad", Arial, sans-serif;
+}
+
+ 
+
+.prothimbleberryject-icon {
+  font-size: 0.9rem;
+}
+
+.prosalmonberryject-arrow {
+  transition: transform 0.3s ease;
+}
+
+ 
+
+@keyframes slideUpCompressed {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .proappleject-showcase {
+    padding: 32px 0;
+  }
+
+  .probananaject-title {
+    font-size: 2rem;
+  }
+
+  .proorangeject-subtitle {
+    font-size: 1rem;
+  }
+
+  .prograpeject-grid {
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .propeachject-card {
+    height: 200px;
+  }
+
+  .prococonutject-content {
+    padding: 20px 24px;
+  }
+
+  .prodragonfruitject-title {
+    font-size: 1.4rem;
+  }
+
+  .proguavaject-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .propapayaject-description {
+    font-size: 0.8rem;
+  }
+
+  .prolemongrassject-avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .prostrawberryject-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+   
+
+  .proacaiject-details h3 {
+    font-size: 1.25rem;
+  }
+
+  .procranberryject-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .propeachject-card {
+    height: 180px;
+  }
+
+  .prodragonfruitject-title {
+    font-size: 1.2rem;
+  }
+
+  .probananaject-title {
+    font-size: 1.75rem;
+  }
+
+  .prograpeject-grid {
+    padding: 0 12px;
+  }
+}

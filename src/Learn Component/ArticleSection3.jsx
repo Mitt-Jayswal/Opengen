@@ -65,7 +65,7 @@ const ArticleSection3 = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Delta Lake 1.2.1 Annoucement</h3>
-            <Link to="https://www.linkedin.com/pulse/contributions-our-planet-earth-every-act-counts-vini-jaiswal?trk=news-guest_share-article" className="article-link">
+            <Link to="https://www.linkedin.com/pulse/delta-lake-121-release-announcement-vini-jaiswal/?trackingId=5%2FjD6H8zS1KjCd3YrEH%2BNA%3D%3D" className="article-link">
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
