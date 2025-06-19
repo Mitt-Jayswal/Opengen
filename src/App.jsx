@@ -52,6 +52,7 @@ import Services from "./Opengen Main Component/ServicesSection";
 import ArticleSection from "./Learn Component/BlogArticle";
 import ArticleSection2 from "./Learn Component/ArticleSection2";
 import ArticleSection3 from "./Learn Component/ArticleSection3";
+import ArticleSection4 from "./Learn Component/ArticleSection4";
 import Podcast from "./Learn Component/Podcast";
 
 
@@ -156,6 +157,7 @@ function App() {
                      <ArticleSection/>
                      <ArticleSection2/>
                      <ArticleSection3/>
+                     <ArticleSection4/>
                      <Podcast/>
                     <FooterSection/>
                     </>
