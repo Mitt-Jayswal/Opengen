@@ -337,6 +337,17 @@
   line-height: 1.5;
 }
 
+.buttontoknow{
+  background-color: #000000;
+  color: #e6c068;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 370px;
+  height: 40px;
+}
+
 /* Animation Keyframes */
 @keyframes slideUpToast {
   from {

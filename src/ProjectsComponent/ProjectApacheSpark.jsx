@@ -1,7 +1,12 @@
 import { useEffect, useRef } from "react";
-import "./ProjectApacheSpark.css"
+import "./ProjectApacheSpark.css";
 import GenAi from "../assets/apachesparkimage1.png"
 import framework from "../assets/Framwworkcomparision.png";
+import highestpayingskill from '../assets/highestpayingskill.jpeg';
+import opensource from '../assets/opensourceproject.png';
+import datacleanrooms from '../assets/datacleanrooms.png';
+import mcpunified from '../assets/mcpunified.png';
+import { Link } from "react-router-dom";
 
 const ProjectApacheSpark = () => {
   const observerRef = useRef(null)
@@ -173,7 +178,7 @@ const ProjectApacheSpark = () => {
               {/* Full Width Image with Title Overlay */}
               <div className="cervellogg-image-container animate-on-scroll">
                 <img
-                  src="/placeholder.svg?height=400&width=1200"
+                  src={highestpayingskill}
                   alt="Spark Streaming Evolution"
                   className="pinarellogg-full-image"
                 />
@@ -206,7 +211,7 @@ const ProjectApacheSpark = () => {
               {/* Full Width Image with Title Overlay */}
               <div className="cervellogg-image-container animate-on-scroll">
                 <img
-                  src="/placeholder.svg?height=400&width=1200"
+                  src={opensource}
                   alt="Delta Lake and MLflow Launch"
                   className="pinarellogg-full-image"
                 />
@@ -234,7 +239,7 @@ const ProjectApacheSpark = () => {
               {/* Full Width Image with Title Overlay */}
               <div className="cervellogg-image-container animate-on-scroll">
                 <img
-                  src="/placeholder.svg?height=400&width=1200"
+                  src={datacleanrooms}
                   alt="Lakehouse Architecture"
                   className="pinarellogg-full-image"
                 />
@@ -292,7 +297,7 @@ const ProjectApacheSpark = () => {
               {/* Final Full Width Image with Title Overlay */}
               <div className="cervellogg-image-container animate-on-scroll">
                 <img
-                  src="/placeholder.svg?height=400&width=1200"
+                  src={mcpunified}
                   alt="Future of AI Systems"
                   className="pinarellogg-full-image"
                 />
@@ -359,11 +364,20 @@ const ProjectApacheSpark = () => {
                 </div>
 
                 <div className="lookgg-documentation-link">
-                  🚀 From 450 to 70,000+ attendees - The evolution of data and AI innovation continues at the 2025 Data
+                  From 450 to 70,000+ attendees - The evolution of data and AI innovation continues at the 2025 Data
                   + AI Summit!
                 </div>
+                 
               </div>
+               
             </div>
+            <br/>
+            <br/>
+            <Link to="https://www.linkedin.com/pulse/apache-spark-community-data-ai-summit-from-genai-agents-vini-jaiswal-xzjfc/">
+            <button className="buttontoknow">
+                 Know Detail About Apache Spark Data AI Summit
+                </button>
+                </Link>
           </div>
         </div>
       </main>
