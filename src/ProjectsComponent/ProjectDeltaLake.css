@@ -2,12 +2,12 @@
   background-color: #000000;
   color: #ffffff;
   min-height: 100vh;
-  font-family: 'Myriad', Arial, sans-serif; 
+  font-family: "Myriad", Arial, sans-serif;
 }
 
 /* Header Styles */
 .tunagg-header {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+  background-color: #000000;
   position: relative;
   padding: 4rem 2rem 6rem;
   overflow: hidden;
@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/")
+  background: url("")
     repeat-x;
   background-size: 200px 100px;
   animation: wave 10s linear infinite;
@@ -263,13 +263,134 @@
 .eelgg-video-container {
   max-width: 1200px;
   margin: 0 auto 3rem;
+  position: relative;
+}
+
+.sharkgg-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #1f2937;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Poster Image Container */
+.turtlegg-poster-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.octopusgg-poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.turtlegg-poster-container:hover .octopusgg-poster-image {
+  transform: scale(1.02);
+}
+
+/* Play Button */
+.jellyfishgg-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.jellyfishgg-play-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+}
+
+.starfishgg-play-icon {
+  font-size: 2rem;
+  color: #000;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+/* Video Player */
+.whalegg-video-player-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .swordgg-video-player {
   width: 100%;
-  height: 400px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #000;
   border-radius: 1rem;
-  background: #1f2937;
+}
+
+.swordgg-video-player:focus {
+  outline: none;
+}
+
+/* Fullscreen Button */
+.dolphingg-fullscreen-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.dolphingg-fullscreen-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+/* Fullscreen Styles */
+.eelgg-video-container:fullscreen {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eelgg-video-container:fullscreen .sharkgg-video-wrapper {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  max-width: none;
+  max-height: none;
+}
+
+.eelgg-video-container:fullscreen .swordgg-video-player {
+  border-radius: 0;
 }
 
 .hammergg-video-content {
@@ -382,8 +503,17 @@
     padding: 3rem 1rem;
   }
 
-  .swordgg-video-player {
-    height: 250px;
+  .sharkgg-video-wrapper {
+    height: 300px;
+  }
+
+  .jellyfishgg-play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .starfishgg-play-icon {
+    font-size: 1.5rem;
   }
 }
 
@@ -407,7 +537,16 @@
     gap: 0.5rem;
   }
 
-  .swordgg-video-player {
-    height: 200px;
+  .sharkgg-video-wrapper {
+    height: 250px;
+  }
+
+  .jellyfishgg-play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .starfishgg-play-icon {
+    font-size: 1.2rem;
   }
 }

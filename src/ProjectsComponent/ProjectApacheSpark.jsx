@@ -1,7 +1,34 @@
-import "../ProjectsComponent/ProjectApacheSpark.css"
-import GenAi from '../assets/apachesparkimage1.png';
+import { useEffect, useRef } from "react";
+import "./ProjectApacheSpark.css"
+import GenAi from "../assets/apachesparkimage1.png"
+import framework from "../assets/Framwworkcomparision.png";
 
 const ProjectApacheSpark = () => {
+  const observerRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in")
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      },
+    )
+
+    const elementsToAnimate = document.querySelectorAll(".animate-on-scroll")
+    elementsToAnimate.forEach((el) => observer.observe(el))
+
+    return () => {
+      elementsToAnimate.forEach((el) => observer.unobserve(el))
+    }
+  }, [])
+
   return (
     <div className="harleygg-project-spark">
       {/* Header Section */}
@@ -25,7 +52,7 @@ const ProjectApacheSpark = () => {
           {/* Left Content */}
           <div className="apriligg-left-content">
             <div className="husqvarnagg-main-text">
-              <div className="mvgg-intro-section">
+              <div className="mvgg-intro-section animate-on-scroll">
                 <p className="royalenfieldgg-intro-text">
                   What began as a modest Spark meetup in 2013 has grown into one of the most influential gatherings in
                   the data and AI ecosystem. Twelve years later, the conversation has evolved far beyond distributed
@@ -49,7 +76,7 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              <div className="benelligg-section">
+              <div className="benelligg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">Introduction</h2>
                 <p className="vespagg-section-text">
                   The Data + AI Summit is where open-source contributors, system architects, AI builders, visionaries
@@ -83,7 +110,7 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">
                   The Origins: Apache Spark and a Community on the Rise (2013–2015)
                 </h2>
@@ -97,20 +124,24 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              {/* Full Width Image with Toast */}
-              <div className="cervellogg-image-container">
+              {/* Full Width Image with Title Overlay */}
+              <div className="cervellogg-image-container animate-on-scroll">
                 <img
-                  src="/placeholder.svg?height=400&width=1200"
+                  src={framework || "/placeholder.svg"}
                   alt="Apache Spark Origins"
                   className="pinarellogg-full-image"
                 />
+                <div className="ferrarigg-image-title-overlay">
+                  <div className="lamborghinigg-title-line"></div>
+                  <h3 className="porschegg-image-title">Framework Comparison Analysis</h3>
+                </div>
                 <div className="bianchigg-image-toast">
                   <div className="orbgg-toast-label">Historical Milestone</div>
                   <h4 className="ridleygg-toast-title">Apache Spark Origins: From 450 to Global Community</h4>
                 </div>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <p className="vespagg-section-text">
                   The momentum accelerated in 2014, with the summit drawing 1,164 attendees from 453 companies, marking
                   Spark's entry into real-world domains like neuroscience, image processing and genomics. Most active
@@ -128,7 +159,7 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">
                   2016–2017: Streaming, Structured APIs, and the Shift to the Cloud
                 </h2>
@@ -139,20 +170,24 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              {/* Full Width Image with Toast */}
-              <div className="cervellogg-image-container">
+              {/* Full Width Image with Title Overlay */}
+              <div className="cervellogg-image-container animate-on-scroll">
                 <img
                   src="/placeholder.svg?height=400&width=1200"
                   alt="Spark Streaming Evolution"
                   className="pinarellogg-full-image"
                 />
+                <div className="ferrarigg-image-title-overlay">
+                  <div className="lamborghinigg-title-line"></div>
+                  <h3 className="porschegg-image-title">Streaming Evolution Timeline</h3>
+                </div>
                 <div className="bianchigg-image-toast">
                   <div className="orbgg-toast-label">Technical Evolution</div>
                   <h4 className="ridleygg-toast-title">Streaming Revolution: Structured APIs and Cloud Migration</h4>
                 </div>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">2018–2020: Enter AI, Delta Lake, and MLflow</h2>
                 <p className="vespagg-section-text">
                   2018 marked a branding and conceptual shift—Spark Summit officially became Spark + AI Summit,
@@ -168,20 +203,24 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              {/* Full Width Image with Toast */}
-              <div className="cervellogg-image-container">
+              {/* Full Width Image with Title Overlay */}
+              <div className="cervellogg-image-container animate-on-scroll">
                 <img
                   src="/placeholder.svg?height=400&width=1200"
                   alt="Delta Lake and MLflow Launch"
                   className="pinarellogg-full-image"
                 />
+                <div className="ferrarigg-image-title-overlay">
+                  <div className="lamborghinigg-title-line"></div>
+                  <h3 className="porschegg-image-title">Delta Lake & MLflow Innovation</h3>
+                </div>
                 <div className="bianchigg-image-toast">
                   <div className="orbgg-toast-label">Open Source Innovation</div>
                   <h4 className="ridleygg-toast-title">Delta Lake & MLflow: Transforming Data Reliability</h4>
                 </div>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">
                   2021–2023: Unifying Data and AI with the Lakehouse Architecture
                 </h2>
@@ -192,20 +231,24 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              {/* Full Width Image with Toast */}
-              <div className="cervellogg-image-container">
+              {/* Full Width Image with Title Overlay */}
+              <div className="cervellogg-image-container animate-on-scroll">
                 <img
                   src="/placeholder.svg?height=400&width=1200"
                   alt="Lakehouse Architecture"
                   className="pinarellogg-full-image"
                 />
+                <div className="ferrarigg-image-title-overlay">
+                  <div className="lamborghinigg-title-line"></div>
+                  <h3 className="porschegg-image-title">Lakehouse Architecture Paradigm</h3>
+                </div>
                 <div className="bianchigg-image-toast">
                   <div className="orbgg-toast-label">Architecture Paradigm</div>
                   <h4 className="ridleygg-toast-title">Lakehouse: Unifying Data Lakes and Warehouses</h4>
                 </div>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">
                   2024–2025: GenAI, RAG, and the Future of Intelligent Systems
                 </h2>
@@ -216,20 +259,20 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              {/* Full Width Image with Toast */}
-              <div className="cervellogg-image-container">
-                <img
-                  src={GenAi}
-                  alt="GenAI and RAG Systems"
-                  className="pinarellogg-full-image"
-                />
+              {/* Full Width Image with Title Overlay */}
+              <div className="cervellogg-image-container animate-on-scroll">
+                <img src={GenAi || "/placeholder.svg"} alt="GenAI and RAG Systems" className="pinarellogg-full-image" />
+                <div className="ferrarigg-image-title-overlay">
+                  <div className="lamborghinigg-title-line"></div>
+                  <h3 className="porschegg-image-title">GenAI Revolution Landscape</h3>
+                </div>
                 <div className="bianchigg-image-toast">
                   <div className="orbgg-toast-label">AI Revolution</div>
                   <h4 className="ridleygg-toast-title">GenAI Era: RAG, LLMs and Intelligent Systems</h4>
                 </div>
               </div>
 
-              <div className="specializedgg-section">
+              <div className="specializedgg-section animate-on-scroll">
                 <h2 className="motoguzzigg-section-title">
                   2025: MCP, Unified Table Formats, and Agentic AI in Production
                 </h2>
@@ -246,13 +289,17 @@ const ProjectApacheSpark = () => {
                 </p>
               </div>
 
-              {/* Final Full Width Image with Toast */}
-              <div className="cervellogg-image-container">
+              {/* Final Full Width Image with Title Overlay */}
+              <div className="cervellogg-image-container animate-on-scroll">
                 <img
                   src="/placeholder.svg?height=400&width=1200"
                   alt="Future of AI Systems"
                   className="pinarellogg-full-image"
                 />
+                <div className="ferrarigg-image-title-overlay">
+                  <div className="lamborghinigg-title-line"></div>
+                  <h3 className="porschegg-image-title">Future AI Systems Vision</h3>
+                </div>
                 <div className="bianchigg-image-toast">
                   <div className="orbgg-toast-label">Future Vision</div>
                   <h4 className="ridleygg-toast-title">2025 & Beyond: Agentic AI and Production Systems</h4>
@@ -262,7 +309,7 @@ const ProjectApacheSpark = () => {
           </div>
 
           {/* Right Sidebar */}
-          <div className="scottgg-right-sidebar">
+          <div className="scottgg-right-sidebar animate-on-scroll">
             <div className="raleighgg-sidebar-container">
               <h3 className="fujigg-sidebar-title">🔑 Key Summit Milestones</h3>
 

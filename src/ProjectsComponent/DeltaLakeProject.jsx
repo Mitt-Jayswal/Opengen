@@ -1,8 +1,62 @@
+import { useState, useRef } from "react";
 import "../ProjectsComponent/ProjectDeltaLake.css";
 import { Link } from "react-router-dom";
- 
+import video from "../assets/videoplayback.mp4";
+import contributor from '../assets/contrributer.png'
 
 const ProjectDeltaLake = () => {
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [isFullscreen, setIsFullscreen] = useState(false)
+  const videoRef = useRef(null)
+  const containerRef = useRef(null)
+
+  const handlePlayClick = () => {
+    setIsPlaying(true)
+    if (videoRef.current) {
+      videoRef.current.play()
+    }
+  }
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play()
+        setIsPlaying(true)
+      } else {
+        videoRef.current.pause()
+        setIsPlaying(false)
+      }
+    }
+  }
+
+  const handleFullscreen = () => {
+    if (containerRef.current) {
+      if (!isFullscreen) {
+        if (containerRef.current.requestFullscreen) {
+          containerRef.current.requestFullscreen()
+        } else if (containerRef.current.webkitRequestFullscreen) {
+          containerRef.current.webkitRequestFullscreen()
+        } else if (containerRef.current.mozRequestFullScreen) {
+          containerRef.current.mozRequestFullScreen()
+        }
+        setIsFullscreen(true)
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen()
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen()
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen()
+        }
+        setIsFullscreen(false)
+      }
+    }
+  }
+
+  const handleVideoEnded = () => {
+    setIsPlaying(false)
+  }
+
   return (
     <div className="salmongg-project-delta">
       {/* Header Section */}
@@ -13,7 +67,6 @@ const ProjectDeltaLake = () => {
             This project will leverage Delta Lake's capabilities to enhance data lake efficiencies
           </p>
           <div className="thinkpadgg-header-date">29 May 2024</div>
-           
         </div>
         <div className="sharkgg-wave-pattern"></div>
       </header>
@@ -24,8 +77,11 @@ const ProjectDeltaLake = () => {
           {/* Left Content */}
           <div className="carpgg-left-content">
             <div className="hpgg-social-icons">
-            <Link to="https://www.linkedin.com/pulse/delta-lake-121-release-announcement-vini-jaiswal/?trackingId=5%2FjD6H8zS1KjCd3YrEH%2BNA%3D%3D" style={{textDecoration:'none'}}>
-              <div className="lenovogg-social-icon acergg-linkedin">in</div>
+              <Link
+                to="https://www.linkedin.com/pulse/delta-lake-121-release-announcement-vini-jaiswal/?trackingId=5%2FjD6H8zS1KjCd3YrEH%2BNA%3D%3D"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="lenovogg-social-icon acergg-linkedin">in</div>
               </Link>
               <div className="msgg-social-icon sonygg-facebook">f</div>
             </div>
@@ -140,11 +196,39 @@ const ProjectDeltaLake = () => {
 
       {/* Video Section */}
       <section className="raygg-video-section">
-        <div className="eelgg-video-container">
-          <video controls className="swordgg-video-player" poster="/placeholder.svg?height=400&width=800">
-            <source src="/placeholder-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="eelgg-video-container" ref={containerRef}>
+          <div className="sharkgg-video-wrapper">
+            {!isPlaying && (
+              <div className="turtlegg-poster-container" onClick={handlePlayClick}>
+                <img
+                  src={contributor}
+                  alt="Video Thumbnail"
+                  className="octopusgg-poster-image"
+                />
+                <div className="jellyfishgg-play-button">
+                  <div className="starfishgg-play-icon">▶</div>
+                </div>
+              </div>
+            )}
+
+            {isPlaying && (
+              <div className="whalegg-video-player-wrapper">
+                <video
+                  ref={videoRef}
+                  className="swordgg-video-player"
+                  onClick={handleVideoClick}
+                  onEnded={handleVideoEnded}
+                  controls
+                >
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <button className="dolphingg-fullscreen-btn" onClick={handleFullscreen}>
+                  {isFullscreen ? "⛶" : "⛶"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="hammergg-video-content">
