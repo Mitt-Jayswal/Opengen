@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import "../Design Opengen Component/ContactRedirectBox.css"
-import sample from '../assets/sample.avif'
+import sample from '../assets/getintouchimage.jpg'
 import { Link,useLocation } from "react-router-dom"
 
 

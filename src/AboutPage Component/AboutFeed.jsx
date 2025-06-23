@@ -1,7 +1,5 @@
-"use client"
-
-import { useEffect, useRef } from "react"
-import { Link } from "react-router-dom"
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
   Quote,
   Newspaper,
@@ -182,7 +180,7 @@ const AboutNewFeed = () => {
 
         <div className="news-grid">
           {news.map((item, idx) => (
-            <Link key={idx} to={item.link} className="news-card">
+            <Link key={idx} to={item.link} className="news-card" onClick={handleNavClick}>
               <div className="news-card-content">
                 <div className="news-card-header">
                   <div className="news-icon-wrapper">{item.icon}</div>

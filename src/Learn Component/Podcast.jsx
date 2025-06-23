@@ -4,6 +4,10 @@ import podcast1 from '../assets/podcast1.png'
 import podcast2 from '../assets/podcast2.png'
 import podcast3 from '../assets/podcast3.png'
 import podcast4 from '../assets/podcast4.png'
+import podcast5 from '../assets/Robot.png'
+import podcast6 from '../assets/podcast6.webp'
+import podcast7 from '../assets/podcast7.png'
+import pdocastproblem from '../assets/podcast33.webp'
 import { Link } from "react-router-dom"
 
 const podcastData = [
@@ -29,7 +33,7 @@ const podcastData = [
   },
   {
     id: 3,
-    image: podcast4,
+    image: pdocastproblem,
     date: "MARCH 23, 2024",
     title: "Whether you're running a business, solving a problem, or building your career, AI can be your co-pilot.",
     description:
@@ -57,7 +61,7 @@ const podcastData = [
   },
   {
     id: 6,
-    image: "/placeholder.svg?height=200&width=350&text=API+Documentation",
+    image: podcast7,
     date: "MARCH 15, 2024",
     title: " Behind the scenes, delivering this high-quality low-latency stream requires a massive technical undertaking.",
     description: "Create comprehensive and user-friendly API documentation that developers love to use.",
@@ -66,7 +70,7 @@ const podcastData = [
   },
   {
     id: 7,
-    image: "/placeholder.svg?height=200&width=350&text=Developer+Experience",
+    image: podcast6,
     date: "MARCH 12, 2024",
     title: "Do you know many open source projects struggle with user traction and adoption?",
     description: "Optimize the developer experience to reduce friction and increase adoption of your platform.",
@@ -75,7 +79,7 @@ const podcastData = [
   },
   {
     id: 8,
-    image: "/placeholder.svg?height=200&width=350&text=Future+Advocacy",
+    image: podcast5,
     date: "MARCH 10, 2024",
     title: "Spotted a “robo-barista” at the San Francisco airport— definitely check it out if you are in SF 🤖",
     description: "Explore emerging trends and technologies shaping the future of developer advocacy.",
@@ -84,6 +88,13 @@ const podcastData = [
   },
   
 ]
+
+ const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
 
 const Podcast = () => {
   return (
@@ -180,7 +191,7 @@ const Podcast = () => {
                 Subscribe Now
               </button>
               </Link>
-              <Link to="/community/Opengen" style={{textDecoration:'none'}}>
+              <Link to="/community/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>
               <button className="explore-btn">
                 <Headphones className="btn-icon" />
                 Join Our Community

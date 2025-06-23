@@ -41,7 +41,7 @@ const projects = [
     icon: "🔐",
     category: "Security",
     buttonText: "View Privacy Project",
-    buttonLink: "/Projects/privacy-innovation",
+    buttonLink: "/services/Opengen",
     buttonAction: () => {
       console.log("Navigating to Privacy Innovation project")
     },
@@ -60,7 +60,7 @@ const projects = [
     icon: "🤖",
     category: "Artificial Intelligence",
     buttonText: "View LF AI Project",
-    buttonLink: "/Projects/lf-ai",
+    buttonLink: "/services/Opengen",
     buttonAction: () => {
       console.log("Navigating to LF AI project")
     },
