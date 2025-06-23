@@ -5,7 +5,7 @@ import { FaCode, FaUsers, FaRocket, FaChartLine, FaTools, FaBullhorn, FaBook, Fa
 import "../Design Opengen Component/AdvancedService.css"
 import recimage from '../assets/recimagecopy.png';
 import recimage2 from '../assets/L.jpeg'
-import hackathonImage from '../assets/newimage.png'  
+import hackathonImage from '../assets/podcast3.png'  
 import { Link } from "react-router-dom"
 
 const AdvancedService = () => {
