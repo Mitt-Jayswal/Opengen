@@ -334,8 +334,8 @@ const Headernew = () => {
                     <FaCode />
                   </div>
                   <div className="chelsea-content">
-                    <h4>Developer Tools</h4>
-                    <p>Access our latest SDKs</p>
+                    <h4>Developer Advocacy</h4>
+                    <p>Join out latets OpenSource AI Data Summit</p>
                   </div>
                 </div>
                 <div className="soho-item">
