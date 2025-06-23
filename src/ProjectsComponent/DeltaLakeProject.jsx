@@ -1,4 +1,5 @@
-import "../ProjectsComponent/ProjectDeltaLake.css"
+import "../ProjectsComponent/ProjectDeltaLake.css";
+import { Link } from "react-router-dom";
  
 
 const ProjectDeltaLake = () => {
@@ -23,7 +24,9 @@ const ProjectDeltaLake = () => {
           {/* Left Content */}
           <div className="carpgg-left-content">
             <div className="hpgg-social-icons">
+            <Link to="https://www.linkedin.com/pulse/delta-lake-121-release-announcement-vini-jaiswal/?trackingId=5%2FjD6H8zS1KjCd3YrEH%2BNA%3D%3D" style={{textDecoration:'none'}}>
               <div className="lenovogg-social-icon acergg-linkedin">in</div>
+              </Link>
               <div className="msgg-social-icon sonygg-facebook">f</div>
             </div>
 
