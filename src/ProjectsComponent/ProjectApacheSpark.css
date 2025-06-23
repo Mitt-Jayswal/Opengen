@@ -1,0 +1,449 @@
+.harleygg-project-spark {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Header Styles */
+.yamahagg-header {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+  position: relative;
+  padding: 4rem 2rem 6rem;
+  overflow: hidden;
+}
+
+.yamahagg-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q25 25 50 50 T100 50 V100 H0 Z' fill='rgba(255,255,255,0.1)'/%3E%3C/svg%3E")
+    repeat-x;
+  background-size: 200px 100px;
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+.bmwgg-wave-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z' fill='rgba(255,255,255,0.2)'/%3E%3C/svg%3E")
+    no-repeat;
+  background-size: cover;
+}
+
+.kawasakigg-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.ducatigg-header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #e6c068;
+}
+
+.hondagg-header-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 800px;
+}
+
+.suzukigg-header-date {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  color: #e6c068;
+  font-weight: 600;
+}
+
+/* Main Content */
+.ktmgg-main-content {
+  padding: 4rem 2rem;
+}
+
+.triumphgg-content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 70% 25%;
+  gap: 5%;
+}
+
+.apriligg-left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.husqvarnagg-main-text {
+  flex: 1;
+}
+
+.mvgg-intro-section {
+  margin-bottom: 3rem;
+}
+
+.royalenfieldgg-intro-text,
+.indiangg-intro-text,
+.victorygg-intro-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+}
+
+.benelligg-section,
+.specializedgg-section {
+  margin-bottom: 3rem;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: slideUpFade 0.6s ease-out forwards;
+}
+
+.benelligg-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.benelligg-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.specializedgg-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.specializedgg-section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.specializedgg-section:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.specializedgg-section:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.motoguzzigg-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e6c068;
+  line-height: 1.3;
+}
+
+.vespagg-section-text,
+.piaggigg-section-text,
+.giantgg-section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+}
+
+.cannondalgg-feature-list {
+  margin: 2rem 0;
+  padding-left: 1rem;
+}
+
+.trekgg-feature-item {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  color: #e6c068;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.trekgg-feature-item::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #e6c068;
+  font-size: 0.8rem;
+}
+
+/* Full Width Images */
+.cervellogg-image-container {
+  width: 100%;
+  margin: 3rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(230, 192, 104, 0.2);
+  position: relative;
+  transform: translateY(60px);
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.pinarellogg-full-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  animation: zoomIn 1s ease-out;
+}
+
+.pinarellogg-full-image:hover {
+  transform: scale(1.05);
+}
+
+/* Toast Overlay Styles */
+.bianchigg-image-toast {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 350px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUpFade 0.6s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.orbgg-toast-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.orbgg-toast-label::before {
+  content: "—";
+  margin-right: 0.5rem;
+  color: #e6c068;
+}
+
+.ridleygg-toast-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Right Sidebar */
+.scottgg-right-sidebar {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.raleighgg-sidebar-container {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #e6c068;
+  box-shadow: 0 8px 32px rgba(230, 192, 104, 0.1);
+}
+
+.fujigg-sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e6c068;
+  text-align: center;
+}
+
+.merckxgg-key-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.colnagogg-key-feature {
+  line-height: 1.5;
+  color: #d1d5db;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(230, 192, 104, 0.1);
+  border-left: 3px solid #e6c068;
+  transition: all 0.3s ease;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: slideUpFade 0.5s ease-out forwards;
+}
+
+.colnagogg-key-feature:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.colnagogg-key-feature:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.colnagogg-key-feature:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.colnagogg-key-feature:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.colnagogg-key-feature:nth-child(5) {
+  animation-delay: 0.9s;
+}
+.colnagogg-key-feature:nth-child(6) {
+  animation-delay: 1.0s;
+}
+.colnagogg-key-feature:nth-child(7) {
+  animation-delay: 1.1s;
+}
+.colnagogg-key-feature:nth-child(8) {
+  animation-delay: 1.2s;
+}
+.colnagogg-key-feature:nth-child(9) {
+  animation-delay: 1.3s;
+}
+.colnagogg-key-feature:nth-child(10) {
+  animation-delay: 1.4s;
+}
+.colnagogg-key-feature:nth-child(11) {
+  animation-delay: 1.5s;
+}
+
+.lookgg-documentation-link {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #e6c068, #f4d484);
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Animation Keyframes */
+@keyframes slideUpFade {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .triumphgg-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .scottgg-right-sidebar {
+    position: static;
+    order: -1;
+  }
+
+  .raleighgg-sidebar-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .yamahagg-header {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .ducatigg-header-title {
+    font-size: 2rem;
+  }
+
+  .hondagg-header-subtitle {
+    font-size: 1rem;
+  }
+
+  .ktmgg-main-content {
+    padding: 3rem 1rem;
+  }
+
+  .motoguzzigg-section-title {
+    font-size: 1.5rem;
+  }
+
+  .royalenfieldgg-intro-text,
+  .indiangg-intro-text,
+  .victorygg-intro-text {
+    font-size: 1rem;
+  }
+
+  .pinarellogg-full-image {
+    height: 250px;
+  }
+
+  .cervellogg-image-container {
+    margin: 2rem 0;
+  }
+
+  .bianchigg-image-toast {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ducatigg-header-title {
+    font-size: 1.5rem;
+  }
+
+  .motoguzzigg-section-title {
+    font-size: 1.25rem;
+  }
+
+  .pinarellogg-full-image {
+    height: 200px;
+  }
+
+  .raleighgg-sidebar-container {
+    padding: 1rem;
+  }
+
+  .colnagogg-key-feature {
+    padding: 0.75rem;
+  }
+
+  .bianchigg-image-toast {
+    padding: 0.75rem;
+  }
+
+  .ridleygg-toast-title {
+    font-size: 1rem;
+  }
+}

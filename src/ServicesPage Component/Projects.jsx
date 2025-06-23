@@ -78,7 +78,7 @@ const projects = [
     icon: "⚡",
     category: "Data AI Summit",
     buttonText: "View Apache Spark Project",
-    buttonLink: "/Projects/apache-spark",
+    buttonLink: "/ApacheSparkAIDataSummit/Opengen",
     buttonAction: () => {
       console.log("Navigating to Apache Spark project")
     },

@@ -29,6 +29,7 @@ import Services from "./Opengen Main Component/ServicesSection";
  import MainHeaderServices from "./ServicesPage Component/MainHeaderService";
  import Projects from "./ServicesPage Component/Projects";
  import ProjectDeltaLake from "./ProjectsComponent/DeltaLakeProject";
+ import ProjectApacheSpark from "./ProjectsComponent/ProjectApacheSpark";
 
   
  import CommunityEvents from "./Community Component/CommunityEvents";
@@ -120,6 +121,16 @@ function App() {
                     <>
                      <OpenNavbar/>
                       <ProjectDeltaLake/>
+                      
+                     
+                    <FooterSection/>  
+                    </>
+                } />
+
+                <Route path="/ApacheSparkAIDataSummit/Opengen" element={
+                    <>
+                     <OpenNavbar/>
+                      <ProjectApacheSpark/>
                       
                      
                     <FooterSection/>  
