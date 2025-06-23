@@ -335,7 +335,7 @@ const Headernew = () => {
                   </div>
                   <div className="chelsea-content">
                     <h4>Developer Advocacy</h4>
-                    <p>Join out latets OpenSource AI Data Summit</p>
+                    <p>Join our latest OpenGen Blogs and Podcast</p>
                   </div>
                 </div>
                 <div className="soho-item">
