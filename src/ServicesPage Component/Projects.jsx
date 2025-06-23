@@ -5,6 +5,7 @@ import project1 from "../assets/Blog 1.png"
 import project2 from "../assets/project2.png"
 import project4 from "../assets/events.jpeg"
 import profilelogo from "../assets/profile logo.jpeg"
+import lfai from '../assets/LF AI.png'
 
 const projects = [
   {
@@ -52,7 +53,7 @@ const projects = [
     description: "Open-source artificial intelligence initiatives driving innovation in machine learning communities.",
     detailedInfo:
       "Contributing to Linux Foundation AI projects with focus on MLOps, model governance, and ethical AI development across multiple industries.",
-    backgroundImage: "/placeholder.svg?height=300&width=1200",
+    backgroundImage: lfai,
     profileImage: profilelogo,
     author: "AI Innovation Hub",
     role: "ML Engineers",
