@@ -1,4 +1,5 @@
 import "../ProjectsComponent/ProjectApacheSpark.css"
+import GenAi from '../assets/apachesparkimage1.png';
 
 const ProjectApacheSpark = () => {
   return (
@@ -218,7 +219,7 @@ const ProjectApacheSpark = () => {
               {/* Full Width Image with Toast */}
               <div className="cervellogg-image-container">
                 <img
-                  src="/placeholder.svg?height=400&width=1200"
+                  src={GenAi}
                   alt="GenAI and RAG Systems"
                   className="pinarellogg-full-image"
                 />
