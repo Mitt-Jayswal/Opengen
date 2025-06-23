@@ -28,6 +28,7 @@ import Services from "./Opengen Main Component/ServicesSection";
 
  import MainHeaderServices from "./ServicesPage Component/MainHeaderService";
  import Projects from "./ServicesPage Component/Projects";
+ import ProjectDeltaLake from "./ProjectsComponent/DeltaLakeProject";
 
   
  import CommunityEvents from "./Community Component/CommunityEvents";
@@ -108,6 +109,17 @@ function App() {
                      <ServiceDev3/>
                      <ServiceDev2/>
                        
+                      
+                     
+                    <FooterSection/>  
+                    </>
+                } />
+
+
+                <Route path="/Projects/Opengen" element={
+                    <>
+                     <OpenNavbar/>
+                      <ProjectDeltaLake/>
                       
                      
                     <FooterSection/>  

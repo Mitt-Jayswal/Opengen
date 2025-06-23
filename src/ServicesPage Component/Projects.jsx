@@ -1,9 +1,10 @@
-import "../Design Service Component/ProjectShowcase.css";
-import { GiTargetPrize } from "react-icons/gi";
-import project1 from '../assets/Blog 1.png';
-import project2 from '../assets/project2.png';
-import project4 from '../assets/events.jpeg';
-import profilelogo from '../assets/profile logo.jpeg'
+import { useNavigate } from "react-router-dom"
+import "../Design Service Component/ProjectShowcase.css"
+import { GiTargetPrize } from "react-icons/gi"
+import project1 from "../assets/Blog 1.png"
+import project2 from "../assets/project2.png"
+import project4 from "../assets/events.jpeg"
+import profilelogo from "../assets/profile logo.jpeg"
 
 const projects = [
   {
@@ -18,7 +19,11 @@ const projects = [
     author: "Data Engineering Team",
     role: "Lead Architects",
     icon: "🏗️",
-    
+    buttonText: "View Delta Lake Project",
+    buttonLink: "/Projects/Opengen",
+    buttonAction: () => {
+      console.log("Navigating to Delta Lake project")
+    },
   },
   {
     id: 2,
@@ -34,6 +39,11 @@ const projects = [
     role: "Security Specialists",
     icon: "🔐",
     category: "Security",
+    buttonText: "View Privacy Project",
+    buttonLink: "/Projects/privacy-innovation",
+    buttonAction: () => {
+      console.log("Navigating to Privacy Innovation project")
+    },
   },
   {
     id: 3,
@@ -48,6 +58,11 @@ const projects = [
     role: "ML Engineers",
     icon: "🤖",
     category: "Artificial Intelligence",
+    buttonText: "View LF AI Project",
+    buttonLink: "/Projects/lf-ai",
+    buttonAction: () => {
+      console.log("Navigating to LF AI project")
+    },
   },
   {
     id: 4,
@@ -62,16 +77,52 @@ const projects = [
     role: "Core Developers",
     icon: "⚡",
     category: "Data AI Summit",
+    buttonText: "View Apache Spark Project",
+    buttonLink: "/Projects/apache-spark",
+    buttonAction: () => {
+      console.log("Navigating to Apache Spark project")
+    },
   },
 ]
 
 const Projects = () => {
+  const navigate = useNavigate()
+
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
+  const handleProjectClick = (project) => {
+    // First scroll to top
+    handleNavClick()
+
+    // Small delay to ensure smooth scroll starts before navigation
+    setTimeout(() => {
+      // Navigate to the project page using React Router
+      if (project.buttonLink) {
+        navigate(project.buttonLink)
+      }
+
+      // Execute custom action if provided
+      if (project.buttonAction) {
+        project.buttonAction()
+      }
+    }, 100) // 100ms delay
+  }
+
   return (
     <div className="proappleject-showcase">
       <div className="promangoject-header">
         <h1 className="probananaject-title">
-        <GiTargetPrize style={{color:'#ffffff'}}/>Defining the Next Era of Technology</h1>
-        <p className="proorangeject-subtitle">Discover our flagship initiatives at the intersection of innovation, impact, and global leadership.</p>
+          <GiTargetPrize style={{ color: "#ffffff" }} />
+          Defining the Next Era of Technology
+        </h1>
+        <p className="proorangeject-subtitle">
+          Discover our flagship initiatives at the intersection of innovation, impact, and global leadership.
+        </p>
       </div>
 
       <div className="prograpeject-grid">
@@ -89,7 +140,6 @@ const Projects = () => {
 
               <div className="prococonutject-content">
                 <div className="propineappleject-header">
-                  
                   <div className="proavocadoject-category">{project.category}</div>
                 </div>
 
@@ -110,14 +160,16 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-
-               
             </div>
 
             <div className="prohuckleberryject-external">
-              <button className="procloudberryject-action">
+              <button
+                className={`procloudberryject-action project-${project.id}-button`}
+                onClick={() => handleProjectClick(project)}
+                data-project-id={project.id}
+              >
                 <span className="prothimbleberryject-icon">👁️</span>
-                <span>View the project</span>
+                <span>{project.buttonText}</span>
                 <span className="prosalmonberryject-arrow">→</span>
               </button>
             </div>
