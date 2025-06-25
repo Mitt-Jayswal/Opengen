@@ -27,7 +27,7 @@ const FreeMidCode = () => {
               fostering innovation and helping us achieve new heights in growth and success."
             </p>
             <Link to="/about/Opengen" onClick={handleNavClick}>
-              <button className="free-mid-btn">Know About OpenGen Founder</button>
+              <button className="free-mid-btn">Know About OpenGen</button>
             </Link>
           </div>
           <div className="free-mid-card-right">
