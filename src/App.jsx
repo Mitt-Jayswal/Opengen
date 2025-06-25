@@ -87,7 +87,7 @@ function App() {
                     </>
                 } />
 
-              <Route path="/about" element={
+              <Route path="/about/Opengen" element={
                     <>
                       <OpenNavbar/>
                      <MainBrandHeaderAbout/>
