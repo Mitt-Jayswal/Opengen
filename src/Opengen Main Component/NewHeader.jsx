@@ -118,7 +118,7 @@ const Headernew = () => {
             <nav className="midtown-desktop">
               <ul className="village-links">
                 <li>
-                  <Link to="/about/Opengen" onClick={handleNavClick}>About</Link>
+                  <Link to="/about" onClick={handleNavClick}>About</Link>
                 </li>
                 <li
                   className="williamsburg-services"
@@ -188,7 +188,7 @@ const Headernew = () => {
           <nav className="uppereast-nav">
             <ul className="upperwest-links">
               <li>
-                <Link to="/about/Opengen" onClick={e => {
+                <Link to="/about" onClick={e => {
     toggleMenu(e);
     handleNavClick(e);
   }} className="morningside-link" >
