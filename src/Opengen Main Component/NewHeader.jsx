@@ -135,7 +135,7 @@ const Headernew = () => {
                       </Link>
                       <Link to="/brandamplification/Opengen" onClick={handleNavClick}>
                         <FaBullhorn style={{ marginRight: 8, color: "#e6c068" }} />
-                        Brand Amplification
+                        Technology Evangelism
                       </Link>
                       {/* <Link to="/partnerships/Opengen">
                         <FaHandshake style={{ marginRight: 8, color: "#0078d4" }} />
@@ -217,7 +217,7 @@ const Headernew = () => {
     handleNavClick(e);
   }} className="lenox-link">
                     <FaBullhorn style={{ marginRight: 10, color: "#e6c068" }} />
-                    <span style={{color:'#ffffff'}}>Brand Amplification</span>
+                    <span style={{color:'#ffffff'}}>Technology Evangelism</span>
                   </Link>
                   {/* <Link to="/partnerships/Opengen" onClick={toggleMenu} className="lenox-link">
                     <FaHandshake style={{ marginRight: 10, color: "#ffffff" }} />

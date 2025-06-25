@@ -52,7 +52,7 @@ const FooterSection = () => {
               </li>
               <li>
                 <Link to="/brandamplification/Opengen" onClick={handleNavClick}>
-                  Brand Amplification
+                  Technology Evangelism
                 </Link>
               </li>
               <li>

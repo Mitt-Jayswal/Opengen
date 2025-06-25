@@ -20,7 +20,7 @@ const MainBrandHeader = () => {
     <div className="brand-lion-shirt-ics" ref={brandLionShirtIcsRef}>
       <div className="brand-tiger-shirt-ics">
         <div className="brand-elephant-shirt-ics">
-          <h1>Brand Amplification</h1>
+          <h1>Technology Evangelism</h1>
         </div>
       </div>
     </div>

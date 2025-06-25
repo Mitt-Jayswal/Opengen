@@ -14,7 +14,7 @@ const cardData = [
     desc: "Build trust and engagement by connecting your brand with developers worldwide. Our advocacy programs foster genuine relationships, provide technical education, and amplify your platform’s impact within the developer ecosystem.",
   },
   {
-    title: "Brand Amplification",
+    title: "Technology Evangelism",
     badge: "Brand",
     img: card2img,
     desc: "Elevate your brand’s presence and credibility among developers. Through workshops, hackathons, and community-led content, we help you stand out as a leader in the tech community.",

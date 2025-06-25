@@ -84,7 +84,7 @@ const OpenNavbar = () => {
                     </Link>
                     <Link to="/brandamplification/Opengen" onClick={handleNavClick}>
                       <FaBullhorn style={{ marginRight: 8, color: "#e6c068" }} />
-                      Brand Amplification
+                      Technology Evangelism
                     </Link>
                     {/* <Link to="/partnerships/Opengen">
                       <FaHandshake style={{ marginRight: 8, color: "#0078d4" }} />
@@ -158,7 +158,7 @@ const OpenNavbar = () => {
     handleNavClick(e);
   }} className="mobile-dropdown-link">
                   <FaBullhorn style={{ marginRight: 10, color: "#e6c068" }} />
-                  <span style={{color:'#ffffff'}}>Brand Amplification</span>
+                  <span style={{color:'#ffffff'}}>Technology Evangelism</span>
                 </Link>
                 {/* <Link to="/partnerships/Opengen" onClick={toggleMenu} className="mobile-dropdown-link">
                   <FaHandshake style={{ marginRight: 10, color: "#0078d4" }} />

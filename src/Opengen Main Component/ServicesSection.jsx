@@ -97,7 +97,7 @@ const Services = () => {
               />
             </div>
             <div className="content-section">
-              <h3 className="card-heading">Brand Amplification</h3>
+              <h3 className="card-heading">Technology Evangelism</h3>
               <p className="card-text">Access adoption and training resources to quickly onboard and maximize your Teams experience.</p>
               <button className="action-button">
                <Link to="/brandamplification/Opengen" style={{textDecoration:'none'}} onClick={handleNavClick}>

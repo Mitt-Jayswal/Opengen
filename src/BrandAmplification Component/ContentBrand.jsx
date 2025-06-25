@@ -44,7 +44,7 @@ const ContentBrand = () => {
   return (
     <div className="page2-container" ref={sectionRef}>
       <div className="page2-header">
-        <h1>Brand Amplification Through Developer Advocacy</h1>
+        <h1>Technology Evangelism Through Developer Advocacy</h1>
       </div>
 
       <div className="page2-content">
@@ -76,7 +76,7 @@ const ContentBrand = () => {
             <img src={whyimage} alt="Developer Advocacy Team" className="page2-image" />
           </div>
           <div className="page2-text-container">
-            <h3>Brand Amplification</h3>
+            <h3>Technology Evangelism</h3>
             <p>
               Our work has been featured in LinkedIn Top Voices, TED AI, United 
               Nations Digital Media, Linux Foundation, Grace Hopper Celebration, Business Insider, Forbes,
