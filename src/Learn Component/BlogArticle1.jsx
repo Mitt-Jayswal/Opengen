@@ -1,7 +1,7 @@
-import "../DesignLearn Component/ArticleSection.css"
-import { Link } from "react-router-dom"
-import Blog1 from '../assets/unitednations.jpeg'
-import Blog2 from '../assets/Blog2.png'
+import "../DesignLearn Component/ArticleSection.css";
+import { Link } from "react-router-dom";
+import Blog1 from '../assets/unitednations.jpeg';
+import Blog2 from '../assets/Blog2.png';
 
 
 const BlogArticle1 = () => {
@@ -19,7 +19,7 @@ const BlogArticle1 = () => {
         <div className="dev-advocacy-container">
           <h2 className="dev-advocacy-title">United Nations Open Source Week 2025</h2>
           <p className="dev-advocacy-description">
-           I am building machine learning models, but my data is siloed”. “I need to ensure that the models I am building are based on reliable data, so my company can make quality decisions.
+            Last week, I had the privilege of attending and actively contributing to the UN Open Source Week 2025 at the United Nations Headquarters in New York City.
           </p>
            
           <div className="dev-advocacy-buttons">
