@@ -1,4 +1,5 @@
-import "../DesignLearn Component/TrendsBlog.css"
+import "../DesignLearn Component/TrendsBlog.css";
+import { Link } from "react-router-dom";
 
 const TrendsBlog = () => {
   return (
@@ -15,22 +16,26 @@ const TrendsBlog = () => {
             <div className="news-item">
               <div className="news-bullet">
                 <span className="bullet"></span>
-                <span className="news-label">News</span>
+                <span className="news-label">2025 News</span>
               </div>
+              <Link to="https://www.linkedin.com/pulse/united-nations-open-source-week-2025-vini-jaiswal-puehc/" style={{textDecoration:'none'}}>
               <h3 className="news-headline">
-                OpenGen Recognized as Developer Advocacy Leader at 2025 Business Awards UK
+                Participation at the United Nations Open Source Week 2025 Summit
               </h3>
+              </Link>
               <div className="news-divider"></div>
             </div>
 
             <div className="news-item">
               <div className="news-bullet">
                 <span className="bullet"></span>
-                <span className="news-label">News</span>
+                <span className="news-label"> 2025 News</span>
               </div>
+              <Link to="https://www.linkedin.com/pulse/apache-spark-community-data-ai-summit-from-genai-agents-vini-jaiswal-xzjfc/" style={{textDecoration:'none'}}>
               <h3 className="news-headline">
-                OpenGen Achieves New Milestone with ISO 9001:2025, ISO 27001:2022 Certifications
+               Participation at the Databricks Data + AI Summit 2025
               </h3>
+              </Link>
               <div className="news-divider"></div>
             </div>
           </div>

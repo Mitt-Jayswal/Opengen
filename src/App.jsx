@@ -55,10 +55,16 @@ import Services from "./Opengen Main Component/ServicesSection";
 
  import TrendsBlog from "./Learn Component/TrendBlog";
 import ArticleSection from "./Learn Component/BlogArticle";
+import BlogArticle1 from "./Learn Component/BlogArticle1";
 import ArticleSection2 from "./Learn Component/ArticleSection2";
 import ArticleSection3 from "./Learn Component/ArticleSection3";
 import ArticleSection4 from "./Learn Component/ArticleSection4";
 import Podcast from "./Learn Component/Podcast";
+
+
+import UnitedNation from "./BlogsComponent/UnitedNation";
+import DataCouncil from "./BlogsComponent/DataCouncil";
+import OpenSourcePicks from "./BlogsComponent/OpenSourcePicks";
 
 
   
@@ -202,11 +208,42 @@ function App() {
                      <br/>
                      <br/>
                      <TrendsBlog/>
+                     <BlogArticle1/>
                      <ArticleSection/>
                      <ArticleSection2/>
                      <ArticleSection3/>
                      <ArticleSection4/>
                      <Podcast/>
+                    <FooterSection/>
+                    </>
+                } />
+
+                
+
+                 <Route path="/unitednation/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <UnitedNation/>
+                    <FooterSection/>
+                    </>
+                } />
+                <Route path="/datacouncil/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <DataCouncil/>
+                    <FooterSection/>
+                    </>
+                } />
+                <Route path="/opensourcepicks/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <OpenSourcePicks/>
                     <FooterSection/>
                     </>
                 } />

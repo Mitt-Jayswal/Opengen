@@ -1,10 +1,10 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom"
-import Blog1 from '../assets/newblog.png'
+import Blog1 from '../assets/unitednations.jpeg'
 import Blog2 from '../assets/Blog2.png'
 
 
-const ArticleSection = () => {
+const BlogArticle1 = () => {
 
   const handleNavClick = () => {
     window.scrollTo({
@@ -17,7 +17,7 @@ const ArticleSection = () => {
     <div className="article-section-container">
       <div className="article-section-content">
         <div className="dev-advocacy-container">
-          <h2 className="dev-advocacy-title">Data AI Summit 2025</h2>
+          <h2 className="dev-advocacy-title">United Nations Open Source Week 2025</h2>
           <p className="dev-advocacy-description">
            I am building machine learning models, but my data is siloed”. “I need to ensure that the models I am building are based on reliable data, so my company can make quality decisions.
           </p>
@@ -42,8 +42,8 @@ const ArticleSection = () => {
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">My Top Open Source Picks at Data + AI Summit 2025</h3>
-            <Link to="/opensourcepicks/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
+            <h3 className="article-title">United Nations Open Source Week 2025</h3>
+            <Link to="/unitednation/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -67,7 +67,7 @@ const ArticleSection = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Data Council 2022: Exploring How Delta Lake is Powering the Future of Lakehouse Architecture</h3>
-            <Link to="https://www.linkedin.com/pulse/building-lakehouse-delta-lake-data-council-2022-vini-jaiswal/?trackingId=hkz4pzpRSq6iErJf5ym8Gg%3D%3D" className="article-link">
+            <Link to="/datacouncil/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -91,4 +91,4 @@ const ArticleSection = () => {
   )
 }
 
-export default ArticleSection;
+export default BlogArticle1;
