@@ -1,7 +1,7 @@
 import lfaiHero from "../assets/lfaiimage1.png"
-import aiInnovation from "../assets/lfaiimage2.png"
-import dataCollaboration from "../assets/lfaiimage1.png"
-import communityDriven from "../assets/lfaiimage1.png"
+import aiInnovation from "../assets/lfaiimage3.jpeg"
+import dataCollaboration from "../assets/lfaiimage4.jpeg"
+import communityDriven from "../assets/lfaiimage5.jpeg"
 import '../ProjectsComponent/lfaidesign.css'
 
 const LFAI = () => {
