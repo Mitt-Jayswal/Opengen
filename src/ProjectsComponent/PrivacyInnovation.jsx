@@ -1,7 +1,7 @@
 import privacyHero from "../assets/privacyinnovation.jpeg"
 import privacyArchitecture from "../assets/privacyinnovation2.png"
 import manateePlatform from "../assets/privacymeeting.png"
-import '../ProjectsComponent/Privacyinnovation.css'
+import '../ProjectsComponent/PrivacyInnovation.css'
 import privacytiktoksponsored from '../assets/privacttiktopsponsored.png'
 
 const PrivacyInnovation = () => {
