@@ -305,13 +305,13 @@
 }
 
 .privacy-nexus-innovation-action-button {
-  background: #3b82f6;
-  color: #ffffff;
+  background: #e6c068;
+  color: #000000;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -319,7 +319,7 @@
 }
 
 .privacy-nexus-innovation-action-button:hover {
-  background: #2563eb;
+  background: #e6c068;
 }
 
 .privacy-nexus-innovation-footer-area {
