@@ -1,0 +1,404 @@
+.privacy-nexus-innovation-wrapper {
+   background-color: #000000;
+  color: #ffffff;
+  font-family: "Myriad", Arial, sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.privacy-nexus-innovation-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.privacy-nexus-innovation-hero-visual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.privacy-nexus-innovation-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.privacy-nexus-innovation-hero-content {
+  max-width: 900px;
+  z-index: 10;
+}
+
+.privacy-nexus-innovation-main-headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.privacy-nexus-innovation-sub-headline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #e2e8f0;
+  font-weight: 300;
+}
+
+.privacy-nexus-innovation-date-stamp {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.privacy-nexus-innovation-layout {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  gap: 3rem;
+  background: #000000;
+  color: #ffffff;
+}
+
+.privacy-nexus-innovation-primary-content {
+  flex: 1;
+  max-width: none;
+}
+
+.privacy-nexus-innovation-sidebar-panel {
+  width: 320px;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.privacy-nexus-innovation-sidebar-widget {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.privacy-nexus-innovation-sidebar-heading {
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.privacy-nexus-innovation-sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.privacy-nexus-innovation-sidebar-link {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.privacy-nexus-innovation-sidebar-link:last-child {
+  border-bottom: none;
+}
+
+.privacy-nexus-innovation-announcement-block {
+  background: #f0f9ff;
+  border-left: 4px solid #e6c068;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.privacy-nexus-innovation-announcement-title {
+  font-size: 1.75rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.privacy-nexus-innovation-body-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.privacy-nexus-innovation-highlight-text {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.privacy-nexus-innovation-visual-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.privacy-nexus-innovation-showcase-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.privacy-nexus-innovation-showcase-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-nexus-innovation-showcase-visual {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.privacy-nexus-innovation-showcase-content {
+  padding: 1.25rem;
+}
+
+.privacy-nexus-innovation-showcase-title {
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-nexus-innovation-showcase-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.privacy-nexus-innovation-content-block {
+  background: #ffffff;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.privacy-nexus-innovation-block-title {
+  font-size: 1.75rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.privacy-nexus-innovation-block-subtitle {
+  font-size: 1.25rem;
+  color: #1e40af;
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.privacy-nexus-innovation-features-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.privacy-nexus-innovation-feature-tile {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.privacy-nexus-innovation-feature-tile:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.privacy-nexus-innovation-feature-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-nexus-innovation-feature-name {
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-nexus-innovation-feature-info {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.privacy-nexus-innovation-tech-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.privacy-nexus-innovation-tech-item {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+.privacy-nexus-innovation-tech-item:hover {
+  background: #e5e7eb;
+  border-color: #3b82f6;
+}
+
+.privacy-nexus-innovation-resources-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.privacy-nexus-innovation-resource-tile {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.privacy-nexus-innovation-resource-tile:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.privacy-nexus-innovation-resource-name {
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-nexus-innovation-resource-info {
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.privacy-nexus-innovation-action-button {
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.privacy-nexus-innovation-action-button:hover {
+  background: #2563eb;
+}
+
+.privacy-nexus-innovation-footer-area {
+  background: #1f2937;
+  color: #d1d5db;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.privacy-nexus-innovation-footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.privacy-nexus-innovation-footer-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-nexus-innovation-footer-tagline {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .privacy-nexus-innovation-hero-banner {
+    height: 70vh;
+  }
+
+  .privacy-nexus-innovation-main-headline {
+    font-size: 2.5rem;
+  }
+
+  .privacy-nexus-innovation-sub-headline {
+    font-size: 1.1rem;
+  }
+
+  .privacy-nexus-innovation-layout {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .privacy-nexus-innovation-sidebar-panel {
+    width: 100%;
+    position: static;
+  }
+
+  .privacy-nexus-innovation-visual-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-nexus-innovation-features-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-nexus-innovation-content-block {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-nexus-innovation-main-headline {
+    font-size: 2rem;
+  }
+
+  .privacy-nexus-innovation-layout {
+    padding: 0.5rem;
+  }
+
+  .privacy-nexus-innovation-content-block {
+    padding: 1rem;
+  }
+
+  .privacy-nexus-innovation-announcement-block {
+    padding: 1.5rem;
+  }
+}

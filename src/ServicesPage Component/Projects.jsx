@@ -5,7 +5,7 @@ import project1 from "../assets/Blog 1.png"
 import project2 from "../assets/project2.png"
 import project4 from "../assets/events.jpeg"
 import profilelogo from "../assets/profile logo.jpeg"
-import lfai from '../assets/LF AI.png'
+import lfai from '../assets/lfaiimage2.png'
 
 const projects = [
   {
@@ -41,7 +41,7 @@ const projects = [
     icon: "🔐",
     category: "Security",
     buttonText: "View Privacy Project",
-    buttonLink: "/services/Opengen",
+    buttonLink: "/privacyInnovation/Opengen",
     buttonAction: () => {
       console.log("Navigating to Privacy Innovation project")
     },
@@ -60,7 +60,7 @@ const projects = [
     icon: "🤖",
     category: "Artificial Intelligence",
     buttonText: "View LF AI Project",
-    buttonLink: "/services/Opengen",
+    buttonLink: "/lfaiopensource/Opengen",
     buttonAction: () => {
       console.log("Navigating to LF AI project")
     },

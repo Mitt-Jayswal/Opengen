@@ -30,6 +30,8 @@ import Services from "./Opengen Main Component/ServicesSection";
  import Projects from "./ServicesPage Component/Projects";
  import ProjectDeltaLake from "./ProjectsComponent/DeltaLakeProject";
  import ProjectApacheSpark from "./ProjectsComponent/ProjectApacheSpark";
+ import PrivacyInnovation from "./ProjectsComponent/PrivacyInnovation";
+ import LFAI from "./ProjectsComponent/lfai";
 
   
  import CommunityEvents from "./Community Component/CommunityEvents";
@@ -131,6 +133,26 @@ function App() {
                     <>
                      <OpenNavbar/>
                       <ProjectApacheSpark/>
+                      
+                     
+                    <FooterSection/>  
+                    </>
+                } />
+
+                 <Route path="/privacyInnovation/Opengen" element={
+                    <>
+                     <OpenNavbar/>
+                      <PrivacyInnovation/>
+                      
+                     
+                    <FooterSection/>  
+                    </>
+                } />
+
+                <Route path="/lfaiopensource/Opengen" element={
+                    <>
+                     <OpenNavbar/>
+                      <LFAI/>
                       
                      
                     <FooterSection/>  
