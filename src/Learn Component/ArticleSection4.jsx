@@ -64,7 +64,7 @@ const ArticleSection4 = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">7 Predictions On The Future Of Technology and Innovation</h3>
-            <Link to="https://www.linkedin.com/pulse/7-predictions-future-technology-innovation-vini-jaiswal/?trackingId=NvSuIIyeTSCwjXSzo1PluA%3D%3D" className="article-link">
+            <Link to="/pulse/7-predictions-future-technology-innovation-vini-jaiswal/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

@@ -68,6 +68,7 @@ import OpenSourcePicks from "./BlogsComponent/OpenSourcePicks";
 import GHC24 from "./BlogsComponent/GHC24";
 import BritishColumbia from "./BlogsComponent/BritishColumbia";
 import AideveloperDay from "./BlogsComponent/Aideveloperday";
+import PredictionTechnology from "./BlogsComponent/PredictionsTechnology";
 
 
   
@@ -278,6 +279,16 @@ function App() {
                      <br/>
                      <br/>
                      <AideveloperDay/>
+                    <FooterSection/>
+                    </>
+                } />
+
+                 <Route path="/pulse/7-predictions-future-technology-innovation-vini-jaiswal/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <PredictionTechnology/>
                     <FooterSection/>
                     </>
                 } />
