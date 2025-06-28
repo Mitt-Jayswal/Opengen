@@ -1,22 +1,54 @@
-import headerimage from '../assets/unitednations.jpeg';
-import unitednationsimage2 from '../assets/unitednationsimage2.png';
-import unitednationsimage3 from '../assets/unitednationsimage3.png';
-import unitednationsimage4 from '../assets/unitednationsimage4.png';
- import {
-  FaFacebookF,
-  FaTwitter,
+import headerimage from "../assets/unitednations.jpeg";
+import unitednationsimage2 from "../assets/unitednationsimage2.png"
+import unitednationsimage3 from "../assets/unitednationsimage3.png"
+import unitednationsimage4 from "../assets/unitednationsimage4.png"
+import { Link } from "react-router-dom";
+import {
+   
   FaLinkedinIn,
-  FaGithub,
-  FaCalendarAlt,
+   
   FaUsers,
-  FaGlobe,
-  FaLightbulb,
-  FaHandshake,
-  FaRocket,
+  FaExternalLinkAlt,
+  FaArrowRight,
+  FaUser,
+  FaBookmark,
+  FaClock,
 } from "react-icons/fa"
 import "./UnitedNation.css"
 
 const UnitedNation = () => {
+  const relatedBlogs = [
+    {
+      id: 1,
+      title: "How agentic AI is driving AI-first business transformation for customers to achieve more",
+      
+       
+      excerpt:
+        "Discover how agentic AI is revolutionizing business operations and driving unprecedented transformation across industries.",
+      readTime: "8 min read",
+      category: "AI Innovation",
+    },
+    {
+      id: 2,
+      title: "Ignite 2024: Why nearly 70% of the Fortune 500 now use Microsoft 365 Copilot",
+      
+       
+      excerpt:
+        "Exploring the massive adoption of AI-powered productivity tools and their impact on enterprise workflows.",
+      readTime: "6 min read",
+      category: "Enterprise Tech",
+    },
+    {
+      id: 3,
+      title: "IDC's 2024 AI opportunity study: Top five AI trends to watch",
+      
+       
+      excerpt: "Key insights from IDC's comprehensive study on emerging AI trends shaping the future of technology.",
+      readTime: "10 min read",
+      category: "Research",
+    },
+  ]
+
   return (
     <div className="blog-lion-container">
       <div className="blog-lion-content">
@@ -28,16 +60,16 @@ const UnitedNation = () => {
               <span className="blog-lion-date">June 26, 2025</span>
             </div>
             <div className="blog-lion-social">
-              <FaFacebookF className="blog-lion-icon" />
-              <FaTwitter className="blog-lion-icon" />
+              <Link to="https://www.linkedin.com/in/vinijaiswal/">
               <FaLinkedinIn className="blog-lion-icon" />
-              <FaGithub className="blog-lion-icon" />
+              </Link>
+              
             </div>
           </header>
 
           <div className="blog-lion-hero">
             <img
-              src={headerimage}
+              src={headerimage || "/placeholder.svg"}
               alt="UN Open Source Week 2025"
               width={800}
               height={400}
@@ -70,7 +102,7 @@ const UnitedNation = () => {
 
             <div className="blog-lion-content-image">
               <img
-                src={unitednationsimage4}
+                src={unitednationsimage4 || "/placeholder.svg"}
                 alt="UN Open Source Week Sessions"
                 width={600}
                 height={300}
@@ -103,7 +135,7 @@ const UnitedNation = () => {
 
             <div className="blog-lion-content-image">
               <img
-                src={unitednationsimage2}
+                src={unitednationsimage2 || "/placeholder.svg"}
                 alt="UN Hackathon Participants"
                 width={600}
                 height={300}
@@ -142,7 +174,7 @@ const UnitedNation = () => {
 
             <div className="blog-lion-content-image">
               <img
-                src={unitednationsimage3}
+                src={unitednationsimage3 || "/placeholder.svg"}
                 alt="OSPO Panel Discussion"
                 width={600}
                 height={300}
@@ -204,60 +236,86 @@ const UnitedNation = () => {
         </div>
 
         <aside className="blog-lion-sidebar">
-          <div className="blog-lion-section">
-            <h3 className="blog-lion-sidebar-title">Key Highlights</h3>
-            <div className="blog-lion-points">
-              <div className="blog-lion-point">
-                <FaCalendarAlt className="blog-lion-point-icon" />
-                <span>UN Open Source Week 2025</span>
+          {/* Author Profile */}
+          <div className="blog-lion-section author-profile">
+            <div className="author-avatar">
+              <FaUser className="avatar-icon" />
+            </div>
+            <h3 className="author-name">Vini Jaiswal</h3>
+            <p className="author-title">Developer Advocate</p>
+            <p className="author-bio">
+              Championing open source innovation, AI infrastructure, and ethical technology policies across global
+              platforms.
+            </p>
+            <div className="author-stats">
+              <div className="stat">
+                <FaBookmark className="stat-icon" />
+                <span>200+ Articles</span>
               </div>
-              <div className="blog-lion-point">
-                <FaUsers className="blog-lion-point-icon" />
-                <span>81+ Global Participants</span>
-              </div>
-              <div className="blog-lion-point">
-                <FaGlobe className="blog-lion-point-icon" />
-                <span>Digital Public Infrastructure</span>
-              </div>
-              <div className="blog-lion-point">
-                <FaLightbulb className="blog-lion-point-icon" />
-                <span>AI Ethics & Transparency</span>
-              </div>
-              <div className="blog-lion-point">
-                <FaHandshake className="blog-lion-point-icon" />
-                <span>Public-Private Collaboration</span>
-              </div>
-              <div className="blog-lion-point">
-                <FaRocket className="blog-lion-point-icon" />
-                <span>OSPO Implementation</span>
+              <div className="stat">
+                <FaUsers className="stat-icon" />
+                <span>13K+ Followers</span>
               </div>
             </div>
           </div>
 
+          {/* Related Blogs */}
           <div className="blog-lion-section">
-            <h3 className="blog-lion-sidebar-title">Related Topics</h3>
-            <ul className="blog-lion-links">
-              <li>
-                <a href="#" className="blog-lion-link">
-                  Open Source Governance
-                </a>
-              </li>
-              <li>
-                <a href="#" className="blog-lion-link">
-                  AI Infrastructure
-                </a>
-              </li>
-              <li>
-                <a href="#" className="blog-lion-link">
-                  Digital Public Goods
-                </a>
-              </li>
-              <li>
-                <a href="#" className="blog-lion-link">
-                  Climate Tech
-                </a>
-              </li>
-            </ul>
+            <h3 className="blog-lion-sidebar-title">
+              <FaExternalLinkAlt className="title-icon" />
+              Related Insights
+            </h3>
+            <div className="related-blogs">
+              {relatedBlogs.map((blog) => (
+                <article key={blog.id} className="related-blog-card">
+                  <div className="blog-card-header">
+                    <span className="blog-category">{blog.category}</span>
+                    <div className="blog-meta">
+                      <FaClock className="meta-icon" />
+                      <span>{blog.readTime}</span>
+                    </div>
+                  </div>
+                  <h4 className="blog-card-title">{blog.title}</h4>
+                  <p className="blog-card-excerpt">{blog.excerpt}</p>
+                  <div className="blog-card-footer">
+                    <div className="blog-author-info">
+                      <span className="blog-author">{blog.author}</span>
+                      <span className="blog-date">{blog.date}</span>
+                    </div>
+                    <FaArrowRight className="read-more-icon" />
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          {/* Newsletter */}
+          <div className="blog-lion-section newsletter-section">
+            <h3 className="blog-lion-sidebar-title">Stay Updated</h3>
+            <p className="newsletter-description">
+              Get exclusive insights on open source, AI policy, and technology innovation delivered weekly.
+            </p>
+            <div className="newsletter-form">
+              <input type="email" placeholder="Enter your email" className="newsletter-input" />
+              <button className="newsletter-button">
+                Subscribe
+                <FaArrowRight className="button-icon" />
+              </button>
+            </div>
+            <p className="newsletter-note">Join 5,000+ tech leaders and policymakers</p>
+          </div>
+
+          {/* Topics */}
+          <div className="blog-lion-section">
+            <h3 className="blog-lion-sidebar-title">Trending Topics</h3>
+            <div className="topic-tags">
+              <span className="topic-tag">Open Source</span>
+              <span className="topic-tag">AI Ethics</span>
+              <span className="topic-tag">Digital Policy</span>
+              <span className="topic-tag">UN Tech</span>
+              <span className="topic-tag">Innovation</span>
+              <span className="topic-tag">Sustainability</span>
+            </div>
           </div>
         </aside>
       </div>

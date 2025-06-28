@@ -1,7 +1,7 @@
 import "../DesignLearn Component/ArticleSection.css";
 import { Link } from "react-router-dom";
 import Blog1 from '../assets/unitednations.jpeg';
-import Blog2 from '../assets/Blog2.png';
+import Blog2 from '../assets/blog4.png';
 
 
 const BlogArticle1 = () => {
@@ -66,8 +66,8 @@ const BlogArticle1 = () => {
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">Data Council 2022: Exploring How Delta Lake is Powering the Future of Lakehouse Architecture</h3>
-            <Link to="/datacouncil/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
+            <h3 className="article-title">Grace Hopper Open Source Day 2024</h3>
+            <Link to="/ghc24+we/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

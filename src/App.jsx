@@ -65,6 +65,7 @@ import Podcast from "./Learn Component/Podcast";
 import UnitedNation from "./BlogsComponent/UnitedNation";
 import DataCouncil from "./BlogsComponent/DataCouncil";
 import OpenSourcePicks from "./BlogsComponent/OpenSourcePicks";
+import GHC24 from "./BlogsComponent/GHC24";
 
 
   
@@ -244,6 +245,16 @@ function App() {
                      <br/>
                      <br/>
                      <OpenSourcePicks/>
+                    <FooterSection/>
+                    </>
+                } />
+
+                <Route path="/ghc24+we/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <GHC24/>
                     <FooterSection/>
                     </>
                 } />

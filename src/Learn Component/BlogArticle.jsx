@@ -67,7 +67,7 @@ const ArticleSection = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Data Council 2022: Exploring How Delta Lake is Powering the Future of Lakehouse Architecture</h3>
-            <Link to="https://www.linkedin.com/pulse/building-lakehouse-delta-lake-data-council-2022-vini-jaiswal/?trackingId=hkz4pzpRSq6iErJf5ym8Gg%3D%3D" className="article-link">
+            <Link to="/datacouncil/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
