@@ -1,6 +1,6 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom";
-import blog5 from '../assets/blog7.png'
+import blog5 from '../assets/aideveloperday1.jpeg'
 import blog6 from '../assets/blog8.png'
 
 const ArticleSection4 = () => {
@@ -39,8 +39,8 @@ const ArticleSection4 = () => {
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">British Columbia's Commitment to Open Source Software: Driving Innovation and Efficiency</h3>
-            <Link to="https://www.linkedin.com/pulse/british-columbias-commitment-open-source-software-driving-jaiswal?utm_source=share&utm_medium=member_ios&utm_campaign=share_via" className="article-link">
+            <h3 className="article-title">Exploring the AI Frontier: Highlights from AI Developer Day, San Francisco – Jan 2024</h3>
+            <Link to="/pulse/Aideveloper+day=2024+sans-Francisco/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

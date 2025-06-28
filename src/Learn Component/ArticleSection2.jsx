@@ -1,6 +1,6 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom"
-import Blog3 from '../assets/Blog3.png'
+import Blog3 from '../assets/blog7.png'
 import blog4 from '../assets/blog4.png'
 
 const ArticleSection2 = () => {
@@ -40,8 +40,8 @@ const ArticleSection2 = () => {
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">United Nations Office for Digital and Emerging Technologies Digital Public Goods Alliance</h3>
-            <Link to="https://www.linkedin.com/pulse/open-source-united-nations-vini-jaiswal-wngrc/?trackingId=5%2FjD6H8zS1KjCd3YrEH%2BNA%3D%3D" className="article-link">
+            <h3 className="article-title">British Columbia's Commitment to Open Source Software: Driving Innovation and Efficiency</h3>
+            <Link to="/pulse/british-columbias-commitment-open-source-software-driving-jaiswal/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -65,7 +65,7 @@ const ArticleSection2 = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Grace Hopper Open Source Day 2024</h3>
-            <Link to="/ghc24+we/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
+            <Link to="/pulse/gracehopper+opensourceday+2024+we-jaiswal/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

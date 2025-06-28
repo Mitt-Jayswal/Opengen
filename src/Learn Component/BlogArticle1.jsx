@@ -43,7 +43,7 @@ const BlogArticle1 = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">United Nations Open Source Week 2025</h3>
-            <Link to="/unitednation/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
+            <Link to="/unitednations-Open+Source&Week=2025/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -67,7 +67,7 @@ const BlogArticle1 = () => {
               <div className="article-tag">Blog</div>
             </div>
             <h3 className="article-title">Grace Hopper Open Source Day 2024</h3>
-            <Link to="/ghc24+we/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
+            <Link to="/pulse/gracehopper+opensourceday+2024+we-jaiswal/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

@@ -295,14 +295,14 @@ const UnitedNation = () => {
             <p className="newsletter-description">
               Get exclusive insights on open source, AI policy, and technology innovation delivered weekly.
             </p>
-            <div className="newsletter-form">
+            {/* <div className="newsletter-form">
               <input type="email" placeholder="Enter your email" className="newsletter-input" />
               <button className="newsletter-button">
                 Subscribe
                 <FaArrowRight className="button-icon" />
               </button>
-            </div>
-            <p className="newsletter-note">Join 5,000+ tech leaders and policymakers</p>
+            </div> */}
+            
           </div>
 
           {/* Topics */}

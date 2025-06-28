@@ -66,6 +66,8 @@ import UnitedNation from "./BlogsComponent/UnitedNation";
 import DataCouncil from "./BlogsComponent/DataCouncil";
 import OpenSourcePicks from "./BlogsComponent/OpenSourcePicks";
 import GHC24 from "./BlogsComponent/GHC24";
+import BritishColumbia from "./BlogsComponent/BritishColumbia";
+import AideveloperDay from "./BlogsComponent/Aideveloperday";
 
 
   
@@ -212,8 +214,9 @@ function App() {
                      <BlogArticle1/>
                      <ArticleSection/>
                      <ArticleSection2/>
+                      <ArticleSection4/>
                      <ArticleSection3/>
-                     <ArticleSection4/>
+                     
                      <Podcast/>
                     <FooterSection/>
                     </>
@@ -221,7 +224,7 @@ function App() {
 
                 
 
-                 <Route path="/unitednation/vinijaiswal/blogs" element={
+                 <Route path="/unitednations-Open+Source&Week=2025/vinijaiswal/blogs" element={
                     <>
                      <OpenNavbar/>
                      <br/>
@@ -249,12 +252,32 @@ function App() {
                     </>
                 } />
 
-                <Route path="/ghc24+we/vinijaiswal/blogs" element={
+                <Route path="/pulse/gracehopper+opensourceday+2024+we-jaiswal/vinijaiswal/blogs" element={
                     <>
                      <OpenNavbar/>
                      <br/>
                      <br/>
                      <GHC24/>
+                    <FooterSection/>
+                    </>
+                } />
+
+                 <Route path="/pulse/british-columbias-commitment-open-source-software-driving-jaiswal/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <BritishColumbia/>
+                    <FooterSection/>
+                    </>
+                } />
+
+                <Route path="/pulse/Aideveloper+day=2024+sans-Francisco/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <AideveloperDay/>
                     <FooterSection/>
                     </>
                 } />

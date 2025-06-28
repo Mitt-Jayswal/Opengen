@@ -20,28 +20,25 @@ const GHC24 = () => {
     {
       id: 1,
       title: "Networking Strategies for Tech Professionals",
-      author: "Sarah Chen",
-      date: "May 15, 2025",
+       
       excerpt: "Master the art of professional networking at tech conferences and build meaningful connections.",
-      readTime: "7 min read",
+      
       category: "Career Growth",
     },
     {
       id: 2,
       title: "Breaking Into Tech: A Comprehensive Guide",
-      author: "Maria Rodriguez",
-      date: "April 22, 2025",
+      
       excerpt: "Essential steps and strategies for transitioning into a successful technology career.",
-      readTime: "12 min read",
+    
       category: "Career Transition",
     },
     {
       id: 3,
       title: "Women in Tech: Leadership and Innovation",
-      author: "Dr. Priya Patel",
-      date: "March 18, 2025",
+      
       excerpt: "Exploring leadership opportunities and innovation pathways for women in technology.",
-      readTime: "9 min read",
+      
       category: "Leadership",
     },
   ]

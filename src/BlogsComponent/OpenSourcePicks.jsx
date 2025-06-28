@@ -12,6 +12,7 @@ import {
   FaBrain,
 } from "react-icons/fa"
 import "../BlogsComponent/OpenSourcePicks.css"
+import { Link } from 'react-router-dom';
 
 const OpenSourcePicks = () => {
   return (
@@ -225,34 +226,34 @@ const OpenSourcePicks = () => {
             <h3 className="blog-tiger-sidebar-title">Featured Companies</h3>
             <ul className="blog-tiger-links">
               <li>
-                <a href="#" className="blog-tiger-link">
+                <Link to="/opensourcepicks/vinijaiswal/blogs" className="blog-tiger-link">
                   Netflix
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="blog-tiger-link">
+                 <Link to="/opensourcepicks/vinijaiswal/blogs"  className="blog-tiger-link">
                   NVIDIA
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="blog-tiger-link">
+                 <Link to="/opensourcepicks/vinijaiswal/blogs"  className="blog-tiger-link">
                   LinkedIn
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="blog-tiger-link">
+                 <Link to="/opensourcepicks/vinijaiswal/blogs"  className="blog-tiger-link">
                   Pinterest
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="blog-tiger-link">
+                 <Link to="/opensourcepicks/vinijaiswal/blogs"  className="blog-tiger-link">
                   Meta
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="blog-tiger-link">
+                 <Link to="/opensourcepicks/vinijaiswal/blogs"  className="blog-tiger-link">
                   Databricks
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
