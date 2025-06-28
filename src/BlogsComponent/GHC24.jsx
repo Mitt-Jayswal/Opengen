@@ -1,5 +1,6 @@
 import headerimage from "../assets/ghc24.png";
 import headerimage2 from "../assets/ghc241.jpeg";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -58,10 +59,10 @@ const GHC24 = () => {
               <span className="blog-tiger-date">June 9, 2025</span>
             </div>
             <div className="blog-tiger-social">
-              <FaFacebookF className="blog-tiger-icon" />
-              <FaTwitter className="blog-tiger-icon" />
-              <FaLinkedinIn className="blog-tiger-icon" />
-              <FaGithub className="blog-tiger-icon" />
+             <Link to="https://www.linkedin.com/in/vinijaiswal/">
+              <FaLinkedinIn className="blog-lion-icon" />
+              </Link>
+              
             </div>
           </header>
 
