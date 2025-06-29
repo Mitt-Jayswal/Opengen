@@ -71,6 +71,7 @@ import BritishColumbia from "./BlogsComponent/BritishColumbia";
 import AideveloperDay from "./BlogsComponent/Aideveloperday";
 import PredictionTechnology from "./BlogsComponent/PredictionsTechnology";
 import OpenAIBlog from "./BlogsComponent/OpenAIblog";
+import GHCOpenSourceDay from "./BlogsComponent/GHCOpenSourceDay";
 
 
   
@@ -305,6 +306,18 @@ function App() {
                     <FooterSection/>
                     </>
                 } />
+
+
+                <Route path="/pulse/ghcopen+source=day-vini-jaiswal/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <GHCOpenSourceDay/>
+                    <FooterSection/>
+                    </>
+                } />
+
 
 
                 <Route path="/support/Opengen" element={

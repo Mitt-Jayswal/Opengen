@@ -1,7 +1,7 @@
 import "../DesignLearn Component/ArticleSection.css"
 import { Link } from "react-router-dom"
 import Blog3 from '../assets/openai2.jpeg'
-import blog4 from '../assets/blog4.png'
+import blog4 from '../assets/ghcnew1.jpeg'
 
 const BlogArticle4 = () => {
   const handleNavClick = () => {
@@ -15,9 +15,17 @@ const BlogArticle4 = () => {
     <div className="article-section-container">
       <div className="article-section-content">
         <div className="dev-advocacy-container">
-          <h2 className="dev-advocacy-title">United Nations Office for Digital and Emerging Technologies</h2>
+          <h2 className="dev-advocacy-title"> Attending OpenAI Dev Day at 2AM from Singapore – Worth Every Second!</h2>
           <p className="dev-advocacy-description">
-            As I stepped into the United Nations headquarters in New York, I felt a surge of excitement and pride. The Open Source assembly was about to unfold, and I was honored to be a part of it.
+           <h4> Now possible:</h4>
+
+<li>Read complex documents with diagrams</li>
+
+<li>Analyze screenshots and visual data</li>
+
+<li>Caption and interpret images intelligently</li>
+
+<li> Use cases: Medical imaging, UX analysis, educational visuals, e-commerce auto-tagging</li>.
           </p>
            
           <div className="dev-advocacy-buttons">
@@ -64,8 +72,8 @@ const BlogArticle4 = () => {
               />
               <div className="article-tag">Blog</div>
             </div>
-            <h3 className="article-title">Grace Hopper Open Source Day 2024</h3>
-            <Link to="/pulse/gracehopper+opensourceday+2024+we-jaiswal/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
+            <h3 className="article-title">Kicking off the Grace Hopper Open Source Day!!! All smiles and excitement 👋 </h3>
+            <Link to="/pulse/ghcopen+source=day-vini-jaiswal/vinijaiswal/blogs" className="article-link" onClick={handleNavClick}>
               View Blog
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
