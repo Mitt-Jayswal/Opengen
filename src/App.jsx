@@ -60,6 +60,7 @@ import ArticleSection2 from "./Learn Component/ArticleSection2";
 import ArticleSection3 from "./Learn Component/ArticleSection3";
 import ArticleSection4 from "./Learn Component/ArticleSection4";
 import Podcast from "./Learn Component/Podcast";
+import BlogArticle4 from "./Learn Component/Blogrticle4";
 
 
 import UnitedNation from "./BlogsComponent/UnitedNation";
@@ -69,6 +70,7 @@ import GHC24 from "./BlogsComponent/GHC24";
 import BritishColumbia from "./BlogsComponent/BritishColumbia";
 import AideveloperDay from "./BlogsComponent/Aideveloperday";
 import PredictionTechnology from "./BlogsComponent/PredictionsTechnology";
+import OpenAIBlog from "./BlogsComponent/OpenAIblog";
 
 
   
@@ -216,6 +218,7 @@ function App() {
                      <ArticleSection/>
                      <ArticleSection2/>
                       <ArticleSection4/>
+                      <BlogArticle4/>
                      <ArticleSection3/>
                      
                      <Podcast/>
@@ -289,6 +292,16 @@ function App() {
                      <br/>
                      <br/>
                      <PredictionTechnology/>
+                    <FooterSection/>
+                    </>
+                } />
+
+                <Route path="/pulse/openai+developer=day&singapore-vini-jaiswal/vinijaiswal/blogs" element={
+                    <>
+                     <OpenNavbar/>
+                     <br/>
+                     <br/>
+                     <OpenAIBlog/>
                     <FooterSection/>
                     </>
                 } />
